@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+dist/
+.venv/
+work/
+source/
+__pycache__/
+*.pyc
+.DS_Store
+.env*.local
+corp-ca.pem

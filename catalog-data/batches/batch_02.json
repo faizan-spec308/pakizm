@@ -1,0 +1,1612 @@
+[
+ {
+  "pdf_page": "page_030",
+  "printed_page": 26,
+  "category": "Forceps",
+  "subcategory": "Tissue Forceps",
+  "products": [
+   {
+    "name": "Tissue Forceps",
+    "description": "1x2 teeth",
+    "variants": [
+     {
+      "ref": "14-0295",
+      "spec": "3 1/2\" (9cm)"
+     },
+     {
+      "ref": "14-0296",
+      "spec": "4 1/8\" (10.5cm)"
+     },
+     {
+      "ref": "14-0297",
+      "spec": "4 1/2\" (11.4cm)"
+     },
+     {
+      "ref": "14-0298",
+      "spec": "5\" (12.7cm)"
+     },
+     {
+      "ref": "14-0299",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0300",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0301",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0302",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-0303",
+      "spec": "10\" (25.4cm)"
+     },
+     {
+      "ref": "14-0304",
+      "spec": "12\" (30.5cm)"
+     },
+     {
+      "ref": "14-0305",
+      "spec": "14\" (35.6cm)"
+     }
+    ]
+   },
+   {
+    "name": "Tissue Forceps",
+    "description": "1x2 teeth, TC",
+    "variants": [
+     {
+      "ref": "14-0306",
+      "spec": "5 3/4\" (14.6cm)"
+     },
+     {
+      "ref": "14-0307",
+      "spec": "6 1/4\" (16cm)"
+     },
+     {
+      "ref": "14-0308",
+      "spec": "7\" (18cm)"
+     }
+    ]
+   },
+   {
+    "name": "Tissue Forceps",
+    "description": "2x3 teeth",
+    "variants": [
+     {
+      "ref": "14-0309",
+      "spec": "5\" (12.7cm)"
+     },
+     {
+      "ref": "14-0310",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0311",
+      "spec": "6 1/4\" (16cm)"
+     },
+     {
+      "ref": "14-0312",
+      "spec": "7 7/8\" (18.1cm)"
+     },
+     {
+      "ref": "14-0313",
+      "spec": "8\" (20cm)"
+     }
+    ]
+   },
+   {
+    "name": "Tissue Forceps",
+    "description": "3x4 teeth",
+    "variants": [
+     {
+      "ref": "14-0314",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0315",
+      "spec": "6 1/4\" (16cm)"
+     },
+     {
+      "ref": "14-0316",
+      "spec": "8\" (20cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_031",
+  "printed_page": 27,
+  "category": "Forceps",
+  "subcategory": "Tissue Forceps",
+  "products": [
+   {
+    "name": "Tissue Forceps",
+    "description": "4x5 teeth",
+    "variants": [
+     {
+      "ref": "14-0317",
+      "spec": "5\" (12.7cm)"
+     },
+     {
+      "ref": "14-0318",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0319",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0320",
+      "spec": "8\" (20cm)"
+     }
+    ]
+   },
+   {
+    "name": "Stille Grasping Forceps",
+    "description": "4x5 teeth",
+    "variants": [
+     {
+      "ref": "14-0321",
+      "spec": "5\" (12.7cm)"
+     }
+    ]
+   },
+   {
+    "name": "Leriche Grasping Forceps",
+    "description": "5x6 teeth",
+    "variants": [
+     {
+      "ref": "14-0322",
+      "spec": "6\" (15cm)"
+     }
+    ]
+   },
+   {
+    "name": "Semken Tissue Forceps",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0323",
+      "spec": "5\" (12.7cm), straight, 1x2 teeth"
+     },
+     {
+      "ref": "14-0324",
+      "spec": "5\" (12.7cm), curved, 1x2 teeth"
+     },
+     {
+      "ref": "14-0325",
+      "spec": "6\" (15cm), curved, 1x2 teeth"
+     },
+     {
+      "ref": "14-0326",
+      "spec": "6\" (15cm), straight, 1x2 teeth"
+     },
+     {
+      "ref": "14-0327",
+      "spec": "5\" (12.7cm), straight, 2x3 teeth"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_032",
+  "printed_page": 28,
+  "category": "Forceps",
+  "subcategory": "Tissue Forceps",
+  "products": [
+   {
+    "name": "Gillies Forceps",
+    "description": "serrated, 1x2 teeth",
+    "variants": [
+     {
+      "ref": "14-0328",
+      "spec": "6\" (15cm)"
+     }
+    ]
+   },
+   {
+    "name": "Gillies Forceps",
+    "description": "serrated, 1x2 teeth, TC",
+    "variants": [
+     {
+      "ref": "14-0329",
+      "spec": "6\" (15cm)"
+     }
+    ]
+   },
+   {
+    "name": "Potts-Smith Forceps",
+    "description": "serrated, 1x2 teeth",
+    "variants": [
+     {
+      "ref": "14-0330",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0331",
+      "spec": "8 1/2\" (21.6cm)"
+     },
+     {
+      "ref": "14-0332",
+      "spec": "10 1/4\" (26cm)"
+     },
+     {
+      "ref": "14-0333",
+      "spec": "12\" (30.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Cushing Tissue Forceps",
+    "description": "1x2 teeth, straight",
+    "variants": [
+     {
+      "ref": "14-0334",
+      "spec": "6 3/4\" (17cm)"
+     },
+     {
+      "ref": "14-0335",
+      "spec": "6 3/4\" (17cm), TC"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_033",
+  "printed_page": 29,
+  "category": "Forceps",
+  "subcategory": "Tissue Forceps",
+  "products": [
+   {
+    "name": "Gerald Tissue Forceps",
+    "description": "1x2 teeth, delicate, straight",
+    "variants": [
+     {
+      "ref": "14-0336",
+      "spec": "7\" (18cm)"
+     }
+    ]
+   },
+   {
+    "name": "Brown Forceps",
+    "description": "side grasping, 9x9 teeth",
+    "variants": [
+     {
+      "ref": "14-0337",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0338",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-0339",
+      "spec": "10\" (25.4cm)"
+     }
+    ]
+   },
+   {
+    "name": "Adson Brown Forceps",
+    "description": "side grasping teeth, 7x7 teeth",
+    "variants": [
+     {
+      "ref": "14-0340",
+      "spec": "4 3/4\" (12cm)"
+     }
+    ]
+   },
+   {
+    "name": "Adson Tissue Forceps",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0341",
+      "spec": "standard, 1.3mm, 4 3/4\" (12cm), 1x2 teeth"
+     },
+     {
+      "ref": "14-0342",
+      "spec": "delicate, .9mm, 4 3/4\" (12cm), 1x2 teeth"
+     },
+     {
+      "ref": "14-0343",
+      "spec": "delicate tying platform smooth, .9mm, 4 7/8\" (12.4cm), 1x2 teeth"
+     },
+     {
+      "ref": "14-0344",
+      "spec": "serrated, 1.3mm, 4 3/4\" (12cm), 1x2 teeth"
+     },
+     {
+      "ref": "14-0345",
+      "spec": "serrated, 1.3mm, 6\" (15cm), 1x2 teeth"
+     },
+     {
+      "ref": "14-0346",
+      "spec": "delicate, .9mm, 6\" (15cm), 1x2 teeth"
+     },
+     {
+      "ref": "14-0347",
+      "spec": "1.7mm, 4 3/4\" (12cm), 2x3 teeth"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_034",
+  "printed_page": 30,
+  "category": "Forceps",
+  "subcategory": "Tissue Forceps",
+  "products": [
+   {
+    "name": "Adson Tissue Forceps",
+    "description": "1x2 teeth, TC, serrated",
+    "variants": [
+     {
+      "ref": "14-0348",
+      "spec": "1.6mm, 4 3/4\" (12cm)"
+     },
+     {
+      "ref": "14-0349",
+      "spec": "2mm, 6\" (15cm)"
+     }
+    ]
+   },
+   {
+    "name": "Bonney Tissue Forceps",
+    "description": "serrated, 7\" (18cm)",
+    "variants": [
+     {
+      "ref": "14-0350",
+      "spec": "1x2 teeth"
+     },
+     {
+      "ref": "14-0351",
+      "spec": "2x3 teeth"
+     }
+    ]
+   },
+   {
+    "name": "Ferris Smith Tissue Forceps",
+    "description": "tying platform, 7\" (18cm)",
+    "variants": [
+     {
+      "ref": "14-0352",
+      "spec": "1x2 teeth"
+     },
+     {
+      "ref": "14-0353",
+      "spec": "2x3 teeth"
+     }
+    ]
+   },
+   {
+    "name": "Lane Forceps",
+    "description": "tying platform, 6\" (15cm)",
+    "variants": [
+     {
+      "ref": "14-0354",
+      "spec": "1x2 teeth"
+     },
+     {
+      "ref": "14-0355",
+      "spec": "2x3 teeth"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_035",
+  "printed_page": 31,
+  "category": "Forceps",
+  "subcategory": "Tissue Forceps",
+  "products": [
+   {
+    "name": "Cushing Forceps",
+    "description": "bayonet, 1x2 teeth",
+    "variants": [
+     {
+      "ref": "14-0356",
+      "spec": "7 1/4\" (18.4cm)"
+     }
+    ]
+   },
+   {
+    "name": "Debakey Forceps",
+    "description": "atraumatic tissue forceps, 1.5mm",
+    "variants": [
+     {
+      "ref": "14-0357",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0358",
+      "spec": "7 3/4\" (19.7cm)"
+     },
+     {
+      "ref": "14-0359",
+      "spec": "9 1/2\" (24cm)"
+     },
+     {
+      "ref": "14-0360",
+      "spec": "12\" (30.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Debakey Forceps",
+    "description": "atraumatic tissue forceps, 2mm",
+    "variants": [
+     {
+      "ref": "14-0361",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0362",
+      "spec": "7 3/4\" (19.7cm)"
+     },
+     {
+      "ref": "14-0363",
+      "spec": "9 1/2\" (24cm)"
+     },
+     {
+      "ref": "14-0364",
+      "spec": "12\" (30.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Debakey Forceps",
+    "description": "atraumatic tissue forceps, 3mm",
+    "variants": [
+     {
+      "ref": "14-0365",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0366",
+      "spec": "7 3/4\" (19.7cm)"
+     },
+     {
+      "ref": "14-0367",
+      "spec": "9 1/2\" (24cm)"
+     },
+     {
+      "ref": "14-0368",
+      "spec": "12\" (30.5cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_036",
+  "printed_page": 32,
+  "category": "Forceps",
+  "subcategory": "Tissue Forceps",
+  "products": [
+   {
+    "name": "Debakey Forceps",
+    "description": "angled atraumatic forceps, 2mm",
+    "variants": [
+     {
+      "ref": "14-0369",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0370",
+      "spec": "7 3/4\" (19.7cm)"
+     },
+     {
+      "ref": "14-0371",
+      "spec": "9 1/2\" (24cm)"
+     },
+     {
+      "ref": "14-0372",
+      "spec": "12\" (30.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Singley Tissue Forceps",
+    "description": "fenestrated serrated tips",
+    "variants": [
+     {
+      "ref": "14-0373",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0374",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0375",
+      "spec": "9\" (23cm)"
+     },
+     {
+      "ref": "14-0376",
+      "spec": "13\" (33cm)"
+     }
+    ]
+   },
+   {
+    "name": "Russian Tissue Forceps",
+    "description": "serrated cupped tips",
+    "variants": [
+     {
+      "ref": "14-0377",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0378",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-0379",
+      "spec": "10\" (25.4cm)"
+     }
+    ]
+   },
+   {
+    "name": "Mayo Russian Tissue Forceps",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0380",
+      "spec": "9\" (23cm)"
+     },
+     {
+      "ref": "14-0381",
+      "spec": "14\" (35.6cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_037",
+  "printed_page": 33,
+  "category": "Forceps",
+  "subcategory": "Dressing Forceps",
+  "products": [
+   {
+    "name": "Dressing Forceps",
+    "description": "serrated",
+    "variants": [
+     {
+      "ref": "14-0382",
+      "spec": "4 1/2\" (11.4cm)"
+     },
+     {
+      "ref": "14-0383",
+      "spec": "5\" (12.7cm)"
+     },
+     {
+      "ref": "14-0384",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0385",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0386",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0387",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-0388",
+      "spec": "10\" (25.4cm)"
+     },
+     {
+      "ref": "14-0389",
+      "spec": "12\" (30.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Semken Dressing Forceps",
+    "description": "delicate, serrated",
+    "variants": [
+     {
+      "ref": "14-0390",
+      "spec": "5\" (12.7cm), straight"
+     },
+     {
+      "ref": "14-0391",
+      "spec": "6\" (15cm), straight"
+     }
+    ]
+   },
+   {
+    "name": "Adson Dressing Forceps",
+    "description": "serrated",
+    "variants": [
+     {
+      "ref": "14-0392",
+      "spec": "delicate, 4 3/4\" (12cm)"
+     },
+     {
+      "ref": "14-0393",
+      "spec": "standard, 4 3/4\" (12cm)"
+     },
+     {
+      "ref": "14-0394",
+      "spec": "6\" (15cm)"
+     }
+    ]
+   },
+   {
+    "name": "Adson Dressing Forceps",
+    "description": "serrated, TC",
+    "variants": [
+     {
+      "ref": "14-0395",
+      "spec": "4 3/4\" (12cm)"
+     },
+     {
+      "ref": "14-0396",
+      "spec": "6\" (15cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_038",
+  "printed_page": 34,
+  "category": "Forceps",
+  "subcategory": "Splinter Forceps",
+  "products": [
+   {
+    "name": "Plain Splinter Forceps",
+    "description": "serrated",
+    "variants": [
+     {
+      "ref": "14-0397",
+      "spec": "3 1/2\" (9cm), straight"
+     },
+     {
+      "ref": "14-0398",
+      "spec": "4 1/2\" (11.4cm), straight"
+     },
+     {
+      "ref": "14-0399",
+      "spec": "3 1/2\" (9cm), curved"
+     },
+     {
+      "ref": "14-0400",
+      "spec": "4 1/2\" (11.4cm), curved"
+     }
+    ]
+   },
+   {
+    "name": "Feilchenfeld Splinter Forceps",
+    "description": "serrated, straight",
+    "variants": [
+     {
+      "ref": "14-0401",
+      "spec": "3\" (7.6cm)"
+     },
+     {
+      "ref": "14-0402",
+      "spec": "4 1/2\" (11.4cm)"
+     }
+    ]
+   },
+   {
+    "name": "Carmalt Splinter Forceps",
+    "description": "serrated, (11.1cm)",
+    "variants": [
+     {
+      "ref": "14-0403",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0404",
+      "spec": "curved"
+     }
+    ]
+   },
+   {
+    "name": "Virtus Splinter Forceps",
+    "description": "serrated, straight",
+    "variants": [
+     {
+      "ref": "14-0405",
+      "spec": "5 1/2\" (14cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_039",
+  "printed_page": 35,
+  "category": "Forceps",
+  "subcategory": "Dressing Forceps",
+  "products": [
+   {
+    "name": "Gerald Forceps",
+    "description": "delicate, serrated",
+    "variants": [
+     {
+      "ref": "14-0406",
+      "spec": "7\" (18cm), straight"
+     },
+     {
+      "ref": "14-0407",
+      "spec": "9 1/4\" (23.5cm), straight"
+     },
+     {
+      "ref": "14-0408",
+      "spec": "7\" (18cm), curved"
+     },
+     {
+      "ref": "14-0409",
+      "spec": "TC, 1mm, 7\" (18cm), straight"
+     }
+    ]
+   },
+   {
+    "name": "Cushing Dressing Forceps",
+    "description": "serrated",
+    "variants": [
+     {
+      "ref": "14-0410",
+      "spec": "7 1/4\" (18.4cm)"
+     }
+    ]
+   },
+   {
+    "name": "Cushing Bayonet Dressing Forceps",
+    "description": "serrated, TC",
+    "variants": [
+     {
+      "ref": "14-0411",
+      "spec": "7\" (18cm)"
+     }
+    ]
+   },
+   {
+    "name": "Adson Bayonet Dressing Forceps",
+    "description": "serrated",
+    "variants": [
+     {
+      "ref": "14-0412",
+      "spec": "7 1/2\" (19cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "Refs 14-0410, 14-0411, 14-0412 not in OCR list; read from image"
+  ]
+ },
+ {
+  "pdf_page": "page_040",
+  "printed_page": 36,
+  "category": "Forceps",
+  "subcategory": "Splinter Forceps",
+  "products": [
+   {
+    "name": "Swiss Jewelers Forceps",
+    "description": "smooth, fine",
+    "variants": [
+     {
+      "ref": "14-0413",
+      "spec": "style #1, (11.7cm)"
+     }
+    ]
+   },
+   {
+    "name": "Swiss Jewelers Forceps",
+    "description": "smooth, very fine",
+    "variants": [
+     {
+      "ref": "14-0414",
+      "spec": "style #3, (11.7cm)"
+     },
+     {
+      "ref": "14-0415",
+      "spec": "style #3C, (11.1cm)"
+     },
+     {
+      "ref": "14-0416",
+      "spec": "style #4, (10.8cm)"
+     },
+     {
+      "ref": "14-0417",
+      "spec": "style #5, (10.8cm)"
+     },
+     {
+      "ref": "14-0418",
+      "spec": "style #7, (11.4cm), curved tips"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_041",
+  "printed_page": 37,
+  "category": "Forceps",
+  "subcategory": "Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Verbrugge Forceps",
+    "description": "self-centering speedlock",
+    "variants": [
+     {
+      "ref": "14-0419",
+      "spec": "max: 25mm, (15cm)"
+     },
+     {
+      "ref": "14-0420",
+      "spec": "max: 45mm, (19cm)"
+     },
+     {
+      "ref": "14-0421",
+      "spec": "max: 40mm, (24cm)"
+     },
+     {
+      "ref": "14-0422",
+      "spec": "max: 65mm, (26cm)"
+     },
+     {
+      "ref": "14-0423",
+      "spec": "max: 65mm, (28cm)"
+     }
+    ]
+   },
+   {
+    "name": "Farabeuf Forceps",
+    "description": "adjustable jaw",
+    "variants": [
+     {
+      "ref": "14-0424",
+      "spec": "9\" (23cm)"
+     },
+     {
+      "ref": "14-0425",
+      "spec": "10 1/4\" (26cm)"
+     }
+    ]
+   },
+   {
+    "name": "Semb Bone Forceps",
+    "description": "angled onside, deep teeth",
+    "variants": [
+     {
+      "ref": "14-0426",
+      "spec": "without ratchet, 7 1/2\" (19cm)"
+     },
+     {
+      "ref": "14-0427",
+      "spec": "with ratchet, 8\" (20cm)"
+     }
+    ]
+   },
+   {
+    "name": "Farabeuf Lambotte Forceps",
+    "description": "adjustable jaw with ratchet",
+    "variants": [
+     {
+      "ref": "14-0428",
+      "spec": "7 1/2\" (19cm)"
+     },
+     {
+      "ref": "14-0429",
+      "spec": "10 1/2\" (26.7cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "Footer printed as 'Bone Holdeing Forceps' (typo normalized)"
+  ]
+ },
+ {
+  "pdf_page": "page_042",
+  "printed_page": 38,
+  "category": "Forceps",
+  "subcategory": "Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Van Buren Bone Forceps",
+    "description": "angled on side, serrated jaws",
+    "variants": [
+     {
+      "ref": "14-0430",
+      "spec": "9\" (23cm)"
+     }
+    ]
+   },
+   {
+    "name": "Fergusson Bone Forceps",
+    "description": "deep 2x2 teeth",
+    "variants": [
+     {
+      "ref": "14-0431",
+      "spec": "8 1/4\" (21cm)"
+     }
+    ]
+   },
+   {
+    "name": "Langenbeck Bone Forceps",
+    "description": "partially serrated, 2x2 teeth",
+    "variants": [
+     {
+      "ref": "14-0432",
+      "spec": "8 1/4\" (21cm)"
+     }
+    ]
+   },
+   {
+    "name": "Verbrugge Forceps",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0433",
+      "spec": "short ratchet, (17cm)"
+     },
+     {
+      "ref": "14-0434",
+      "spec": "max: 52mm, long ratchet, (25.4cm)"
+     },
+     {
+      "ref": "14-0435",
+      "spec": "max: 48mm, long ratchet, (26.7cm)"
+     },
+     {
+      "ref": "14-0436",
+      "spec": "max: 48mm, long ratchet, (28cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "Footer printed as 'Bone Holdeing Forceps' (typo normalized)"
+  ]
+ },
+ {
+  "pdf_page": "page_043",
+  "printed_page": 39,
+  "category": "Forceps",
+  "subcategory": "Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Kern Bone Forceps",
+    "description": "serrated jaws, 2x2 teeth, with ratchet",
+    "variants": [
+     {
+      "ref": "14-0437",
+      "spec": "5 3/4\" (14.6cm)"
+     },
+     {
+      "ref": "14-0438",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0439",
+      "spec": "8 1/2\" (21.6cm)"
+     }
+    ]
+   },
+   {
+    "name": "Kern Bone Forceps",
+    "description": "serrated jaws, 2x2 teeth, without ratchet",
+    "variants": [
+     {
+      "ref": "14-0440",
+      "spec": "5 3/4\" (14.6cm)"
+     },
+     {
+      "ref": "14-0441",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0442",
+      "spec": "8 1/2\" (21.6cm)"
+     }
+    ]
+   },
+   {
+    "name": "Lane Bone Forceps",
+    "description": "2x2 teeth, serrated jaws, 13\" (33cm), with ratchet",
+    "variants": [
+     {
+      "ref": "14-0443",
+      "spec": "max: 30mm, light"
+     },
+     {
+      "ref": "14-0444",
+      "spec": "max: 34mm, standard"
+     }
+    ]
+   },
+   {
+    "name": "Lane Bone Forceps",
+    "description": "2x2 teeth, serrated jaws, 13\" (33cm), without ratchet",
+    "variants": [
+     {
+      "ref": "14-0445",
+      "spec": "light"
+     },
+     {
+      "ref": "14-0446",
+      "spec": "standard"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "Footer printed as 'Bone Holdeing Forceps' (typo normalized)"
+  ]
+ },
+ {
+  "pdf_page": "page_044",
+  "printed_page": 40,
+  "category": "Forceps",
+  "subcategory": "Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Lane Bone Forceps",
+    "description": "2x2 teeth, serrated jaws, 18\" (45.7cm), heavy",
+    "variants": [
+     {
+      "ref": "14-0447",
+      "spec": "without ratchet"
+     },
+     {
+      "ref": "14-0448",
+      "spec": "max: 48mm, with ratchet"
+     }
+    ]
+   },
+   {
+    "name": "Lowman Bone Clamp",
+    "description": "1x1 jaws",
+    "variants": [
+     {
+      "ref": "14-0449",
+      "spec": "4 3/4\" (12cm)"
+     },
+     {
+      "ref": "14-0450",
+      "spec": "7 1/4\" (18.4cm)"
+     },
+     {
+      "ref": "14-0451",
+      "spec": "8\" (20cm)"
+     }
+    ]
+   },
+   {
+    "name": "Low man Bone Clamp",
+    "description": "1x2 jaws",
+    "variants": [
+     {
+      "ref": "14-0452",
+      "spec": "4 3/4\" (12cm)"
+     },
+     {
+      "ref": "14-0453",
+      "spec": "7 1/4\" (18.4cm)"
+     },
+     {
+      "ref": "14-0454",
+      "spec": "8\" (20cm)"
+     }
+    ]
+   },
+   {
+    "name": "Ulrich Bone Forceps",
+    "description": "straight, with speed lock",
+    "variants": [
+     {
+      "ref": "14-0455",
+      "spec": "7 1/4\" (18.4cm)"
+     },
+     {
+      "ref": "14-0456",
+      "spec": "9\" (23cm)"
+     },
+     {
+      "ref": "14-0457",
+      "spec": "10\" (25.4cm)"
+     },
+     {
+      "ref": "14-0458",
+      "spec": "11\" (28cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "Footer printed as 'Bone Holdeing Forceps' (typo normalized)"
+  ]
+ },
+ {
+  "pdf_page": "page_045",
+  "printed_page": 41,
+  "category": "Forceps",
+  "subcategory": "Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Lambotte Bone Forceps",
+    "description": "adjustable jaw with swivel head, with ratchet",
+    "variants": [
+     {
+      "ref": "14-0459",
+      "spec": "8 3/4\" (22.2cm)"
+     },
+     {
+      "ref": "14-0460",
+      "spec": "10 1/4\" (26cm)"
+     },
+     {
+      "ref": "14-0461",
+      "spec": "13\" (33cm)"
+     }
+    ]
+   },
+   {
+    "name": "Bishop Bone Forceps",
+    "description": "adjustable jaw, with ratchet",
+    "variants": [
+     {
+      "ref": "14-0462",
+      "spec": "9\" (23cm)"
+     },
+     {
+      "ref": "14-0463",
+      "spec": "13\" (33cm)"
+     }
+    ]
+   },
+   {
+    "name": "Pelvic Reduction Forceps",
+    "description": "with speed lock",
+    "variants": [
+     {
+      "ref": "14-0464",
+      "spec": "angled, short pointed ball tips, 7 3/4\" (19.7cm)"
+     },
+     {
+      "ref": "14-0465",
+      "spec": "straight, long pointed ball tips, 10\" (25.4cm)"
+     }
+    ]
+   },
+   {
+    "name": "Littauer Bone Forceps",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0466",
+      "spec": "5\" (12.7cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "14-0462, 14-0463, 14-0466 not in OCR list; read from image"
+  ]
+ },
+ {
+  "pdf_page": "page_046",
+  "printed_page": 42,
+  "category": "Forceps",
+  "subcategory": "Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Pelvic Reduction Forceps",
+    "description": "angled, long pointed ball tips with speedlock",
+    "variants": [
+     {
+      "ref": "14-0467",
+      "spec": "9 1/2\" (24cm)"
+     }
+    ]
+   },
+   {
+    "name": "Pelvic Reduction Forceps",
+    "description": "straight, long pointed ball tips with speedlock",
+    "variants": [
+     {
+      "ref": "14-0468",
+      "spec": "16\" (40.6cm)"
+     }
+    ]
+   },
+   {
+    "name": "Pelvic Reduction Forceps",
+    "description": "asymetric pointed ball tips with speedlock",
+    "variants": [
+     {
+      "ref": "14-0469",
+      "spec": "16\" (40.6cm)"
+     }
+    ]
+   },
+   {
+    "name": "Pelvic Reduction Forceps",
+    "description": "long 1x2 ball tips with speedlock",
+    "variants": [
+     {
+      "ref": "14-0470",
+      "spec": "15 3/4\" (40cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "Footer printed as 'Bone Holdeing Forceps' (typo normalized)"
+  ]
+ },
+ {
+  "pdf_page": "page_047",
+  "printed_page": 43,
+  "category": "Forceps",
+  "subcategory": "Bone Cutting Forceps",
+  "products": [
+   {
+    "name": "Cleveland Bone Forceps",
+    "description": "angled, delicate",
+    "variants": [
+     {
+      "ref": "14-0471",
+      "spec": "5 3/4\" (14.6cm)"
+     },
+     {
+      "ref": "14-0472",
+      "spec": "6 1/2\" (16.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Littauer Bone Forceps",
+    "description": "straight",
+    "variants": [
+     {
+      "ref": "14-0473",
+      "spec": "6\" (15cm)"
+     }
+    ]
+   },
+   {
+    "name": "Cottle Kazanjian Forceps",
+    "description": "straight",
+    "variants": [
+     {
+      "ref": "14-0474",
+      "spec": "7 1/2\" (19cm)"
+     },
+     {
+      "ref": "14-0475",
+      "spec": "7 1/8\" (18.1cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_048",
+  "printed_page": 44,
+  "category": "Forceps",
+  "subcategory": "Bone Cutting Forceps",
+  "products": [
+   {
+    "name": "Liston Bone Forceps",
+    "description": "straight",
+    "variants": [
+     {
+      "ref": "14-0476",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0477",
+      "spec": "6 1/2\" (16.5cm)"
+     },
+     {
+      "ref": "14-0478",
+      "spec": "7 1/2\" (19cm)"
+     },
+     {
+      "ref": "14-0479",
+      "spec": "8 1/2\" (21.6cm)"
+     }
+    ]
+   },
+   {
+    "name": "Liston Bone Forceps",
+    "description": "angled",
+    "variants": [
+     {
+      "ref": "14-0480",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0481",
+      "spec": "6 1/2\" (16.5cm)"
+     },
+     {
+      "ref": "14-0482",
+      "spec": "7 1/2\" (19cm)"
+     },
+     {
+      "ref": "14-0483",
+      "spec": "8 1/2\" (21.6cm)"
+     }
+    ]
+   },
+   {
+    "name": "Ruskin Liston Forceps",
+    "description": "delicate",
+    "variants": [
+     {
+      "ref": "14-0484",
+      "spec": "straight, 5 3/4\" (14.6cm)"
+     },
+     {
+      "ref": "14-0485",
+      "spec": "up, 6\" (15cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_049",
+  "printed_page": 45,
+  "category": "Forceps",
+  "subcategory": "Bone Cutting Forceps",
+  "products": [
+   {
+    "name": "Ruskin Liston Forceps",
+    "description": "7\" (18cm)",
+    "variants": [
+     {
+      "ref": "14-0486",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0487",
+      "spec": "angled"
+     }
+    ]
+   },
+   {
+    "name": "Ruskin-Rowland Forceps",
+    "description": "delicate jaw, 7\" (18cm)",
+    "variants": [
+     {
+      "ref": "14-0488",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0489",
+      "spec": "angled"
+     }
+    ]
+   },
+   {
+    "name": "McIndoe Forceps",
+    "description": "very delicate, 7\" (18cm)",
+    "variants": [
+     {
+      "ref": "14-0490",
+      "spec": "angled jaw"
+     }
+    ]
+   },
+   {
+    "name": "Stille-Liston Forceps",
+    "description": "10 1/2\" (26.7cm)",
+    "variants": [
+     {
+      "ref": "14-0491",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0492",
+      "spec": "angled"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_050",
+  "printed_page": 46,
+  "category": "Forceps",
+  "subcategory": "Bone Cutting / Wire Pulling & Twisting Forceps",
+  "products": [
+   {
+    "name": "Stille-Horsley Forceps",
+    "description": "10 1/2\" (26.7cm)",
+    "variants": [
+     {
+      "ref": "14-0493",
+      "spec": "angled jaw"
+     }
+    ]
+   },
+   {
+    "name": "Wire Pulling Forceps",
+    "description": "one grooved jaw",
+    "variants": [
+     {
+      "ref": "14-0494",
+      "spec": "6 1/2\" (16.5cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_051",
+  "printed_page": 47,
+  "category": "Forceps",
+  "subcategory": "Wire Pulling & Twisting Forceps",
+  "products": [
+   {
+    "name": "Wire Twister and Tightener",
+    "description": "side fenestration",
+    "variants": [
+     {
+      "ref": "14-0495",
+      "spec": "6 1/4\" (16cm)"
+     }
+    ]
+   },
+   {
+    "name": "Wire Twisting Forceps",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0496",
+      "spec": "6 3/4\" (17cm)"
+     }
+    ]
+   },
+   {
+    "name": "Wire Twisting Forceps",
+    "description": "tungsten carbide inserts, 6mm serrated, rounded tip",
+    "variants": [
+     {
+      "ref": "14-0497",
+      "spec": "7 1/2\" (19cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_052",
+  "printed_page": 48,
+  "category": "Forceps",
+  "subcategory": "Wire Pulling & Twisting Forceps",
+  "products": [
+   {
+    "name": "Wire Twisting Forceps",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0498",
+      "spec": "6\" (15cm), 3mm serrated, rounded tip, tungsten carbide inserts"
+     },
+     {
+      "ref": "14-0499",
+      "spec": "6\" (15cm), 3mm smooth, rounded tip"
+     },
+     {
+      "ref": "14-0500",
+      "spec": "8\" (20cm), tungsten carbide"
+     }
+    ]
+   },
+   {
+    "name": "Berry Wire Twister Forceps",
+    "description": "tungsten carbide jaw, long jaw",
+    "variants": [
+     {
+      "ref": "14-0501",
+      "spec": "7 3/4\" (19.7cm)"
+     }
+    ]
+   },
+   {
+    "name": "Corwin Wire Twister",
+    "description": "serrated, tungsten carbide inserts",
+    "variants": [
+     {
+      "ref": "14-0502",
+      "spec": "6 1/4\" (16cm), round tips"
+     },
+     {
+      "ref": "14-0503",
+      "spec": "6 1/4\" (16cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_053",
+  "printed_page": 49,
+  "category": "Forceps",
+  "subcategory": "Wire Pulling & Twisting Forceps",
+  "products": [
+   {
+    "name": "Wire Tightener",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0504",
+      "spec": "4 3/4\" (12cm)"
+     }
+    ]
+   },
+   {
+    "name": "Loute Wire Tightener",
+    "description": "max: 1.5mm/17 gauge cerclage wire",
+    "variants": [
+     {
+      "ref": "14-0505",
+      "spec": "8 1/2\" (21.6cm)"
+     }
+    ]
+   },
+   {
+    "name": "Jet Wire Twister",
+    "description": "10mm serrated jaw",
+    "variants": [
+     {
+      "ref": "14-0506",
+      "spec": "11\" (28cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_054",
+  "printed_page": 50,
+  "category": "Rongeurs",
+  "subcategory": "",
+  "products": [],
+  "_warnings": [
+   "Divider page: 'No# 3 Rongeurs'; no products"
+  ]
+ }
+]

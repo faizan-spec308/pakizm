@@ -1,0 +1,1554 @@
+[
+ {
+  "pdf_page": "page_005",
+  "printed_page": 1,
+  "category": "Scalpel Handle",
+  "subcategory": "Scalpel Handle",
+  "products": [
+   {
+    "name": "Collin Scalpel Handle",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0100",
+      "spec": "No.9"
+     },
+     {
+      "ref": "14-0101",
+      "spec": "No.8"
+     }
+    ]
+   },
+   {
+    "name": "Scalpel Handle",
+    "description": "Solid",
+    "variants": [
+     {
+      "ref": "14-0102",
+      "spec": "No.3"
+     }
+    ]
+   },
+   {
+    "name": "Scalpel Handle",
+    "description": "Solid",
+    "variants": [
+     {
+      "ref": "14-0103",
+      "spec": "No.3"
+     }
+    ]
+   },
+   {
+    "name": "Standard Scalpel Handle",
+    "description": "Solid",
+    "variants": [
+     {
+      "ref": "14-0104",
+      "spec": "No.3"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "Footer printed as 'SCALPEL HANDEL'; refs 0102/0103 have no printed name"
+  ]
+ },
+ {
+  "pdf_page": "page_006",
+  "printed_page": 2,
+  "category": "Scalpel Handle",
+  "subcategory": "Scalpel Handle",
+  "products": [
+   {
+    "name": "Standard Scalpel Handle",
+    "description": "Solid",
+    "variants": [
+     {
+      "ref": "14-0105",
+      "spec": "No.4"
+     }
+    ]
+   },
+   {
+    "name": "Scalpel Handle",
+    "description": "Solid, straight",
+    "variants": [
+     {
+      "ref": "14-0106",
+      "spec": "No.4L"
+     }
+    ]
+   },
+   {
+    "name": "Scalpel Handle",
+    "description": "Solid, curved",
+    "variants": [
+     {
+      "ref": "14-0107",
+      "spec": "No.4L"
+     }
+    ]
+   },
+   {
+    "name": "Scalpel Handle",
+    "description": "Solid, straight",
+    "variants": [
+     {
+      "ref": "14-0108",
+      "spec": "No.3L"
+     }
+    ]
+   },
+   {
+    "name": "Scalpel Handle",
+    "description": "Solid, curved",
+    "variants": [
+     {
+      "ref": "14-0109",
+      "spec": "No.3L"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "Refs 0106-0109 have no printed name"
+  ]
+ },
+ {
+  "pdf_page": "page_007",
+  "printed_page": 3,
+  "category": "Scalpel Handle",
+  "subcategory": "Scalpel Handle",
+  "products": [
+   {
+    "name": "Double Handle Scalpel Handle",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0110",
+      "spec": "No. A + No. 3"
+     }
+    ]
+   },
+   {
+    "name": "Scalpel Handle",
+    "description": "Solid",
+    "variants": [
+     {
+      "ref": "14-0111",
+      "spec": "No. 7K"
+     }
+    ]
+   },
+   {
+    "name": "Scalpel Handle",
+    "description": "Solid",
+    "variants": [
+     {
+      "ref": "14-0112",
+      "spec": "No. 7"
+     }
+    ]
+   },
+   {
+    "name": "Euromed-Super Scalpel Handle",
+    "description": "Hollow",
+    "variants": [
+     {
+      "ref": "14-0113",
+      "spec": "No. 10"
+     }
+    ]
+   },
+   {
+    "name": "Plastics Scalpel Handle",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0114",
+      "spec": ""
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "Refs 0110-0112, 0114 have no printed product name; names derived from labels"
+  ]
+ },
+ {
+  "pdf_page": "page_008",
+  "printed_page": 4,
+  "category": "Forceps",
+  "subcategory": "Forceps",
+  "products": [],
+  "_warnings": [
+   "Illustration-only page 'No# 2 Forceps', no refs, no footer subcategory"
+  ]
+ },
+ {
+  "pdf_page": "page_009",
+  "printed_page": 5,
+  "category": "Forceps",
+  "subcategory": "Towel & Sponge Forceps",
+  "products": [
+   {
+    "name": "Vorse Tube Forceps",
+    "description": "serrated",
+    "variants": [
+     {
+      "ref": "14-0115",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0116",
+      "spec": "7 1/4\" (18.4cm)"
+     },
+     {
+      "ref": "14-0117",
+      "spec": "8\" (20cm)"
+     }
+    ]
+   },
+   {
+    "name": "Presbyterian Tubing Forceps",
+    "description": "smooth, straight",
+    "variants": [
+     {
+      "ref": "14-0118",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0119",
+      "spec": "7 1/8\" (18.4cm)"
+     },
+     {
+      "ref": "14-0120",
+      "spec": "8\" (20cm)"
+     }
+    ]
+   },
+   {
+    "name": "Foerster Sponge Forceps",
+    "description": "serrated",
+    "variants": [
+     {
+      "ref": "14-0121",
+      "spec": "7\" (18cm), straight"
+     },
+     {
+      "ref": "14-0122",
+      "spec": "7\" (18cm), curved"
+     },
+     {
+      "ref": "14-0123",
+      "spec": "9 1/2\" (24cm), straight"
+     },
+     {
+      "ref": "14-0124",
+      "spec": "9 1/2\" (24cm), curved"
+     },
+     {
+      "ref": "14-0125",
+      "spec": "12\" (30.5cm), straight"
+     },
+     {
+      "ref": "14-0126",
+      "spec": "12\" (30.5cm), curved"
+     }
+    ]
+   },
+   {
+    "name": "Foerster Sponge Forceps",
+    "description": "smooth",
+    "variants": [
+     {
+      "ref": "14-0127",
+      "spec": "7\" (18cm), straight"
+     },
+     {
+      "ref": "14-0128",
+      "spec": "7\" (18cm), curved"
+     },
+     {
+      "ref": "14-0129",
+      "spec": "9 1/2\" (24cm), straight"
+     },
+     {
+      "ref": "14-0130",
+      "spec": "9 1/2\" (24cm), curved"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_010",
+  "printed_page": 6,
+  "category": "Forceps",
+  "subcategory": "Towel & Sponge Forceps",
+  "products": [
+   {
+    "name": "Bergmann-Foerster Forceps",
+    "description": "serrated, 9 1/2\" (24cm)",
+    "variants": [
+     {
+      "ref": "14-0131",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0132",
+      "spec": "curved"
+     }
+    ]
+   },
+   {
+    "name": "Fletcher Sponge Forceps",
+    "description": "serrated, 9 1/2\" (24cm)",
+    "variants": [
+     {
+      "ref": "14-0133",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0134",
+      "spec": "s-shaped"
+     }
+    ]
+   },
+   {
+    "name": "Jones Towel Forceps",
+    "description": "perforating sharp points",
+    "variants": [
+     {
+      "ref": "14-0135",
+      "spec": "2 1/4\" (5.7cm)"
+     },
+     {
+      "ref": "14-0136",
+      "spec": "3 1/4\" (8.3cm)"
+     }
+    ]
+   },
+   {
+    "name": "Backhaus Towel Forceps",
+    "description": "perforating sharp points",
+    "variants": [
+     {
+      "ref": "14-0137",
+      "spec": "3 1/2\" (9cm)"
+     },
+     {
+      "ref": "14-0138",
+      "spec": "4\" (10cm)"
+     },
+     {
+      "ref": "14-0139",
+      "spec": "5 1/4\" (13.3cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "14-0134 printed 's-shped'; normalized to s-shaped"
+  ]
+ },
+ {
+  "pdf_page": "page_011",
+  "printed_page": 7,
+  "category": "Forceps",
+  "subcategory": "Towel & Sponge Forceps",
+  "products": [
+   {
+    "name": "Backhaus Roeder Towel Forceps",
+    "description": "perforating sharp ball tips",
+    "variants": [
+     {
+      "ref": "14-0140",
+      "spec": "5 1/4\" (13.3cm)"
+     }
+    ]
+   },
+   {
+    "name": "Balland Socket Towel Forceps",
+    "description": "non-perforating ball tip",
+    "variants": [
+     {
+      "ref": "14-0141",
+      "spec": "5 1/2\" (14cm)"
+     }
+    ]
+   },
+   {
+    "name": "Lorna (Edna) Towel Forceps",
+    "description": "non-perforating fine teeth",
+    "variants": [
+     {
+      "ref": "14-0142",
+      "spec": "4\" (10cm)"
+     },
+     {
+      "ref": "14-0143",
+      "spec": "5 1/2\" (14cm)"
+     }
+    ]
+   },
+   {
+    "name": "Non-perforating Towel Forceps",
+    "description": "serrated",
+    "variants": [
+     {
+      "ref": "14-0144",
+      "spec": "4\" (10cm)"
+     },
+     {
+      "ref": "14-0145",
+      "spec": "5 1/8\" (13cm)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_012",
+  "printed_page": 8,
+  "category": "Forceps",
+  "subcategory": "Tissue Forceps",
+  "products": [
+   {
+    "name": "Judd Allis Tissue Forceps",
+    "description": "3x4 teeth",
+    "variants": [
+     {
+      "ref": "14-0146",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0147",
+      "spec": "7 1/2\" (19cm)"
+     }
+    ]
+   },
+   {
+    "name": "Allis Tissue Forceps",
+    "description": "3x4 teeth",
+    "variants": [
+     {
+      "ref": "14-0148",
+      "spec": "5 1/2\" (14cm)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_013",
+  "printed_page": 9,
+  "category": "Forceps",
+  "subcategory": "Tissue Forceps",
+  "products": [
+   {
+    "name": "Allis Tissue Forceps",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0149",
+      "spec": "4x5 teeth, 5 1/8\" (13cm)"
+     },
+     {
+      "ref": "14-0150",
+      "spec": "4x5 teeth, 6\" (15cm)"
+     },
+     {
+      "ref": "14-0151",
+      "spec": "5x6 teeth, 6\" (15cm)"
+     },
+     {
+      "ref": "14-0152",
+      "spec": "5x6 teeth, 7 1/2\" (19cm)"
+     },
+     {
+      "ref": "14-0153",
+      "spec": "5x6 teeth, 8\" (20cm)"
+     },
+     {
+      "ref": "14-0154",
+      "spec": "5x6 teeth, 9\" (23cm)"
+     }
+    ]
+   },
+   {
+    "name": "Allis Adair Forceps",
+    "description": "9x10 teeth",
+    "variants": [
+     {
+      "ref": "14-0155",
+      "spec": "6\" (15cm)"
+     }
+    ]
+   },
+   {
+    "name": "Thoms-Allis Forceps",
+    "description": "6x7 teeth",
+    "variants": [
+     {
+      "ref": "14-0156",
+      "spec": "8\" (20cm)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_014",
+  "printed_page": 10,
+  "category": "Forceps",
+  "subcategory": "Tissue Forceps",
+  "products": [
+   {
+    "name": "Babcock Forceps",
+    "description": "fenestrated",
+    "variants": [
+     {
+      "ref": "14-0157",
+      "spec": "6 1/4\" (16cm)"
+     },
+     {
+      "ref": "14-0158",
+      "spec": "7 1/4\" (18.4cm)"
+     },
+     {
+      "ref": "14-0159",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-0160",
+      "spec": "9\" (23cm)"
+     },
+     {
+      "ref": "14-0161",
+      "spec": "12\" (30.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Kocher Forceps",
+    "description": "serrated, 1x2 teeth, 5 1/2\" (14cm)",
+    "variants": [
+     {
+      "ref": "14-0162",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0163",
+      "spec": "curved"
+     }
+    ]
+   },
+   {
+    "name": "Rochester-Ochsner Forceps",
+    "description": "serrated, 1x2 teeth, straight",
+    "variants": [
+     {
+      "ref": "14-0164",
+      "spec": "6 1/4\" (16cm)"
+     },
+     {
+      "ref": "14-0165",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0166",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-0167",
+      "spec": "9 1/2\" (24cm)"
+     },
+     {
+      "ref": "14-0168",
+      "spec": "10 1/4\" (26cm)"
+     },
+     {
+      "ref": "14-0169",
+      "spec": "12\" (30.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Rochester-Ochsner Forceps",
+    "description": "serrated, 1x2 teeth, curved",
+    "variants": [
+     {
+      "ref": "14-0170",
+      "spec": "6 1/4\" (16cm)"
+     },
+     {
+      "ref": "14-0171",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0172",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-0173",
+      "spec": "9 1/2\" (24cm)"
+     },
+     {
+      "ref": "14-0174",
+      "spec": "10 1/4\" (26cm)"
+     },
+     {
+      "ref": "14-0175",
+      "spec": "12\" (30.5cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "Straight variant name printed 'Rochester-Obsner' (likely typo for Ochsner); normalized"
+  ]
+ },
+ {
+  "pdf_page": "page_015",
+  "printed_page": 11,
+  "category": "Forceps",
+  "subcategory": "Splinter / Hemostatic Forceps",
+  "products": [
+   {
+    "name": "Peet Splinter Forceps",
+    "description": "double curve, 4 1/2\" (11.4cm)",
+    "variants": [
+     {
+      "ref": "14-0176",
+      "spec": "curved"
+     }
+    ]
+   },
+   {
+    "name": "Williams Splinter Forceps",
+    "description": "serrated, 5 1/2\" (14cm)",
+    "variants": [
+     {
+      "ref": "14-0177",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0178",
+      "spec": "45 deg, curved"
+     },
+     {
+      "ref": "14-0179",
+      "spec": "90 deg, curved"
+     }
+    ]
+   },
+   {
+    "name": "Hartmann Mosquito Forceps",
+    "description": "serrated, 4\" (10cm)",
+    "variants": [
+     {
+      "ref": "14-0180",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0181",
+      "spec": "curved"
+     },
+     {
+      "ref": "14-0182",
+      "spec": "straight, 1x2 teeth"
+     },
+     {
+      "ref": "14-0183",
+      "spec": "curved, 1x2 teeth"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_016",
+  "printed_page": 12,
+  "category": "Forceps",
+  "subcategory": "Hemostatic Forceps",
+  "products": [
+   {
+    "name": "Micro Hartmann Forceps",
+    "description": "delicate, serrated, 3 1/2\" (9cm)",
+    "variants": [
+     {
+      "ref": "14-0184",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0185",
+      "spec": "curved"
+     }
+    ]
+   },
+   {
+    "name": "Petit-Point Jacobson Forceps",
+    "description": "very delicate, serrated, 5\" (12.7cm)",
+    "variants": [
+     {
+      "ref": "14-0186",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0187",
+      "spec": "curved"
+     }
+    ]
+   },
+   {
+    "name": "Mosquito Forceps",
+    "description": "serrated, 1x2 teeth",
+    "variants": [
+     {
+      "ref": "14-0188",
+      "spec": "4 3/4\" (12cm), straight, delicate"
+     },
+     {
+      "ref": "14-0189",
+      "spec": "4 3/4\" (12cm), curved, delicate"
+     },
+     {
+      "ref": "14-0190",
+      "spec": "5\" (12.7cm), straight"
+     },
+     {
+      "ref": "14-0191",
+      "spec": "5\" (12.7cm), curved"
+     }
+    ]
+   },
+   {
+    "name": "Petit-Point Mosquito Forceps",
+    "description": "serrated, 6\" (15cm)",
+    "variants": [
+     {
+      "ref": "14-0192",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0193",
+      "spec": "curved"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_017",
+  "printed_page": 13,
+  "category": "Forceps",
+  "subcategory": "Hemostatic Forceps",
+  "products": [
+   {
+    "name": "Providence Hospital Forceps",
+    "description": "serrated, 5 1/2\" (14cm)",
+    "variants": [
+     {
+      "ref": "14-0194",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0195",
+      "spec": "curved"
+     }
+    ]
+   },
+   {
+    "name": "Mosquito Forceps (Halstead)",
+    "description": "delicate, serrated, 6\" (15cm)",
+    "variants": [
+     {
+      "ref": "14-0196",
+      "spec": "curved"
+     }
+    ]
+   },
+   {
+    "name": "Mosquito Forceps (Halstead)",
+    "description": "serrated",
+    "variants": [
+     {
+      "ref": "14-0197",
+      "spec": "5\" (12.7cm), straight"
+     },
+     {
+      "ref": "14-0198",
+      "spec": "5\" (12.7cm), straight, delicate"
+     },
+     {
+      "ref": "14-0199",
+      "spec": "5\" (12.7cm), curved"
+     },
+     {
+      "ref": "14-0200",
+      "spec": "5\" (12.7cm), curved, delicate"
+     },
+     {
+      "ref": "14-0201",
+      "spec": "5 1/2\" (14cm), curved"
+     }
+    ]
+   },
+   {
+    "name": "DeBakey Mosquito Forceps",
+    "description": "atraumatic jaw, 5\" (12.7cm)",
+    "variants": [
+     {
+      "ref": "14-0202",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0203",
+      "spec": "curved"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_018",
+  "printed_page": 14,
+  "category": "Forceps",
+  "subcategory": "Hemostatic Forceps",
+  "products": [
+   {
+    "name": "Leriche Forceps",
+    "description": "delicate, 6\" (15cm)",
+    "variants": [
+     {
+      "ref": "14-0204",
+      "spec": "straight, serrated"
+     },
+     {
+      "ref": "14-0205",
+      "spec": "curved, serrated"
+     },
+     {
+      "ref": "14-0206",
+      "spec": "straight, 1x2 teeth"
+     },
+     {
+      "ref": "14-0207",
+      "spec": "curved, 1x2 teeth"
+     }
+    ]
+   },
+   {
+    "name": "Kelly Forceps",
+    "description": "serrated jaws, 5 1/2\" (14cm)",
+    "variants": [
+     {
+      "ref": "14-0208",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0209",
+      "spec": "curved"
+     }
+    ]
+   },
+   {
+    "name": "Crile Forceps",
+    "description": "fully serrated jaws, 5 1/2\" (14cm)",
+    "variants": [
+     {
+      "ref": "14-0210",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0211",
+      "spec": "straight, delicate"
+     },
+     {
+      "ref": "14-0212",
+      "spec": "curved"
+     },
+     {
+      "ref": "14-0213",
+      "spec": "curved, delicate"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_019",
+  "printed_page": 15,
+  "category": "Forceps",
+  "subcategory": "Hemostatic Forceps",
+  "products": [
+   {
+    "name": "Collier Forceps",
+    "description": "delicate, serrated, straight",
+    "variants": [
+     {
+      "ref": "14-0214",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0215",
+      "spec": "6 1/4\" (16cm)"
+     },
+     {
+      "ref": "14-0216",
+      "spec": "7 1/4\" (18.4cm)"
+     }
+    ]
+   },
+   {
+    "name": "Collier Forceps",
+    "description": "delicate, serrated, curved",
+    "variants": [
+     {
+      "ref": "14-0217",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0218",
+      "spec": "6 1/4\" (16cm)"
+     },
+     {
+      "ref": "14-0219",
+      "spec": "7 1/4\" (18.4cm)"
+     }
+    ]
+   },
+   {
+    "name": "Rankin-Crile Forceps",
+    "description": "fully serrated jaws, 6 1/4\" (16cm)",
+    "variants": [
+     {
+      "ref": "14-0220",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0221",
+      "spec": "curved"
+     }
+    ]
+   },
+   {
+    "name": "Rankin-Kelly Forceps",
+    "description": "serrated jaws, 6 1/4\" (16cm)",
+    "variants": [
+     {
+      "ref": "14-0222",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0223",
+      "spec": "curved"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_020",
+  "printed_page": 16,
+  "category": "Forceps",
+  "subcategory": "Hemostatic Forceps",
+  "products": [
+   {
+    "name": "Rochester Pean Forceps",
+    "description": "serrated, straight",
+    "variants": [
+     {
+      "ref": "14-0224",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0225",
+      "spec": "6 1/4\" (16cm)"
+     },
+     {
+      "ref": "14-0226",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0227",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-0228",
+      "spec": "8 3/4\" (22.2cm)"
+     },
+     {
+      "ref": "14-0229",
+      "spec": "10 1/4\" (26cm)"
+     },
+     {
+      "ref": "14-0230",
+      "spec": "12\" (30.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Rochester Pean Forceps",
+    "description": "serrated, curved",
+    "variants": [
+     {
+      "ref": "14-0231",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0232",
+      "spec": "6 1/4\" (16cm)"
+     },
+     {
+      "ref": "14-0233",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0234",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-0235",
+      "spec": "8 3/4\" (22.2cm)"
+     },
+     {
+      "ref": "14-0236",
+      "spec": "10 1/4\" (26cm)"
+     },
+     {
+      "ref": "14-0237",
+      "spec": "12\" (30.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Adson Forceps",
+    "description": "serrated, 7 1/4\" (18.4cm)",
+    "variants": [
+     {
+      "ref": "14-0238",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0239",
+      "spec": "curved"
+     }
+    ]
+   },
+   {
+    "name": "Adson Artery Forceps",
+    "description": "serrated, 1x2 teeth, 7 1/4\" (18.4cm)",
+    "variants": [
+     {
+      "ref": "14-0240",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-0241",
+      "spec": "curved"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_021",
+  "printed_page": 17,
+  "category": "Forceps",
+  "subcategory": "Hemostatic Forceps",
+  "products": [
+   {
+    "name": "Mixter Baby Forceps",
+    "description": "curved, serrated",
+    "variants": [
+     {
+      "ref": "14-0242",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0243",
+      "spec": "7 1/2\" (19cm)"
+     }
+    ]
+   },
+   {
+    "name": "Gemini Forceps",
+    "description": "curved, serrated",
+    "variants": [
+     {
+      "ref": "14-0244",
+      "spec": "5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-0245",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0246",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-0247",
+      "spec": "9\" (23cm)"
+     },
+     {
+      "ref": "14-0248",
+      "spec": "11\" (28cm)"
+     }
+    ]
+   },
+   {
+    "name": "Mixter Forceps",
+    "description": "delicate, full curve, serrated",
+    "variants": [
+     {
+      "ref": "14-0249",
+      "spec": "5 1/4\" (13.3cm)"
+     }
+    ]
+   },
+   {
+    "name": "Kantrowitz Forceps",
+    "description": "right angle, serrated",
+    "variants": [
+     {
+      "ref": "14-0250",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-0251",
+      "spec": "9 1/2\" (24cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "14-0243 and 14-0249 added (missed by OCR)"
+  ]
+ },
+ {
+  "pdf_page": "page_022",
+  "printed_page": 18,
+  "category": "Forceps",
+  "subcategory": "Hemostatic Forceps",
+  "products": [
+   {
+    "name": "Schmidt Forceps",
+    "description": "curved, serrated, 7 1/2\" (19cm)",
+    "variants": [
+     {
+      "ref": "14-0252",
+      "spec": "full curve"
+     },
+     {
+      "ref": "14-0253",
+      "spec": "slight curve, one open ring"
+     }
+    ]
+   },
+   {
+    "name": "Vanderbilt University Clamp",
+    "description": "serrated, 8 1/2\" (21.6cm)",
+    "variants": [
+     {
+      "ref": "14-0254",
+      "spec": "light curve"
+     }
+    ]
+   },
+   {
+    "name": "Sarot Forceps",
+    "description": "serrated, 9 1/2\" (24cm)",
+    "variants": [
+     {
+      "ref": "14-0255",
+      "spec": "light curve"
+     }
+    ]
+   },
+   {
+    "name": "Crafoord Forceps",
+    "description": "serrated, 9 1/2\" (24cm)",
+    "variants": [
+     {
+      "ref": "14-0256",
+      "spec": "curved jaw"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "Printed name 'Crafoord' spelled 'Crafoord' as printed"
+  ]
+ },
+ {
+  "pdf_page": "page_023",
+  "printed_page": 19,
+  "category": "Forceps",
+  "subcategory": "Hemostatic Forceps",
+  "products": [
+   {
+    "name": "Bennington Tissue Forceps",
+    "description": "serrated jaw",
+    "variants": [
+     {
+      "ref": "14-0257",
+      "spec": "6\" (15cm)"
+     },
+     {
+      "ref": "14-0258",
+      "spec": "8\" (20cm)"
+     }
+    ]
+   },
+   {
+    "name": "Lahey Traction Forceps",
+    "description": "3x3 sharp",
+    "variants": [
+     {
+      "ref": "14-0259",
+      "spec": "6 1/4\" (16cm)"
+     }
+    ]
+   },
+   {
+    "name": "Pratt Scalp Forceps",
+    "description": "fine teeth",
+    "variants": [
+     {
+      "ref": "14-0260",
+      "spec": "6\" (15cm)"
+     }
+    ]
+   },
+   {
+    "name": "Meeker Artery Forceps",
+    "description": "right angle, serrated",
+    "variants": [
+     {
+      "ref": "14-0261",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-0262",
+      "spec": "10 3/4\" (27.3cm)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_024",
+  "printed_page": 20,
+  "category": "Forceps",
+  "subcategory": "Hemostatic / Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Ferguson Forceps",
+    "description": "serrated, 1x2 jaws",
+    "variants": [
+     {
+      "ref": "14-0263",
+      "spec": "6 1/4\" (16cm), straight"
+     },
+     {
+      "ref": "14-0264",
+      "spec": "6 1/4\" (16cm), curved"
+     },
+     {
+      "ref": "14-0265",
+      "spec": "7 3/4\" (19.7cm), straight"
+     },
+     {
+      "ref": "14-0266",
+      "spec": "7 3/4\" (19.7cm), curved"
+     }
+    ]
+   },
+   {
+    "name": "Rochester-Carmalt Forceps",
+    "description": "cross serrated tips, longitudinally serrated jaws",
+    "variants": [
+     {
+      "ref": "14-0267",
+      "spec": "6 1/4\" (16cm), straight"
+     },
+     {
+      "ref": "14-0268",
+      "spec": "6 1/4\" (16cm), curved"
+     },
+     {
+      "ref": "14-0269",
+      "spec": "8\" (20cm), straight"
+     },
+     {
+      "ref": "14-0270",
+      "spec": "8\" (20cm), curved"
+     }
+    ]
+   },
+   {
+    "name": "Vogen Sesamoid Clamp",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0271",
+      "spec": "4\" (10cm) shaft"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_025",
+  "printed_page": 21,
+  "category": "Forceps",
+  "subcategory": "Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Stagbeetle Forceps",
+    "description": "curved, pointed tips",
+    "variants": [
+     {
+      "ref": "14-0272",
+      "spec": "4 3/4\" (12cm)"
+     }
+    ]
+   },
+   {
+    "name": "Bone Reduction Forceps",
+    "description": "curved, pointed tips",
+    "variants": [
+     {
+      "ref": "14-0273",
+      "spec": "5 1/4\" (13.3cm)"
+     }
+    ]
+   },
+   {
+    "name": "Plate and Bone Holding Forceps",
+    "description": "one pointed tip, one foot plate",
+    "variants": [
+     {
+      "ref": "14-0274",
+      "spec": "4 3/4\" (12cm)"
+     }
+    ]
+   },
+   {
+    "name": "Bone Reduction Forceps",
+    "description": "curved, pointed tips, 5\" (12.7cm)",
+    "variants": [
+     {
+      "ref": "14-0275",
+      "spec": "10mm serrations"
+     },
+     {
+      "ref": "14-0276",
+      "spec": "15mm serrations"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "ocr_refs empty; refs read from image"
+  ]
+ },
+ {
+  "pdf_page": "page_026",
+  "printed_page": 22,
+  "category": "Forceps",
+  "subcategory": "Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Bone Reduction Forceps",
+    "description": "curved, one pointed tip, one step-pointed tip",
+    "variants": [
+     {
+      "ref": "14-0277",
+      "spec": "5 1/4\" (13.3cm)"
+     }
+    ]
+   },
+   {
+    "name": "Reill Reduction Forceps",
+    "description": "curved jaw",
+    "variants": [
+     {
+      "ref": "14-0278",
+      "spec": "7\" (18cm)"
+     }
+    ]
+   },
+   {
+    "name": "Bone Reduction Forceps",
+    "description": "curved, serrated jaws",
+    "variants": [
+     {
+      "ref": "14-0279",
+      "spec": "5 1/2\" (14cm)"
+     }
+    ]
+   },
+   {
+    "name": "Bone Reduction Forceps",
+    "description": "8\" (20cm)",
+    "variants": [
+     {
+      "ref": "14-0280",
+      "spec": "2\" (5cm) double ratchet, opening: 9mm to 100mm"
+     },
+     {
+      "ref": "14-0281",
+      "spec": "with speed lock, max opening: 70mm"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "0277-0279, 0281 added (missed by OCR); 0280 spec as printed"
+  ]
+ },
+ {
+  "pdf_page": "page_027",
+  "printed_page": 23,
+  "category": "Forceps",
+  "subcategory": "Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Bone Reduction Forceps",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-0282",
+      "spec": "curved with .062\" (1.6mm) guide, 5 1/4\" (13.3cm)"
+     },
+     {
+      "ref": "14-0283",
+      "spec": "curved with .035\" (.9mm) guide, 6 3/4\" (17cm)"
+     }
+    ]
+   },
+   {
+    "name": "Glenoid Perforating Forceps",
+    "description": "6 1/2\" (16.5cm)",
+    "variants": [
+     {
+      "ref": "14-0284",
+      "spec": "strong angle"
+     },
+     {
+      "ref": "14-0285",
+      "spec": "slight angle"
+     }
+    ]
+   },
+   {
+    "name": "Locke Phalangeal Forceps",
+    "description": "serrated jaws, 1x2 teeth",
+    "variants": [
+     {
+      "ref": "14-0286",
+      "spec": "6\" (15cm)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "pdf_page": "page_028",
+  "printed_page": 24,
+  "category": "Forceps",
+  "subcategory": "Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Lewin Bone Forceps",
+    "description": "slightly curved, over lapping serrated jaws",
+    "variants": [
+     {
+      "ref": "14-0287",
+      "spec": "7\" (18cm)"
+     }
+    ]
+   },
+   {
+    "name": "Dingman Forceps",
+    "description": "angular serrated jaws, 2x2 sharp teeth",
+    "variants": [
+     {
+      "ref": "14-0288",
+      "spec": "7 1/2\" (19cm)"
+     }
+    ]
+   },
+   {
+    "name": "Sesamoidectomy Clamp",
+    "description": "curved jaw",
+    "variants": [
+     {
+      "ref": "14-0289",
+      "spec": "6 1/2\" (16.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Plate Holding Forceps",
+    "description": "curved",
+    "variants": [
+     {
+      "ref": "14-0290",
+      "spec": "4 3/4\" (12cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "'Ding man' printed with a space; normalized to Dingman"
+  ]
+ },
+ {
+  "pdf_page": "page_029",
+  "printed_page": 25,
+  "category": "Forceps",
+  "subcategory": "Bone Holding Forceps",
+  "products": [
+   {
+    "name": "Fibula Forceps",
+    "description": "with speedlock, angled tips",
+    "variants": [
+     {
+      "ref": "14-0291",
+      "spec": "8 1/2\" (21.6cm)"
+     }
+    ]
+   },
+   {
+    "name": "Patella Forceps",
+    "description": "with speed lock, 2x2 sharp teeth",
+    "variants": [
+     {
+      "ref": "14-0292",
+      "spec": "max opening: 48mm"
+     }
+    ]
+   },
+   {
+    "name": "Bone Holding Forceps",
+    "description": "with speedlock, curved serrated jaws",
+    "variants": [
+     {
+      "ref": "14-0293",
+      "spec": "max: 28mm, 6 1/4\" (16cm)"
+     },
+     {
+      "ref": "14-0294",
+      "spec": "max: 54mm, 9\" (23cm)"
+     }
+    ]
+   }
+  ]
+ }
+]

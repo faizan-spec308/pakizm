@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Pakizm — "Clinical Steel" palette.
+  Cool neutrals + a single steel-blue accent. All colors are tokens, so the
+  brand palette can be swapped in one place once final colors are chosen.
+*/
+:root {
+  --bg: #f6f8f9;
+  --surface: #ffffff;
+  --surface-2: #eef2f4;
+  --ink: #0f1a1f;
+  --muted: #5b6b73;
+  --line: #dde4e8;
+  --accent: #15607f;
+  --accent-ink: #ffffff;
+  --accent-soft: #e3eef3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1215;
+    --surface: #121b20;
+    --surface-2: #19242a;
+    --ink: #e8eef1;
+    --muted: #93a4ac;
+    --line: #233138;
+    --accent: #4fb3d9;
+    --accent-ink: #06161d;
+    --accent-soft: #102a34;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1215;
+  --surface: #121b20;
+  --surface-2: #19242a;
+  --ink: #e8eef1;
+  --muted: #93a4ac;
+  --line: #233138;
+  --accent: #4fb3d9;
+  --accent-ink: #06161d;
+  --accent-soft: #102a34;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+/* utilities */
+.container-c {
+  max-width: var(--maxw, 1200px);
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+@media (max-width: 480px) {
+  .container-c {
+    padding-inline: 16px;
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.ref {
+  font-family: var(--font-mono), monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

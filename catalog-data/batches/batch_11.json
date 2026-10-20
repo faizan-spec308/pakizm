@@ -1,0 +1,1378 @@
+[
+ {
+  "pdf_page": "page_255",
+  "printed_page": 251,
+  "category": "Awls",
+  "subcategory": "Awls",
+  "products": [
+   {
+    "name": "Bone Awl",
+    "description": "with grooves",
+    "variants": [
+     {
+      "ref": "14-2597",
+      "spec": "5 3/4\" (14.6cm)"
+     }
+    ]
+   },
+   {
+    "name": "Bone Awl",
+    "description": "square taper",
+    "variants": [
+     {
+      "ref": "14-2598",
+      "spec": "5 3/4\" (14.6cm)"
+     }
+    ]
+   },
+   {
+    "name": "T-Handle Bone Awl",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2599",
+      "spec": "5 1/2\" (14cm)"
+     }
+    ]
+   },
+   {
+    "name": "Perthes Bone Awl",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2600",
+      "spec": "8 1/4\" (21cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_256",
+  "printed_page": 252,
+  "category": "Awls",
+  "subcategory": "Awls",
+  "products": [
+   {
+    "name": "Shoulder Percussion Awl",
+    "description": "8 1/2\" (21.6cm)",
+    "variants": [
+     {
+      "ref": "14-2601",
+      "spec": "small curve"
+     },
+     {
+      "ref": "14-2602",
+      "spec": "medium curve"
+     },
+     {
+      "ref": "14-2603",
+      "spec": "large curve"
+     }
+    ]
+   },
+   {
+    "name": "Shoulder Penetrating Awl",
+    "description": "phenolic handle, small curve",
+    "variants": [
+     {
+      "ref": "14-2604",
+      "spec": "7 1/4\" (18.4cm)"
+     },
+     {
+      "ref": "14-2605",
+      "spec": "9 1/4\" (23.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Kuntscher Diamond Pointed Awl",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2606",
+      "spec": "11\" (28cm)"
+     },
+     {
+      "ref": "14-2607",
+      "spec": "tibia, 11\" (28cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_257",
+  "printed_page": 253,
+  "category": "Cartilage & Tendon",
+  "subcategory": "",
+  "products": [],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_258",
+  "printed_page": 254,
+  "category": "Cartilage & Tendon",
+  "subcategory": "Cartilage Clamps & Forceps",
+  "products": [
+   {
+    "name": "Preston Ligamentum Flavum Forceps",
+    "description": "angled serrated jaws, 1x2 teeth",
+    "variants": [
+     {
+      "ref": "14-2608",
+      "spec": "7\" (18cm)"
+     }
+    ]
+   },
+   {
+    "name": "Martin Cartilage Clamp",
+    "description": "straight, with teeth",
+    "variants": [
+     {
+      "ref": "14-2609",
+      "spec": "7 1/4\" (18.4cm)"
+     }
+    ]
+   },
+   {
+    "name": "Walton Cartilage Clamp",
+    "description": "8\" (20cm)",
+    "variants": [
+     {
+      "ref": "14-2610",
+      "spec": "straight with teeth"
+     },
+     {
+      "ref": "14-2611",
+      "spec": "slightly curved with teeth"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_259",
+  "printed_page": 255,
+  "category": "Cartilage & Tendon",
+  "subcategory": "Cartilage Clamps & Forceps",
+  "products": [
+   {
+    "name": "Hoen Grasping Forceps",
+    "description": "serrated, 1x2 teeth",
+    "variants": [
+     {
+      "ref": "14-2612",
+      "spec": "5 1/2\" (14cm)"
+     }
+    ]
+   },
+   {
+    "name": "Carroll Tendon Pulling Forceps",
+    "description": "curved shaft, serrated jaws",
+    "variants": [
+     {
+      "ref": "14-2613",
+      "spec": "5 1/2\" (14cm)"
+     }
+    ]
+   },
+   {
+    "name": "Brand Tendon Pulling Forceps",
+    "description": "angled shaft, serrated jaws",
+    "variants": [
+     {
+      "ref": "14-2614",
+      "spec": "1 x 2 teeth, 6\" (15cm)"
+     },
+     {
+      "ref": "14-2615",
+      "spec": "1 x 2 teeth, 7 1/2\" (19cm)"
+     },
+     {
+      "ref": "14-2616",
+      "spec": "2 x 3 teeth, 9 1/2\" (24cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_260",
+  "printed_page": 256,
+  "category": "Cartilage & Tendon",
+  "subcategory": "Tendon Instruments",
+  "products": [
+   {
+    "name": "Bunnell Tendon Stripper",
+    "description": "with knurled handle, 6\" (15cm)",
+    "variants": [
+     {
+      "ref": "14-2617",
+      "spec": "3mm"
+     },
+     {
+      "ref": "14-2618",
+      "spec": "4mm"
+     },
+     {
+      "ref": "14-2619",
+      "spec": "5mm"
+     },
+     {
+      "ref": "14-2620",
+      "spec": "6mm"
+     },
+     {
+      "ref": "14-2621",
+      "spec": "7mm"
+     }
+    ]
+   },
+   {
+    "name": "Smillie Knife",
+    "description": "with T-grip handle, 6 3/4\" (17cm)",
+    "variants": [
+     {
+      "ref": "14-2622",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-2623",
+      "spec": "curved left"
+     },
+     {
+      "ref": "14-2624",
+      "spec": "curved right"
+     }
+    ]
+   },
+   {
+    "name": "Downing Cartilage Knife",
+    "description": "concave edge with guards",
+    "variants": [
+     {
+      "ref": "14-2625",
+      "spec": "10\" (25.4cm)"
+     }
+    ]
+   },
+   {
+    "name": "Tendon Passer",
+    "description": "one stepped tip, 6\" (15cm)",
+    "variants": [
+     {
+      "ref": "14-2626",
+      "spec": "straight"
+     },
+     {
+      "ref": "14-2627",
+      "spec": "curved"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_261",
+  "printed_page": 257,
+  "category": "Cartilage & Tendon",
+  "subcategory": "Tendon Instruments",
+  "products": [
+   {
+    "name": "Kleinert-Kutz Tendon Retriever",
+    "description": "rigid shaft, serrated 1 x 2 teeth, 8\" (20cm)",
+    "variants": [
+     {
+      "ref": "14-2628",
+      "spec": "2.0mm diameter"
+     },
+     {
+      "ref": "14-2629",
+      "spec": "2.5mm diameter"
+     }
+    ]
+   },
+   {
+    "name": "Kleinert-Kutz Tendon Retriever",
+    "description": "flexible shaft, serrated 1x2 teeth, 8\" (20cm)",
+    "variants": [
+     {
+      "ref": "14-2630",
+      "spec": "1.75mm diameter"
+     }
+    ]
+   },
+   {
+    "name": "Martin Cartilage Scissors",
+    "description": "two curved serrated blades",
+    "variants": [
+     {
+      "ref": "14-2631",
+      "spec": "8\" (20cm)"
+     }
+    ]
+   },
+   {
+    "name": "Mueller Capsule Scissors",
+    "description": "angular blades",
+    "variants": [
+     {
+      "ref": "14-2632",
+      "spec": "9 1/2\" (24cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": [
+   "14-2632 (Mueller Capsule Scissors) was not in ocr_refs; added from image"
+  ]
+ },
+ {
+  "pdf_page": "page_262",
+  "printed_page": 258,
+  "category": "Drills",
+  "subcategory": "",
+  "products": [],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_263",
+  "printed_page": 259,
+  "category": "Drills",
+  "subcategory": "Drills",
+  "products": [
+   {
+    "name": "Hudson Cranial Drill Set",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2633",
+      "spec": "set, complete with brace and 5 attachments"
+     }
+    ]
+   },
+   {
+    "name": "Hudson Drill Brace",
+    "description": "with snap-lock",
+    "variants": [
+     {
+      "ref": "14-2634",
+      "spec": "10 1/2\" (26.7cm)"
+     }
+    ]
+   },
+   {
+    "name": "Hudson Drill Brace",
+    "description": "thumb screw lock",
+    "variants": [
+     {
+      "ref": "14-2635",
+      "spec": "10 1/2\" (26.7cm)"
+     }
+    ]
+   },
+   {
+    "name": "Hudson Burr",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2636",
+      "spec": "9mm"
+     },
+     {
+      "ref": "14-2637",
+      "spec": "14mm"
+     },
+     {
+      "ref": "14-2638",
+      "spec": "16mm"
+     },
+     {
+      "ref": "14-2639",
+      "spec": "22mm"
+     }
+    ]
+   },
+   {
+    "name": "Hudson Cerebellar Extension",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2640",
+      "spec": ""
+     }
+    ]
+   },
+   {
+    "name": "Cushing Perforating Drill",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2641",
+      "spec": "10mm"
+     },
+     {
+      "ref": "14-2642",
+      "spec": "13mm"
+     },
+     {
+      "ref": "14-2643",
+      "spec": "16mm"
+     }
+    ]
+   },
+   {
+    "name": "Cushing Burr",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2644",
+      "spec": "10mm"
+     },
+     {
+      "ref": "14-2645",
+      "spec": "16mm"
+     },
+     {
+      "ref": "14-2646",
+      "spec": "20mm"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_264",
+  "printed_page": 260,
+  "category": "Drills",
+  "subcategory": "Drills",
+  "products": [
+   {
+    "name": "Drill Bit",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2647",
+      "spec": "2mm"
+     }
+    ]
+   },
+   {
+    "name": "McKenzie Drill Bit",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2648",
+      "spec": "13mm"
+     }
+    ]
+   },
+   {
+    "name": "D'Errico Drill Bit",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2649",
+      "spec": "17mm"
+     }
+    ]
+   },
+   {
+    "name": "McKenzie Enlarging Burr",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2650",
+      "spec": "17mm"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_265",
+  "printed_page": 261,
+  "category": "Drills",
+  "subcategory": "Drills",
+  "products": [
+   {
+    "name": "Bunnell Drill",
+    "description": "cannulated, includes chuck key, 5 3/4\" (14.6cm)",
+    "variants": [
+     {
+      "ref": "14-2651",
+      "spec": "accepts bits up to 5/32\" (4mm)"
+     }
+    ]
+   },
+   {
+    "name": "Ralks Drill",
+    "description": "cannulated, includes chuck key, 5 3/4\" (14.6cm)",
+    "variants": [
+     {
+      "ref": "14-2652",
+      "spec": "accepts bits up to 1/4\" (6.4mm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_266",
+  "printed_page": 262,
+  "category": "Drills",
+  "subcategory": "Drills",
+  "products": [
+   {
+    "name": "Universal Drill",
+    "description": "cannulated, includes chuck key, 11\" (28cm)",
+    "variants": [
+     {
+      "ref": "14-2653",
+      "spec": "accepts bits up to 1/4\" (6.4mm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_267",
+  "printed_page": 263,
+  "category": "Cast Removal",
+  "subcategory": "",
+  "products": [],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_268",
+  "printed_page": 264,
+  "category": "Cast Removal",
+  "subcategory": "Cast Removal",
+  "products": [
+   {
+    "name": "Engle Plaster Saw",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2654",
+      "spec": "6\" (15cm)"
+     }
+    ]
+   },
+   {
+    "name": "Reiner Plaster Knife",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2655",
+      "spec": "7\" (18cm)"
+     }
+    ]
+   },
+   {
+    "name": "Walton Cast Spreader",
+    "description": "serrated outside blades",
+    "variants": [
+     {
+      "ref": "14-2656",
+      "spec": "9\" (23cm)"
+     }
+    ]
+   },
+   {
+    "name": "Henning Plaster Spreader",
+    "description": "serrated outside blades",
+    "variants": [
+     {
+      "ref": "14-2657",
+      "spec": "11\" (28cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_269",
+  "printed_page": 265,
+  "category": "Cast Removal",
+  "subcategory": "Cast Removal",
+  "products": [
+   {
+    "name": "Pediatric Cast Breaker",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2658",
+      "spec": "7\" (18cm)"
+     }
+    ]
+   },
+   {
+    "name": "Wolf Plaster Cast Breaker",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2659",
+      "spec": "7\" (18cm)"
+     },
+     {
+      "ref": "14-2660",
+      "spec": "9 1/2\" (24cm)"
+     }
+    ]
+   },
+   {
+    "name": "Finger Plaster Shears",
+    "description": "side angled, serrated, sharp",
+    "variants": [
+     {
+      "ref": "14-2661",
+      "spec": "6 1/2\" (16.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Esmarch Bandage & Plaster Shears",
+    "description": "angled",
+    "variants": [
+     {
+      "ref": "14-2662",
+      "spec": "8\" (20cm)"
+     },
+     {
+      "ref": "14-2663",
+      "spec": "8 3/4\" (22.2cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_270",
+  "printed_page": 266,
+  "category": "Cast Removal",
+  "subcategory": "Cast Removal",
+  "products": [
+   {
+    "name": "Bergmann Bandage & Plaster Shears",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2664",
+      "spec": "9\" (23cm)"
+     }
+    ]
+   },
+   {
+    "name": "Bruns Shears",
+    "description": "one serrated blade",
+    "variants": [
+     {
+      "ref": "14-2665",
+      "spec": "9 1/4\" (23.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Hercules Scissors",
+    "description": "one serrated blade",
+    "variants": [
+     {
+      "ref": "14-2666",
+      "spec": "7 1/2\" (19cm)"
+     }
+    ]
+   },
+   {
+    "name": "Martin Tornado Plaster Shears",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2667",
+      "spec": "9 1/2\" (24cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_271",
+  "printed_page": 267,
+  "category": "Cast Removal",
+  "subcategory": "Cast Removal",
+  "products": [
+   {
+    "name": "Utility Plaster Shears",
+    "description": "serrated",
+    "variants": [
+     {
+      "ref": "14-2668",
+      "spec": "8\" (20cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_272",
+  "printed_page": 268,
+  "category": "Suction Tubes",
+  "subcategory": "",
+  "products": [],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_273",
+  "printed_page": 269,
+  "category": "Suction Tubes",
+  "subcategory": "Suction Tubes",
+  "products": [
+   {
+    "name": "Frazier Suction Tube",
+    "description": "straight, round hole, 7\" (18cm)",
+    "variants": [
+     {
+      "ref": "14-2669",
+      "spec": "3 Fr"
+     },
+     {
+      "ref": "14-2670",
+      "spec": "4 Fr"
+     },
+     {
+      "ref": "14-2671",
+      "spec": "5 Fr"
+     },
+     {
+      "ref": "14-2672",
+      "spec": "6 Fr"
+     },
+     {
+      "ref": "14-2673",
+      "spec": "7 Fr"
+     },
+     {
+      "ref": "14-2674",
+      "spec": "8 Fr"
+     },
+     {
+      "ref": "14-2675",
+      "spec": "9 Fr"
+     },
+     {
+      "ref": "14-2676",
+      "spec": "10 Fr"
+     },
+     {
+      "ref": "14-2677",
+      "spec": "11 Fr"
+     },
+     {
+      "ref": "14-2678",
+      "spec": "12 Fr"
+     },
+     {
+      "ref": "14-2679",
+      "spec": "13 Fr"
+     },
+     {
+      "ref": "14-2680",
+      "spec": "14 Fr"
+     },
+     {
+      "ref": "14-2681",
+      "spec": "15 Fr"
+     }
+    ]
+   },
+   {
+    "name": "Frazier Suction Tube",
+    "description": "angled, round hole, 7\" (18cm)",
+    "variants": [
+     {
+      "ref": "14-2682",
+      "spec": "3 Fr"
+     },
+     {
+      "ref": "14-2683",
+      "spec": "4 Fr"
+     },
+     {
+      "ref": "14-2684",
+      "spec": "5 Fr"
+     },
+     {
+      "ref": "14-2685",
+      "spec": "6 Fr"
+     },
+     {
+      "ref": "14-2686",
+      "spec": "7 Fr"
+     },
+     {
+      "ref": "14-2687",
+      "spec": "8 Fr"
+     },
+     {
+      "ref": "14-2688",
+      "spec": "9 Fr"
+     },
+     {
+      "ref": "14-2689",
+      "spec": "10 Fr"
+     },
+     {
+      "ref": "14-2690",
+      "spec": "11 Fr"
+     },
+     {
+      "ref": "14-2691",
+      "spec": "12 Fr"
+     }
+    ]
+   },
+   {
+    "name": "Frazier Suction Tube",
+    "description": "straight, slotted thumb hole, 7\" (18cm)",
+    "variants": [
+     {
+      "ref": "14-2692",
+      "spec": "3 Fr"
+     },
+     {
+      "ref": "14-2693",
+      "spec": "4 Fr"
+     },
+     {
+      "ref": "14-2694",
+      "spec": "5 Fr"
+     },
+     {
+      "ref": "14-2695",
+      "spec": "6 Fr"
+     },
+     {
+      "ref": "14-2696",
+      "spec": "7 Fr"
+     },
+     {
+      "ref": "14-2697",
+      "spec": "8 Fr"
+     },
+     {
+      "ref": "14-2698",
+      "spec": "9 Fr"
+     },
+     {
+      "ref": "14-2699",
+      "spec": "10 Fr"
+     },
+     {
+      "ref": "14-2700",
+      "spec": "11 Fr"
+     },
+     {
+      "ref": "14-2701",
+      "spec": "12 Fr"
+     }
+    ]
+   },
+   {
+    "name": "Frazier Suction Tube",
+    "description": "angled, slotted thumb hole, 7\" (18cm)",
+    "variants": [
+     {
+      "ref": "14-2702",
+      "spec": "3 Fr"
+     },
+     {
+      "ref": "14-2703",
+      "spec": "4 Fr"
+     },
+     {
+      "ref": "14-2704",
+      "spec": "5 Fr"
+     },
+     {
+      "ref": "14-2705",
+      "spec": "6 Fr"
+     },
+     {
+      "ref": "14-2706",
+      "spec": "7 Fr"
+     },
+     {
+      "ref": "14-2707",
+      "spec": "8 Fr"
+     },
+     {
+      "ref": "14-2708",
+      "spec": "9 Fr"
+     },
+     {
+      "ref": "14-2709",
+      "spec": "10 Fr"
+     },
+     {
+      "ref": "14-2710",
+      "spec": "11 Fr"
+     },
+     {
+      "ref": "14-2711",
+      "spec": "12 Fr"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_274",
+  "printed_page": 270,
+  "category": "Suction Tubes",
+  "subcategory": "Suction Tubes",
+  "products": [
+   {
+    "name": "Malis Type Frazier Suction Tube",
+    "description": "8\" (20cm)",
+    "variants": [
+     {
+      "ref": "14-2712",
+      "spec": "7 Fr"
+     },
+     {
+      "ref": "14-2713",
+      "spec": "9 Fr"
+     },
+     {
+      "ref": "14-2714",
+      "spec": "11 Fr"
+     }
+    ]
+   },
+   {
+    "name": "Baron Suction Tube",
+    "description": "5 1/2\" (14cm)",
+    "variants": [
+     {
+      "ref": "14-2715",
+      "spec": "3 Fr"
+     },
+     {
+      "ref": "14-2716",
+      "spec": "5 Fr"
+     },
+     {
+      "ref": "14-2717",
+      "spec": "7 Fr"
+     }
+    ]
+   },
+   {
+    "name": "Adson Suction Tube",
+    "description": "curved",
+    "variants": [
+     {
+      "ref": "14-2718",
+      "spec": "10 Fr, 6\" (15cm)"
+     },
+     {
+      "ref": "14-2719",
+      "spec": "12 Fr, 5 1/2\" (14cm)"
+     },
+     {
+      "ref": "14-2720",
+      "spec": "14 Fr, 5\" (12.7cm)"
+     },
+     {
+      "ref": "14-2721",
+      "spec": "15 Fr, 6\" (15cm)"
+     }
+    ]
+   },
+   {
+    "name": "Atraumatic Tip Suction Tube",
+    "description": "angled shaft, straight tip",
+    "variants": [
+     {
+      "ref": "14-2722",
+      "spec": "3 Fr, 4\" (10cm)"
+     },
+     {
+      "ref": "14-2723",
+      "spec": "5 Fr, 4\" (10cm)"
+     },
+     {
+      "ref": "14-2724",
+      "spec": "7 Fr, 4\" (10cm)"
+     },
+     {
+      "ref": "14-2725",
+      "spec": "10 Fr, 4\" (10cm)"
+     },
+     {
+      "ref": "14-2726",
+      "spec": "12 Fr, 4\" (10cm)"
+     },
+     {
+      "ref": "14-2727",
+      "spec": "3 Fr, 5\" (12.7cm)"
+     },
+     {
+      "ref": "14-2728",
+      "spec": "5 Fr, 5\" (12.7cm)"
+     },
+     {
+      "ref": "14-2729",
+      "spec": "7 Fr, 5\" (12.7cm)"
+     },
+     {
+      "ref": "14-2730",
+      "spec": "10 Fr, 5\" (12.7cm)"
+     },
+     {
+      "ref": "14-2731",
+      "spec": "12 Fr, 5\" (12.7cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_275",
+  "printed_page": 271,
+  "category": "Suction Tubes",
+  "subcategory": "Suction Tubes",
+  "products": [
+   {
+    "name": "Multi-Hole Suction Tube",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2732",
+      "spec": "5 Fr, 4 1/2\" (11.4cm)"
+     },
+     {
+      "ref": "14-2733",
+      "spec": "5 Fr, 6 1/2\" (16.5cm)"
+     },
+     {
+      "ref": "14-2734",
+      "spec": "7 Fr, 4 1/2\" (11.4cm)"
+     },
+     {
+      "ref": "14-2735",
+      "spec": "7 Fr, 6 1/2\" (16.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Rosen Suction Tube",
+    "description": "4\" (10cm)",
+    "variants": [
+     {
+      "ref": "14-2736",
+      "spec": "14 Fr"
+     },
+     {
+      "ref": "14-2737",
+      "spec": "15 Fr"
+     },
+     {
+      "ref": "14-2738",
+      "spec": "16 Fr"
+     },
+     {
+      "ref": "14-2739",
+      "spec": "17 Fr"
+     },
+     {
+      "ref": "14-2740",
+      "spec": "18 Fr"
+     },
+     {
+      "ref": "14-2741",
+      "spec": "19 Fr"
+     },
+     {
+      "ref": "14-2742",
+      "spec": "20 Fr"
+     },
+     {
+      "ref": "14-2743",
+      "spec": "22 Fr"
+     },
+     {
+      "ref": "14-2744",
+      "spec": "24 Fr"
+     },
+     {
+      "ref": "14-2745",
+      "spec": "26 Fr"
+     }
+    ]
+   },
+   {
+    "name": "Fukushima Suction Tube",
+    "description": "teardrop opening 6 1/4\" (16cm)",
+    "variants": [
+     {
+      "ref": "14-2746",
+      "spec": "3 Fr"
+     },
+     {
+      "ref": "14-2747",
+      "spec": "4 Fr"
+     },
+     {
+      "ref": "14-2748",
+      "spec": "5 Fr"
+     },
+     {
+      "ref": "14-2749",
+      "spec": "6 Fr"
+     },
+     {
+      "ref": "14-2750",
+      "spec": "7 Fr"
+     },
+     {
+      "ref": "14-2751",
+      "spec": "8 Fr"
+     },
+     {
+      "ref": "14-2752",
+      "spec": "9 Fr"
+     }
+    ]
+   },
+   {
+    "name": "Fukushima Suction Tube",
+    "description": "teardrop opening, 7\" (18cm)",
+    "variants": [
+     {
+      "ref": "14-2753",
+      "spec": "3 Fr"
+     },
+     {
+      "ref": "14-2754",
+      "spec": "4 Fr"
+     },
+     {
+      "ref": "14-2755",
+      "spec": "5 Fr"
+     },
+     {
+      "ref": "14-2756",
+      "spec": "6 Fr"
+     },
+     {
+      "ref": "14-2757",
+      "spec": "7 Fr"
+     },
+     {
+      "ref": "14-2758",
+      "spec": "8 Fr"
+     },
+     {
+      "ref": "14-2759",
+      "spec": "9 Fr"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_276",
+  "printed_page": 272,
+  "category": "Suction Tubes",
+  "subcategory": "Suction Tubes",
+  "products": [
+   {
+    "name": "Fukushima Suction Tube",
+    "description": "teardrop opening 8\" (20cm)",
+    "variants": [
+     {
+      "ref": "14-2760",
+      "spec": "3 Fr"
+     },
+     {
+      "ref": "14-2761",
+      "spec": "4 Fr"
+     },
+     {
+      "ref": "14-2762",
+      "spec": "5 Fr"
+     },
+     {
+      "ref": "14-2763",
+      "spec": "6 Fr"
+     },
+     {
+      "ref": "14-2764",
+      "spec": "7 Fr"
+     },
+     {
+      "ref": "14-2765",
+      "spec": "8 Fr"
+     },
+     {
+      "ref": "14-2766",
+      "spec": "9 Fr"
+     },
+     {
+      "ref": "14-2767",
+      "spec": "10 Fr"
+     },
+     {
+      "ref": "14-2768",
+      "spec": "11 Fr"
+     },
+     {
+      "ref": "14-2769",
+      "spec": "12 Fr"
+     }
+    ]
+   },
+   {
+    "name": "Poole Suction Tube",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2770",
+      "spec": "curved end, 23 Fr, 10\" (25.4cm)"
+     },
+     {
+      "ref": "14-2771",
+      "spec": "straight, 30 Fr, 8 3/4\" (22.2cm)"
+     },
+     {
+      "ref": "14-2772",
+      "spec": "pediatric, angular, 17 Fr, 8\" (20cm)"
+     }
+    ]
+   },
+   {
+    "name": "Andrews Pynchon Suction Tube",
+    "description": "",
+    "variants": [
+     {
+      "ref": "14-2773",
+      "spec": "9\" (23cm)"
+     }
+    ]
+   },
+   {
+    "name": "Yankauer Suction Tube",
+    "description": "stainless",
+    "variants": [
+     {
+      "ref": "14-2774",
+      "spec": "8 1/2\" (21.6cm)"
+     },
+     {
+      "ref": "14-2775",
+      "spec": "11 1/2\" (29.2cm)"
+     },
+     {
+      "ref": "14-2776",
+      "spec": "front tip only"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_277",
+  "printed_page": 273,
+  "category": "Suction Tubes",
+  "subcategory": "Suction Tubes",
+  "products": [
+   {
+    "name": "Yankauer Suction Tube",
+    "description": "stainless with control valve",
+    "variants": [
+     {
+      "ref": "14-2777",
+      "spec": "11 3/8\" (28.9cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_278",
+  "printed_page": 274,
+  "category": "Measuring",
+  "subcategory": "",
+  "products": [],
+  "_warnings": []
+ },
+ {
+  "pdf_page": "page_279",
+  "printed_page": 275,
+  "category": "Measuring",
+  "subcategory": "Measuring",
+  "products": [
+   {
+    "name": "Castroviejo Caliper",
+    "description": "graduated from 0 to 20mm",
+    "variants": [
+     {
+      "ref": "14-2778",
+      "spec": "3 1/4\" (8.3cm)"
+     }
+    ]
+   },
+   {
+    "name": "Castroviejo Caliper",
+    "description": "graduated from 0 to 40mm",
+    "variants": [
+     {
+      "ref": "14-2779",
+      "spec": "6 1/2\" (16.5cm)"
+     }
+    ]
+   },
+   {
+    "name": "Polk Finger Goniometer",
+    "description": "inch and mm graduations",
+    "variants": [
+     {
+      "ref": "14-2780",
+      "spec": "6\" (15cm)"
+     }
+    ]
+   },
+   {
+    "name": "Townley Caliper",
+    "description": "measures inside and outside",
+    "variants": [
+     {
+      "ref": "14-2781",
+      "spec": "4\" (10cm)"
+     }
+    ]
+   }
+  ],
+  "_warnings": []
+ }
+]
