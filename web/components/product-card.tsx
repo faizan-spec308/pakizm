@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 import ProductImage from "./product-image";
 
 type SlimProduct = {
@@ -16,31 +15,31 @@ export default function ProductCard({ product }: { product: SlimProduct }) {
   return (
     <Link
       href={`/products/${product.categorySlug}/${product.id}`}
-      className="group flex flex-col overflow-hidden rounded-card border border-line bg-surface transition-all duration-500 ease-premium hover:-translate-y-1 hover:border-line-2 hover:shadow-lift"
+      className="group flex flex-col"
     >
-      <div className="relative aspect-square overflow-hidden bg-surface-2">
+      <div className="relative aspect-square overflow-hidden rounded-card border border-line product-surface transition-colors duration-300 group-hover:border-line-2">
         <ProductImage
           ref_={product.primaryRef}
           alt={product.name}
-          className="h-full w-full object-contain p-6 transition-transform duration-700 ease-premium group-hover:scale-[1.04]"
+          className="h-full w-full object-contain p-7 transition-transform duration-500 ease-premium group-hover:scale-[1.05]"
         />
-        <span className="absolute right-3 top-3 flex h-7 w-7 translate-y-1 items-center justify-center rounded-full bg-ink text-bg opacity-0 transition-all duration-500 ease-premium group-hover:translate-y-0 group-hover:opacity-100">
-          <ArrowUpRight size={13} weight="bold" />
+        <span className="absolute left-3 top-3 rounded bg-surface-2/90 px-2 py-0.5 text-[0.62rem] font-semibold uppercase tracking-wide text-muted backdrop-blur">
+          {product.subcategory}
         </span>
       </div>
-      <div className="flex flex-1 flex-col gap-1 border-t border-line p-4">
-        <div className="text-[0.68rem] uppercase tracking-[0.12em] text-muted">
-          {product.subcategory}
-        </div>
-        <h3 className="text-[0.98rem] font-semibold leading-snug tracking-tight text-ink">
+      <div className="flex flex-1 flex-col px-0.5 pt-3">
+        <h3 className="text-[0.95rem] font-semibold leading-snug tracking-tight text-ink group-hover:text-accent">
           {product.name}
         </h3>
-        <div className="mt-auto flex items-center justify-between pt-3">
-          <span className="ref text-[0.78rem] text-ink-2">{product.primaryRef}</span>
-          <span className="text-[0.7rem] text-muted">
+        <div className="mt-1.5 flex items-center justify-between">
+          <span className="ref text-[0.78rem] text-muted">{product.primaryRef}</span>
+          <span className="text-[0.72rem] text-muted">
             {n} {n === 1 ? "size" : "sizes"}
           </span>
         </div>
+        <span className="mt-2 text-[0.8rem] font-semibold text-accent">
+          Request quote →
+        </span>
       </div>
     </Link>
   );

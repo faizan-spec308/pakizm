@@ -52,15 +52,13 @@ export default async function ProductPage({
       <div className="grid gap-12 md:grid-cols-2">
         {/* image — double-bezel */}
         <div className="md:sticky md:top-28 md:self-start">
-          <div className="rounded-[20px] border border-line bg-surface-2 p-2">
-            <div className="aspect-square overflow-hidden rounded-[13px] border border-line bg-surface">
-              <ProductImage
-                ref_={p.primaryRef}
-                alt={p.name}
-                className="h-full w-full object-contain p-10"
-                showRef={false}
-              />
-            </div>
+          <div className="aspect-square overflow-hidden rounded-card border border-line product-surface">
+            <ProductImage
+              ref_={p.primaryRef}
+              alt={p.name}
+              className="h-full w-full object-contain p-12"
+              showRef={false}
+            />
           </div>
         </div>
 

@@ -23,12 +23,14 @@ const PAGE = 48;
 
 export default function ProductsBrowser({
   initialCategory = "",
+  initialQuery = "",
 }: {
   initialCategory?: string;
+  initialQuery?: string;
 }) {
   const [all, setAll] = useState<Slim[] | null>(null);
   const [cats, setCats] = useState<CatMeta[]>([]);
-  const [q, setQ] = useState("");
+  const [q, setQ] = useState(initialQuery);
   const [cat, setCat] = useState(initialCategory);
   const [limit, setLimit] = useState(PAGE);
 

@@ -11,6 +11,8 @@ export default {
         bg: "var(--bg)",
         surface: "var(--surface)",
         "surface-2": "var(--surface-2)",
+        "surface-3": "var(--surface-3)",
+        "product-bg": "var(--product-bg)",
         ink: "var(--ink)",
         "ink-2": "var(--ink-2)",
         muted: "var(--muted)",
@@ -21,7 +23,7 @@ export default {
         "accent-soft": "var(--accent-soft)",
       },
       fontFamily: {
-        serif: ["var(--font-serif)", "Georgia", "serif"],
+        display: ["var(--font-display)", "system-ui", "sans-serif"],
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
@@ -30,16 +32,15 @@ export default {
         tighter: "-0.03em",
       },
       borderRadius: {
-        card: "14px",
-        btn: "8px",
+        card: "12px",
+        btn: "6px",
       },
       boxShadow: {
-        // ultra-diffuse, low-opacity — never harsh
-        soft: "0 1px 2px rgba(26,26,24,0.03), 0 6px 20px -8px rgba(26,26,24,0.06)",
-        lift: "0 2px 6px rgba(26,26,24,0.04), 0 18px 40px -16px rgba(26,26,24,0.10)",
+        soft: "0 1px 2px rgba(10,15,20,0.03), 0 8px 24px -12px rgba(10,15,20,0.10)",
+        lift: "0 2px 8px rgba(10,15,20,0.05), 0 20px 46px -18px rgba(10,15,20,0.16)",
       },
       maxWidth: {
-        content: "1240px",
+        content: "1320px",
         prose: "68ch",
       },
       transitionTimingFunction: {
