@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="container-c py-14">
-      <header className="max-w-[60ch]">
-        <p className="eyebrow">About Pakizm</p>
-        <h1 className="mt-3 text-[2.4rem] font-semibold leading-tight tracking-[-0.03em]">
+      <header className="max-w-prose">
+        <span className="eyebrow">About Pakizm</span>
+        <h1 className="display mt-4 text-[2.6rem] leading-[1.06] sm:text-[3.4rem]">
           A manufacturer of precision surgical instruments.
         </h1>
-        <p className="mt-6 text-[1.08rem] leading-relaxed text-muted">
+        <p className="mt-6 text-[1.08rem] leading-relaxed text-ink-2">
           Since 2005, Pakizm has manufactured and exported orthopedic, dental and
           general surgery instruments. We produce in surgical stainless steel to
           exacting tolerances, supplying distributors and healthcare providers
@@ -35,7 +35,7 @@ export default function AboutPage() {
 
       <section className="mt-16 grid gap-10 md:grid-cols-[1fr_1fr]">
         <div>
-          <h2 className="text-[1.5rem] font-semibold tracking-[-0.02em]">
+          <h2 className="display text-[1.7rem] sm:text-[2rem]">
             Quality that carries a lifetime guarantee
           </h2>
           <p className="mt-4 text-muted">
@@ -45,7 +45,7 @@ export default function AboutPage() {
           </p>
         </div>
         <div>
-          <h2 className="text-[1.5rem] font-semibold tracking-[-0.02em]">
+          <h2 className="display text-[1.7rem] sm:text-[2rem]">
             Built for partners worldwide
           </h2>
           <p className="mt-4 text-muted">

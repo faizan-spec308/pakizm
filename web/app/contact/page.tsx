@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="container-c py-14">
-      <header className="max-w-[60ch]">
-        <p className="eyebrow">Contact</p>
-        <h1 className="mt-3 text-[2.4rem] font-semibold leading-tight tracking-[-0.03em]">
+      <header className="max-w-prose">
+        <span className="eyebrow">Contact</span>
+        <h1 className="display mt-4 text-[2.6rem] leading-[1.06] sm:text-[3.4rem]">
           Request a quote
         </h1>
-        <p className="mt-5 text-[1.05rem] leading-relaxed text-muted">
+        <p className="mt-5 text-[1.05rem] leading-relaxed text-ink-2">
           Send us your reference list, quantities or custom requirements and our
           team will respond with a quotation.
         </p>

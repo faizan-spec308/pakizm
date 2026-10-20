@@ -3,103 +3,200 @@
 @tailwind utilities;
 
 /*
-  Pakizm — "Clinical Steel" palette.
-  Cool neutrals + a single steel-blue accent. All colors are tokens, so the
-  brand palette can be swapped in one place once final colors are chosen.
+  Pakizm — Premium Editorial Minimalism.
+  Warm bone canvas, warm charcoal ink, one washed steel accent, hairline rules,
+  ultra-diffuse shadows. Editorial serif display + premium grotesk body.
+  All colors are tokens — swap the brand palette here in one place.
 */
 :root {
-  --bg: #f6f8f9;
+  --bg: #faf9f6;
   --surface: #ffffff;
-  --surface-2: #eef2f4;
-  --ink: #0f1a1f;
-  --muted: #5b6b73;
-  --line: #dde4e8;
-  --accent: #15607f;
+  --surface-2: #f3f2ed;
+  --ink: #1b1b18;
+  --ink-2: #3a3a35;
+  --muted: #76746c;
+  --line: rgba(27, 27, 24, 0.09);
+  --line-2: rgba(27, 27, 24, 0.14);
+  --accent: #1f5e73;
   --accent-ink: #ffffff;
-  --accent-soft: #e3eef3;
+  --accent-soft: #eaf1f3;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0c1215;
-    --surface: #121b20;
-    --surface-2: #19242a;
-    --ink: #e8eef1;
-    --muted: #93a4ac;
-    --line: #233138;
-    --accent: #4fb3d9;
-    --accent-ink: #06161d;
-    --accent-soft: #102a34;
+    --bg: #0f1113;
+    --surface: #16191c;
+    --surface-2: #1d2124;
+    --ink: #ecebe6;
+    --ink-2: #c3c2bb;
+    --muted: #8f8d85;
+    --line: rgba(236, 235, 230, 0.1);
+    --line-2: rgba(236, 235, 230, 0.16);
+    --accent: #5bb6d0;
+    --accent-ink: #08171c;
+    --accent-soft: #11272f;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0c1215;
-  --surface: #121b20;
-  --surface-2: #19242a;
-  --ink: #e8eef1;
-  --muted: #93a4ac;
-  --line: #233138;
-  --accent: #4fb3d9;
-  --accent-ink: #06161d;
-  --accent-soft: #102a34;
+  --bg: #0f1113;
+  --surface: #16191c;
+  --surface-2: #1d2124;
+  --ink: #ecebe6;
+  --ink-2: #c3c2bb;
+  --muted: #8f8d85;
+  --line: rgba(236, 235, 230, 0.1);
+  --line-2: rgba(236, 235, 230, 0.16);
+  --accent: #5bb6d0;
+  --accent-ink: #08171c;
+  --accent-soft: #11272f;
   color-scheme: dark;
 }
 
 * {
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
-
 body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-sans), system-ui, sans-serif;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-feature-settings: "ss01", "cv01";
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 ::selection {
   background: var(--accent);
   color: var(--accent-ink);
 }
 
-/* utilities */
+/* --- layout --- */
 .container-c {
-  max-width: var(--maxw, 1200px);
+  max-width: var(--maxw, 1240px);
   margin-inline: auto;
-  padding-inline: 20px;
+  padding-inline: 28px;
 }
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .container-c {
-    padding-inline: 16px;
+    padding-inline: 18px;
   }
 }
 
+/* --- display type --- */
+.display {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.04;
+}
+.display-ital {
+  font-style: italic;
+}
+
+/* --- eyebrow pill --- */
 .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
   font-family: var(--font-mono), monospace;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
+}
+.eyebrow::before {
+  content: "";
+  width: 1.4em;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
 }
 
 .ref {
   font-family: var(--font-mono), monospace;
   font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
 }
 
-.focus-ring:focus-visible {
+/* --- hairline helpers --- */
+.hairline {
+  border: 1px solid var(--line);
+}
+
+/* --- buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.94rem;
+  padding: 0.78em 1.3em;
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--bg);
+}
+.btn-primary:hover {
+  box-shadow: var(--shadow-lift, 0 18px 40px -16px rgba(27, 27, 24, 0.22));
+}
+.btn-ghost {
+  border: 1px solid var(--line-2);
+  color: var(--ink);
+}
+.btn-ghost:hover {
+  border-color: var(--ink);
+}
+.btn .btn-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 999px;
+  background: color-mix(in srgb, currentColor 14%, transparent);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn:hover .btn-dot {
+  transform: translate(2px, -1px);
+}
+
+.focus-ring:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* subtle depth: hairline grid + soft light (decorative layers) */
+.grid-texture {
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 20%, transparent 75%);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 20%, transparent 75%);
 }
 
 @media (prefers-reduced-motion: reduce) {

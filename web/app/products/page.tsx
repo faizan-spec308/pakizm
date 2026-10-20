@@ -11,15 +11,14 @@ export const metadata: Metadata = {
 export default function ProductsPage() {
   const { stats } = getCatalog();
   return (
-    <div className="container-c py-12">
-      <header className="mb-2">
-        <p className="eyebrow">Catalog</p>
-        <h1 className="mt-2 text-[2rem] font-semibold tracking-[-0.02em]">
-          All products
-        </h1>
-        <p className="mt-2 max-w-[60ch] text-muted">
-          {stats.products.toLocaleString()} instruments across{" "}
-          {stats.categories} categories, with {stats.variants.toLocaleString()}{" "}
+    <div className="container-c py-14">
+      <header className="mb-4 max-w-prose">
+        <span className="eyebrow">The catalog</span>
+        <h1 className="display mt-4 text-[2.6rem] sm:text-[3.2rem]">All products</h1>
+        <p className="mt-4 text-[1.02rem] leading-relaxed text-ink-2">
+          <span className="ref text-ink">{stats.products.toLocaleString()}</span>{" "}
+          instruments across {stats.categories} categories, with{" "}
+          <span className="ref text-ink">{stats.variants.toLocaleString()}</span>{" "}
           reference sizes. Search by name, reference number or dimension.
         </p>
       </header>

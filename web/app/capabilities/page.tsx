@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
   title: "Capabilities & OEM",
@@ -10,12 +11,12 @@ export const metadata: Metadata = {
 export default function CapabilitiesPage() {
   return (
     <div className="container-c py-14">
-      <header className="max-w-[60ch]">
-        <p className="eyebrow">Capabilities</p>
-        <h1 className="mt-3 text-[2.4rem] font-semibold leading-tight tracking-[-0.03em]">
+      <header className="max-w-prose">
+        <span className="eyebrow">Capabilities</span>
+        <h1 className="display mt-4 text-[2.6rem] leading-[1.06] sm:text-[3.4rem]">
           OEM and custom manufacturing, finished to your standard.
         </h1>
-        <p className="mt-6 text-[1.08rem] leading-relaxed text-muted">
+        <p className="mt-6 text-[1.08rem] leading-relaxed text-ink-2">
           Beyond our standard catalog, we manufacture to specification and mark
           instruments under your own brand. Tell us what you need and we will
           quote it.
@@ -45,21 +46,21 @@ export default function CapabilitiesPage() {
         </div>
       </section>
 
-      <section className="mt-16 flex flex-col items-start gap-5 rounded-2xl border border-line bg-accent-soft p-8 md:flex-row md:items-center md:justify-between">
+      <section className="mt-16 flex flex-col items-start gap-6 rounded-card border border-line bg-accent-soft p-8 md:flex-row md:items-center md:justify-between md:p-12">
         <div>
-          <h2 className="text-[1.5rem] font-semibold tracking-[-0.02em]">
+          <h2 className="display text-[1.8rem] sm:text-[2.2rem]">
             Have a custom requirement?
           </h2>
-          <p className="mt-2 max-w-[48ch] text-muted">
+          <p className="mt-2 max-w-[48ch] text-ink-2">
             Send drawings, samples or a reference list and we will prepare a
             quotation.
           </p>
         </div>
-        <Link
-          href="/contact"
-          className="focus-ring shrink-0 rounded-full bg-accent px-7 py-3.5 font-medium text-accent-ink transition-opacity hover:opacity-90"
-        >
+        <Link href="/contact" className="btn btn-primary shrink-0">
           Get in touch
+          <span className="btn-dot">
+            <ArrowUpRight size={13} weight="bold" />
+          </span>
         </Link>
       </section>
     </div>

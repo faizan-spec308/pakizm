@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 import { getCatalog, getProduct, getRelated } from "@/lib/catalog";
 import ProductImage from "@/components/product-image";
 import ProductCard from "@/components/product-card";
@@ -38,86 +39,98 @@ export default async function ProductPage({
 
   return (
     <div className="container-c py-12">
-      <nav className="mb-8 text-[0.85rem] text-muted" aria-label="Breadcrumb">
-        <Link href="/products" className="hover:text-accent">Products</Link>
-        <span className="mx-2">/</span>
-        <Link href={`/products/${p.categorySlug}`} className="hover:text-accent">
+      <nav className="mb-10 flex flex-wrap items-center gap-2 text-[0.84rem] text-muted" aria-label="Breadcrumb">
+        <Link href="/products" className="transition-colors hover:text-accent">Products</Link>
+        <span>/</span>
+        <Link href={`/products/${p.categorySlug}`} className="transition-colors hover:text-accent">
           {p.category}
         </Link>
-        <span className="mx-2">/</span>
-        <span className="text-ink">{p.name}</span>
+        <span>/</span>
+        <span className="text-ink-2">{p.name}</span>
       </nav>
 
-      <div className="grid gap-10 md:grid-cols-2">
-        {/* image */}
-        <div className="md:sticky md:top-24 md:self-start">
-          <div className="aspect-square overflow-hidden rounded-2xl border border-line bg-surface">
-            <ProductImage
-              ref_={p.primaryRef}
-              alt={p.name}
-              className="h-full w-full object-contain p-8"
-            />
+      <div className="grid gap-12 md:grid-cols-2">
+        {/* image — double-bezel */}
+        <div className="md:sticky md:top-28 md:self-start">
+          <div className="rounded-[20px] border border-line bg-surface-2 p-2">
+            <div className="aspect-square overflow-hidden rounded-[13px] border border-line bg-surface">
+              <ProductImage
+                ref_={p.primaryRef}
+                alt={p.name}
+                className="h-full w-full object-contain p-10"
+                showRef={false}
+              />
+            </div>
           </div>
         </div>
 
         {/* details */}
         <div>
-          <p className="eyebrow">{p.subcategory}</p>
-          <h1 className="mt-2 text-[2rem] font-semibold leading-tight tracking-[-0.02em]">
+          <span className="eyebrow">{p.subcategory}</span>
+          <h1 className="display mt-4 text-[2.3rem] leading-[1.08] sm:text-[2.8rem]">
             {p.name}
           </h1>
           {p.description && (
-            <p className="mt-3 text-[1.02rem] text-muted">{p.description}</p>
+            <p className="mt-4 text-[1.05rem] leading-relaxed text-ink-2">
+              {p.description}
+            </p>
           )}
 
-          <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.88rem] text-muted">
+          <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-2 text-[0.88rem] text-muted">
             <span>
               Reference <span className="ref text-ink">{p.primaryRef}</span>
             </span>
             <span>
-              {p.variants.length}{" "}
+              <span className="ref text-ink">{p.variants.length}</span>{" "}
               {p.variants.length === 1 ? "reference size" : "reference sizes"}
             </span>
           </div>
 
-          {/* variants table */}
-          <div className="mt-8 overflow-hidden rounded-xl border border-line">
+          {/* variants */}
+          <div className="mt-8 overflow-hidden rounded-card border border-line">
             <table className="w-full text-[0.9rem]">
               <thead>
-                <tr className="border-b border-line bg-surface-2 text-left text-[0.75rem] uppercase tracking-wide text-muted">
-                  <th className="px-4 py-2.5 font-medium">Reference</th>
-                  <th className="px-4 py-2.5 font-medium">Size / specification</th>
+                <tr className="border-b border-line bg-surface-2 text-left text-[0.68rem] uppercase tracking-[0.1em] text-muted">
+                  <th className="px-5 py-3 font-medium">Reference</th>
+                  <th className="px-5 py-3 font-medium">Size / specification</th>
                 </tr>
               </thead>
               <tbody>
                 {p.variants.map((v, i) => (
-                  <tr key={v.ref + i} className="border-b border-line last:border-0">
-                    <td className="ref px-4 py-2.5 text-ink">{v.ref}</td>
-                    <td className="px-4 py-2.5 text-muted">{v.spec || "—"}</td>
+                  <tr
+                    key={v.ref + i}
+                    className="border-b border-line transition-colors last:border-0 hover:bg-surface-2"
+                  >
+                    <td className="ref whitespace-nowrap px-5 py-3 text-ink">{v.ref}</td>
+                    <td className="px-5 py-3 text-ink-2">{v.spec || "—"}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <div className="mt-8 rounded-xl border border-line bg-accent-soft p-5">
-            <p className="text-[0.95rem] font-medium">Request pricing for this instrument</p>
-            <p className="mt-1 text-[0.86rem] text-muted">
-              Available in surgical stainless steel with OEM / custom marking.
+          {/* quote */}
+          <div className="mt-8 rounded-card border border-line bg-accent-soft p-6">
+            <p className="font-semibold tracking-tight">Request pricing for this instrument</p>
+            <p className="mt-1.5 text-[0.9rem] leading-relaxed text-ink-2">
+              Available in surgical stainless steel with OEM and custom marking.
             </p>
             <Link
               href={`/contact?ref=${encodeURIComponent(p.primaryRef)}`}
-              className="focus-ring mt-4 inline-block rounded-full bg-accent px-6 py-2.5 text-[0.9rem] font-medium text-accent-ink transition-opacity hover:opacity-90"
+              className="btn btn-primary mt-5"
             >
               Request a quote
+              <span className="btn-dot">
+                <ArrowUpRight size={13} weight="bold" />
+              </span>
             </Link>
           </div>
         </div>
       </div>
 
       {related.length > 0 && (
-        <section className="mt-20 border-t border-line pt-12">
-          <h2 className="mb-6 text-[1.2rem] font-semibold tracking-[-0.01em]">
+        <section className="mt-24 border-t border-line pt-14">
+          <h2 className="display mb-8 text-[1.6rem] sm:text-[2rem]">
             Related in {p.subcategory}
           </h2>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">

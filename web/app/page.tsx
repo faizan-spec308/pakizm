@@ -1,161 +1,262 @@
 import Link from "next/link";
+import {
+  ArrowUpRight,
+  ArrowRight,
+  Medal,
+  Gear,
+  Globe,
+} from "@phosphor-icons/react/dist/ssr";
 import { getCatalog } from "@/lib/catalog";
+import Reveal from "@/components/reveal";
 
 export default function HomePage() {
   const { categories, stats } = getCatalog();
 
   return (
     <>
-      {/* Hero */}
-      <section className="border-b border-line">
-        <div className="container-c grid items-center gap-12 py-16 md:grid-cols-[1.25fr_0.75fr] md:py-24">
+      {/* ───────── Hero ───────── */}
+      <section className="relative overflow-hidden">
+        <div
+          aria-hidden
+          className="grid-texture pointer-events-none absolute inset-x-0 top-0 h-[420px] opacity-70"
+        />
+        <div className="container-c relative grid items-center gap-16 pb-20 pt-16 md:grid-cols-[1.15fr_0.85fr] md:pb-28 md:pt-24">
           <div>
-            <p className="eyebrow">Precision surgical instruments · since 2005</p>
-            <h1 className="mt-4 text-[2.5rem] font-semibold leading-[1.05] tracking-[-0.03em] sm:text-[3.4rem]">
-              Orthopedic instruments,
-              <br />
-              engineered to specification.
-            </h1>
-            <p className="mt-6 max-w-[52ch] text-[1.05rem] leading-relaxed text-muted">
-              Pakizm manufactures and exports orthopedic, dental and general
-              surgery instruments in surgical stainless steel — built to exacting
-              tolerances, finished to order, and backed by a lifetime guarantee.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href="/products"
-                className="focus-ring rounded-full bg-accent px-6 py-3 text-[0.95rem] font-medium text-accent-ink transition-opacity hover:opacity-90"
-              >
-                Browse the catalog
-              </Link>
-              <Link
-                href="/contact"
-                className="focus-ring rounded-full border border-line px-6 py-3 text-[0.95rem] font-medium transition-colors hover:border-accent hover:text-accent"
-              >
-                Request a quote
-              </Link>
-            </div>
+            <Reveal>
+              <span className="eyebrow">Precision instruments · since 2005</span>
+            </Reveal>
+            <Reveal delay={0.06}>
+              <h1 className="display mt-7 text-[2.9rem] leading-[1.02] sm:text-[4.1rem] md:text-[4.6rem]">
+                Orthopedic instruments,
+                <br />
+                <span className="display-ital text-accent">made to specification.</span>
+              </h1>
+            </Reveal>
+            <Reveal delay={0.12}>
+              <p className="mt-7 max-w-[46ch] text-[1.08rem] leading-relaxed text-ink-2">
+                A manufacturer of surgical stainless-steel instruments — built to
+                exacting tolerances, finished to order, and supplied to
+                distributors and surgeons worldwide.
+              </p>
+            </Reveal>
+            <Reveal delay={0.18}>
+              <div className="mt-9 flex flex-wrap items-center gap-3">
+                <Link href="/products" className="btn btn-primary">
+                  Browse the catalog
+                  <span className="btn-dot">
+                    <ArrowRight size={13} weight="bold" />
+                  </span>
+                </Link>
+                <Link href="/contact" className="btn btn-ghost">
+                  Request a quote
+                </Link>
+              </div>
+            </Reveal>
           </div>
 
-          {/* spec panel — real catalog figures as the hero's visual anchor */}
-          <div className="rounded-2xl border border-line bg-surface p-6">
-            <div className="eyebrow mb-4">Catalog at a glance</div>
-            <dl className="divide-y divide-line">
-              <Stat value={stats.products.toLocaleString()} label="Instruments" />
-              <Stat value={stats.variants.toLocaleString()} label="Reference sizes" />
-              <Stat value={String(stats.categories)} label="Categories" />
-              <Stat value="2005" label="Manufacturing since" />
-            </dl>
-          </div>
+          {/* figures — double-bezel card */}
+          <Reveal delay={0.1}>
+            <div className="rounded-[20px] border border-line bg-surface-2 p-2 shadow-soft">
+              <div className="rounded-[13px] border border-line bg-surface p-7">
+                <div className="eyebrow mb-5">The catalog</div>
+                <dl className="flex flex-col">
+                  <Figure value={stats.products.toLocaleString()} label="Instruments" />
+                  <Figure value={stats.variants.toLocaleString()} label="Reference sizes" />
+                  <Figure value={String(stats.categories)} label="Categories" />
+                  <Figure value="2005" label="Manufacturing since" last />
+                </dl>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      {/* Category directory */}
-      <section className="container-c py-16 md:py-20">
-        <div className="mb-8 flex items-end justify-between gap-4">
-          <div>
-            <p className="eyebrow">Product range</p>
-            <h2 className="mt-2 text-[1.8rem] font-semibold tracking-[-0.02em]">
-              Browse by instrument category
-            </h2>
-          </div>
-          <Link
-            href="/products"
-            className="focus-ring hidden shrink-0 text-[0.9rem] font-medium text-accent hover:underline sm:block"
-          >
-            View all products →
-          </Link>
+      {/* ───────── Category directory ───────── */}
+      <section className="container-c border-t border-line py-20 md:py-28">
+        <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
+          <Reveal>
+            <div>
+              <span className="eyebrow">Product range</span>
+              <h2 className="display mt-4 text-[2rem] sm:text-[2.6rem]">
+                Twenty-six instrument families.
+              </h2>
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <Link
+              href="/products"
+              className="group inline-flex items-center gap-2 text-[0.92rem] font-medium text-ink"
+            >
+              View all products
+              <ArrowRight
+                size={15}
+                weight="bold"
+                className="transition-transform duration-500 ease-premium group-hover:translate-x-1"
+              />
+            </Link>
+          </Reveal>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          {categories.map((c) => (
-            <Link
-              key={c.slug}
-              href={`/products/${c.slug}`}
-              className="focus-ring group flex items-center justify-between rounded-xl border border-line bg-surface px-4 py-4 transition-colors hover:border-accent"
-            >
-              <span className="text-[0.95rem] font-medium leading-tight group-hover:text-accent">
-                {c.name}
-              </span>
-              <span className="ref ml-2 shrink-0 text-[0.78rem] text-muted">
-                {c.count}
-              </span>
-            </Link>
+        <div className="grid grid-cols-1 gap-px overflow-hidden rounded-card border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
+          {categories.map((c, i) => (
+            <Reveal key={c.slug} delay={Math.min(i * 0.025, 0.3)}>
+              <Link
+                href={`/products/${c.slug}`}
+                className="group flex h-full items-center justify-between gap-4 bg-surface px-6 py-7 transition-colors duration-400 ease-premium hover:bg-surface-2"
+              >
+                <div>
+                  <div className="text-[1.05rem] font-semibold tracking-tight text-ink">
+                    {c.name}
+                  </div>
+                  <div className="ref mt-1 text-[0.75rem] text-muted">
+                    {c.count} instruments
+                  </div>
+                </div>
+                <ArrowUpRight
+                  size={18}
+                  weight="light"
+                  className="shrink-0 text-muted transition-all duration-500 ease-premium group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent"
+                />
+              </Link>
+            </Reveal>
           ))}
         </div>
       </section>
 
-      {/* Manufacturing / quality */}
-      <section className="border-y border-line bg-surface">
-        <div className="container-c py-16 md:py-20">
-          <div className="grid gap-12 md:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <p className="eyebrow">Manufacturing</p>
-              <h2 className="mt-2 text-[1.8rem] font-semibold leading-tight tracking-[-0.02em]">
-                Made from surgical stainless steel, finished to your standard.
+      {/* ───────── Manufacturing ───────── */}
+      <section className="border-t border-line bg-surface">
+        <div className="container-c grid gap-14 py-20 md:grid-cols-[0.95fr_1.05fr] md:py-28">
+          <Reveal>
+            <div className="md:sticky md:top-28 md:self-start">
+              <span className="eyebrow">Manufacturing</span>
+              <h2 className="display mt-4 text-[2rem] leading-[1.06] sm:text-[2.7rem]">
+                Surgical stainless steel,{" "}
+                <span className="display-ital text-accent">finished to your standard.</span>
               </h2>
-              <p className="mt-5 max-w-[46ch] text-muted">
+              <p className="mt-6 max-w-[42ch] text-ink-2">
                 Every instrument is produced to specification and available with
-                OEM and private-label marking. Each piece carries our lifetime
+                OEM and private-label marking — each piece backed by a lifetime
                 guarantee against manufacturing defects.
               </p>
               <Link
                 href="/capabilities"
-                className="focus-ring mt-6 inline-block text-[0.92rem] font-medium text-accent hover:underline"
+                className="group mt-7 inline-flex items-center gap-2 text-[0.92rem] font-medium text-ink"
               >
-                Capabilities & custom manufacturing →
+                Capabilities & custom manufacturing
+                <ArrowRight
+                  size={15}
+                  weight="bold"
+                  className="transition-transform duration-500 ease-premium group-hover:translate-x-1"
+                />
               </Link>
             </div>
+          </Reveal>
 
-            <div className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
+          <Reveal delay={0.1}>
+            <div className="grid gap-px overflow-hidden rounded-card border border-line bg-line sm:grid-cols-2">
               {FINISHES.map((f) => (
-                <div key={f.name} className="bg-surface p-5">
-                  <div className="ref text-[0.78rem] text-accent">{f.code}</div>
-                  <div className="mt-1 font-medium">{f.name}</div>
-                  <p className="mt-1 text-[0.86rem] text-muted">{f.desc}</p>
+                <div key={f.name} className="bg-surface p-7">
+                  <div className="ref text-[0.72rem] text-accent">{f.code}</div>
+                  <div className="mt-2 font-semibold tracking-tight">{f.name}</div>
+                  <p className="mt-1.5 text-[0.88rem] leading-relaxed text-muted">
+                    {f.desc}
+                  </p>
                 </div>
               ))}
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="container-c py-20">
-        <div className="flex flex-col items-start gap-6 rounded-2xl border border-line bg-accent-soft p-8 md:flex-row md:items-center md:justify-between md:p-12">
-          <div>
-            <h2 className="text-[1.6rem] font-semibold tracking-[-0.02em]">
-              Need pricing or a custom specification?
-            </h2>
-            <p className="mt-2 max-w-[48ch] text-muted">
-              Send us your reference list or requirements and our team will
-              respond with a quotation.
-            </p>
-          </div>
-          <Link
-            href="/contact"
-            className="focus-ring shrink-0 rounded-full bg-accent px-7 py-3.5 font-medium text-accent-ink transition-opacity hover:opacity-90"
-          >
-            Request a quote
-          </Link>
+      {/* ───────── Values ───────── */}
+      <section className="container-c border-t border-line py-20 md:py-24">
+        <div className="grid gap-x-10 gap-y-12 md:grid-cols-3">
+          {VALUES.map((v, i) => (
+            <Reveal key={v.title} delay={i * 0.08}>
+              <div>
+                <v.icon size={26} weight="light" className="text-accent" />
+                <h3 className="mt-5 text-[1.15rem] font-semibold tracking-tight">
+                  {v.title}
+                </h3>
+                <p className="mt-2 max-w-[34ch] leading-relaxed text-ink-2">
+                  {v.body}
+                </p>
+              </div>
+            </Reveal>
+          ))}
         </div>
+      </section>
+
+      {/* ───────── CTA ───────── */}
+      <section className="container-c pb-28">
+        <Reveal>
+          <div className="relative overflow-hidden rounded-[22px] border border-line bg-ink px-8 py-16 text-bg md:px-16 md:py-24">
+            <div className="relative mx-auto max-w-2xl text-center">
+              <h2 className="display text-[2.2rem] leading-tight sm:text-[3rem]">
+                Request pricing or a{" "}
+                <span className="display-ital">custom specification.</span>
+              </h2>
+              <p className="mx-auto mt-5 max-w-[46ch] text-[1.02rem] text-bg/70">
+                Send us your reference list or requirements and our team will
+                respond with a quotation.
+              </p>
+              <Link
+                href="/contact"
+                className="btn mt-9 bg-bg text-ink hover:opacity-95"
+              >
+                Request a quote
+                <span className="btn-dot">
+                  <ArrowUpRight size={13} weight="bold" />
+                </span>
+              </Link>
+            </div>
+          </div>
+        </Reveal>
       </section>
     </>
   );
 }
 
-function Stat({ value, label }: { value: string; label: string }) {
+function Figure({
+  value,
+  label,
+  last,
+}: {
+  value: string;
+  label: string;
+  last?: boolean;
+}) {
   return (
-    <div className="flex items-baseline justify-between py-3">
+    <div
+      className={`flex items-baseline justify-between py-4 ${last ? "" : "border-b border-line"}`}
+    >
       <dt className="text-[0.9rem] text-muted">{label}</dt>
-      <dd className="ref text-[1.5rem] font-semibold tracking-tight">{value}</dd>
+      <dd className="ref text-[1.6rem] font-medium tracking-tight text-ink">{value}</dd>
     </div>
   );
 }
 
+const VALUES = [
+  {
+    icon: Gear,
+    title: "Made to specification",
+    body: "Produced to exacting tolerances in surgical stainless steel, finished to order.",
+  },
+  {
+    icon: Medal,
+    title: "Lifetime guarantee",
+    body: "Every instrument is backed against manufacturing defects for the life of the product.",
+  },
+  {
+    icon: Globe,
+    title: "Worldwide export",
+    body: "Supplying distributors and healthcare providers internationally since 2005.",
+  },
+];
+
 const FINISHES = [
-  { code: "01", name: "Satin & matte", desc: "Sand-blasted, glare-free surface." },
+  { code: "01", name: "Satin & matte", desc: "Sand-blasted, glare-free surface for the operating field." },
   { code: "02", name: "Mirror polish", desc: "High-polish reflective finish." },
-  { code: "03", name: "Gold electroplated", desc: "Plated marking and handles." },
+  { code: "03", name: "Gold electroplated", desc: "Plated marking, rings and handles." },
   { code: "04", name: "Black oxidized", desc: "Anodized, low-reflection coating." },
 ];

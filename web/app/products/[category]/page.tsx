@@ -49,12 +49,10 @@ export default async function CategoryPage({
         <span className="text-ink">{cat.name}</span>
       </nav>
 
-      <header className="mb-10 border-b border-line pb-8">
-        <p className="eyebrow">Category</p>
-        <h1 className="mt-2 text-[2.2rem] font-semibold tracking-[-0.02em]">
-          {cat.name}
-        </h1>
-        <p className="mt-2 text-muted">
+      <header className="mb-12 border-b border-line pb-10">
+        <span className="eyebrow">Category</span>
+        <h1 className="display mt-4 text-[2.6rem] sm:text-[3.4rem]">{cat.name}</h1>
+        <p className="ref mt-3 text-[0.9rem] text-muted">
           {cat.count} instruments · {groups.length}{" "}
           {groups.length === 1 ? "group" : "groups"}
         </p>

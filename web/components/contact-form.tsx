@@ -10,19 +10,14 @@ export default function ContactForm() {
 
   if (sent) {
     return (
-      <div className="rounded-2xl border border-line bg-accent-soft p-8">
-        <h2 className="text-[1.3rem] font-semibold tracking-[-0.01em]">
-          Thank you — your request is noted.
-        </h2>
-        <p className="mt-2 max-w-[52ch] text-muted">
+      <div className="rounded-card border border-line bg-accent-soft p-8">
+        <h2 className="display text-[1.7rem]">Thank you — your request is noted.</h2>
+        <p className="mt-3 max-w-[52ch] leading-relaxed text-ink-2">
           This is a preview form; message delivery will be connected before
           launch. In the meantime, please reach us directly using the details on
           this page.
         </p>
-        <button
-          onClick={() => setSent(false)}
-          className="focus-ring mt-5 rounded-full border border-line px-5 py-2 text-[0.9rem] font-medium hover:border-accent hover:text-accent"
-        >
+        <button onClick={() => setSent(false)} className="btn btn-ghost mt-6">
           Send another
         </button>
       </div>
@@ -50,13 +45,10 @@ export default function ContactForm() {
           rows={5}
           required
           defaultValue={ref ? `Please quote reference ${ref}:\n` : ""}
-          className="focus-ring resize-y rounded-lg border border-line bg-surface px-4 py-2.5 text-[0.95rem]"
+          className="resize-y rounded-btn border border-line bg-surface px-4 py-3 text-[0.95rem] transition-colors focus:border-line-2"
         />
       </div>
-      <button
-        type="submit"
-        className="focus-ring mt-1 self-start rounded-full bg-accent px-7 py-3 font-medium text-accent-ink transition-opacity hover:opacity-90"
-      >
+      <button type="submit" className="btn btn-primary mt-2 self-start">
         Submit request
       </button>
     </form>
@@ -85,7 +77,7 @@ function Field({
         name={id}
         type={type}
         required={required}
-        className="focus-ring rounded-lg border border-line bg-surface px-4 py-2.5 text-[0.95rem]"
+        className="rounded-btn border border-line bg-surface px-4 py-3 text-[0.95rem] transition-colors focus:border-line-2"
       />
     </div>
   );

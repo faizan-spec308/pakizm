@@ -6,40 +6,45 @@ type Props = {
   ref_: string;
   alt: string;
   className?: string;
+  showRef?: boolean;
 };
 
 /**
- * Shows the real product photo at /products/<reference>.webp once it exists,
- * otherwise a clean branded placeholder. Drop files into web/public/products/
- * named by reference number and they appear automatically.
+ * Real photo at /products/<reference>.webp once it exists, else a refined
+ * placeholder. Drop files into web/public/products/ named by reference number.
  */
-export default function ProductImage({ ref_, alt, className }: Props) {
+export default function ProductImage({ ref_, alt, className, showRef = true }: Props) {
   const [failed, setFailed] = useState(false);
   const src = `/products/${ref_}.webp`;
 
   if (failed) {
     return (
       <div
-        className={`flex flex-col items-center justify-center gap-2 bg-surface-2 text-muted ${className ?? ""}`}
-        aria-label={`${alt} — photo coming soon`}
+        className={`flex flex-col items-center justify-center gap-3 ${className ?? ""}`}
+        aria-label={`${alt} — photograph pending`}
       >
         <svg
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
+          width="46"
+          height="46"
+          viewBox="0 0 48 48"
           fill="none"
-          stroke="currentColor"
-          strokeWidth="1.25"
+          stroke="var(--muted)"
+          strokeWidth="1"
           strokeLinecap="round"
           strokeLinejoin="round"
           aria-hidden="true"
-          style={{ opacity: 0.5 }}
+          style={{ opacity: 0.55 }}
         >
-          <path d="M4 20 L14 10" />
-          <circle cx="17" cy="7" r="3" />
-          <path d="M4 20 l1.5 -3.5 L15 7" />
+          <circle cx="12" cy="36" r="4.5" />
+          <circle cx="36" cy="12" r="3.5" />
+          <path d="M15 33 L33 15" />
+          <path d="M12 31.5 V22 M36 15.5 V26" />
         </svg>
-        <span className="ref text-[0.68rem] tracking-wide">{ref_}</span>
+        {showRef && (
+          <span className="ref text-[0.66rem] uppercase tracking-[0.12em] text-muted">
+            {ref_}
+          </span>
+        )}
       </div>
     );
   }
