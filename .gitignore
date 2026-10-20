@@ -8,5 +8,9 @@ source/
 __pycache__/
 *.pyc
 .DS_Store
-.env*.local
+# secrets / env (keep examples)
+.env
+.env.*
+!.env.example
+!.env.*.example
 corp-ca.pem
