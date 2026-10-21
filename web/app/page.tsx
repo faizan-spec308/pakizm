@@ -80,7 +80,7 @@ export default function HomePage() {
                 </Link>
               </Reveal>
             </div>
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
               {featured.map((p, i) => (
                 <Reveal key={p.id} delay={Math.min(i * 0.05, 0.3)}>
                   <ProductCard product={p} />

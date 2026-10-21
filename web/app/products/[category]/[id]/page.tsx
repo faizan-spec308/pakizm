@@ -98,9 +98,9 @@ export default async function ProductPage({
           </div>
 
           {/* variants */}
-          <div className="mt-8 overflow-hidden rounded-card border border-line">
+          <div className="mt-8 max-h-[480px] overflow-y-auto rounded-card border border-line">
             <table className="w-full text-[0.9rem]">
-              <thead>
+              <thead className="sticky top-0 z-10">
                 <tr className="border-b border-line bg-surface-2 text-left text-[0.68rem] uppercase tracking-[0.1em] text-muted">
                   <th className="px-5 py-3 font-medium">Reference</th>
                   <th className="px-5 py-3 font-medium">Size / specification</th>
@@ -144,7 +144,7 @@ export default async function ProductPage({
           <h2 className="display mb-8 text-[1.6rem] sm:text-[2rem]">
             Related in {p.subcategory}
           </h2>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
             {related.map((r) => (
               <ProductCard key={r.id} product={r} />
             ))}

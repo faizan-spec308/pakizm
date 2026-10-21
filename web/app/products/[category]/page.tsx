@@ -8,6 +8,7 @@ import {
   groupBySubcategory,
 } from "@/lib/catalog";
 import ProductCard from "@/components/product-card";
+import Reveal from "@/components/reveal";
 
 export function generateStaticParams() {
   return getCategories().map((c) => ({ category: c.slug }));
@@ -68,9 +69,11 @@ export default async function CategoryPage({
               </span>
             </h2>
           )}
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-            {g.items.map((p) => (
-              <ProductCard key={p.id} product={p} />
+          <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
+            {g.items.map((p, i) => (
+              <Reveal key={p.id} delay={Math.min(i * 0.03, 0.25)}>
+                <ProductCard product={p} />
+              </Reveal>
             ))}
           </div>
         </section>

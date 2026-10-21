@@ -32,6 +32,7 @@ export default function ProductsBrowser({
   const [cats, setCats] = useState<CatMeta[]>([]);
   const [q, setQ] = useState(initialQuery);
   const [cat, setCat] = useState(initialCategory);
+  const [sort, setSort] = useState("featured");
   const [limit, setLimit] = useState(PAGE);
 
   useEffect(() => {
@@ -47,7 +48,7 @@ export default function ProductsBrowser({
   const filtered = useMemo(() => {
     if (!all) return [];
     const needle = q.trim().toLowerCase();
-    return all.filter((p) => {
+    const list = all.filter((p) => {
       if (cat && p.categorySlug !== cat) return false;
       if (!needle) return true;
       return (
@@ -57,21 +58,20 @@ export default function ProductsBrowser({
         p.refs.some((r) => r.toLowerCase().includes(needle))
       );
     });
-  }, [all, q, cat]);
+    if (sort === "name") list.sort((a, b) => a.name.localeCompare(b.name));
+    else if (sort === "ref") list.sort((a, b) => a.primaryRef.localeCompare(b.primaryRef));
+    return list;
+  }, [all, q, cat, sort]);
 
-  useEffect(() => setLimit(PAGE), [q, cat]);
+  useEffect(() => setLimit(PAGE), [q, cat, sort]);
   const shown = filtered.slice(0, limit);
 
   return (
     <div>
-      <div className="sticky top-[74px] z-30 -mx-7 border-b border-line bg-bg/90 px-7 py-4 backdrop-blur-xl">
+      <div className="sticky top-[66px] z-30 -mx-6 border-b border-line bg-bg/90 px-6 py-4 backdrop-blur-xl">
         <div className="flex flex-col gap-3.5">
           <div className="relative">
-            <MagnifyingGlass
-              size={17}
-              weight="light"
-              className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-muted"
-            />
+            <MagnifyingGlass size={17} weight="regular" className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-muted" />
             <input
               type="search"
               value={q}
@@ -98,20 +98,39 @@ export default function ProductsBrowser({
         {all === null ? (
           <SkeletonGrid />
         ) : filtered.length === 0 ? (
-          <p className="py-24 text-center text-muted">No products match your search.</p>
+          <div className="py-24 text-center">
+            <p className="text-muted">No products match your search.</p>
+            <button onClick={() => { setQ(""); setCat(""); }} className="btn btn-ghost mt-5">
+              Clear filters
+            </button>
+          </div>
         ) : (
           <>
-            <p className="mb-6 text-[0.85rem] text-muted">
-              <span className="ref text-ink">{filtered.length.toLocaleString()}</span>{" "}
-              products{cat ? ` in ${cats.find((c) => c.slug === cat)?.name}` : ""}
-            </p>
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            <div className="mb-6 flex items-center justify-between gap-4">
+              <p className="text-[0.85rem] text-muted">
+                <span className="ref text-ink">{filtered.length.toLocaleString()}</span>{" "}
+                products{cat ? ` in ${cats.find((c) => c.slug === cat)?.name}` : ""}
+              </p>
+              <label className="flex items-center gap-2 text-[0.82rem] text-muted">
+                <span className="hidden sm:inline">Sort</span>
+                <select
+                  value={sort}
+                  onChange={(e) => setSort(e.target.value)}
+                  className="rounded-btn border border-line bg-surface px-3 py-1.5 text-[0.82rem] text-ink transition-colors focus:border-line-2"
+                >
+                  <option value="featured">Featured</option>
+                  <option value="name">Name A–Z</option>
+                  <option value="ref">Reference</option>
+                </select>
+              </label>
+            </div>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
               {shown.map((p) => (
                 <ProductCard key={p.id} product={p} />
               ))}
             </div>
             {shown.length < filtered.length && (
-              <div className="mt-12 flex justify-center">
+              <div className="mt-14 flex justify-center">
                 <button onClick={() => setLimit((l) => l + PAGE)} className="btn btn-ghost">
                   Show more · {filtered.length - shown.length} remaining
                 </button>
@@ -124,19 +143,11 @@ export default function ProductsBrowser({
   );
 }
 
-function Chip({
-  active,
-  onClick,
-  children,
-}: {
-  active: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-}) {
+function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
     <button
       onClick={onClick}
-      className={`whitespace-nowrap rounded-full border px-4 py-1.5 text-[0.82rem] transition-all duration-400 ease-premium ${
+      className={`whitespace-nowrap rounded-full border px-4 py-1.5 text-[0.8rem] font-medium transition-all duration-400 ease-premium ${
         active
           ? "border-ink bg-ink text-bg"
           : "border-line bg-surface text-ink-2 hover:border-line-2 hover:text-ink"
@@ -149,13 +160,13 @@ function Chip({
 
 function SkeletonGrid() {
   return (
-    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+    <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
       {Array.from({ length: 12 }).map((_, i) => (
-        <div key={i} className="overflow-hidden rounded-card border border-line bg-surface">
-          <div className="aspect-square animate-pulse bg-surface-2" />
-          <div className="space-y-2 border-t border-line p-4">
-            <div className="h-3 w-1/2 animate-pulse rounded bg-surface-2" />
+        <div key={i}>
+          <div className="aspect-square animate-pulse rounded-card border border-line bg-surface-2" />
+          <div className="space-y-2 pt-3">
             <div className="h-4 w-4/5 animate-pulse rounded bg-surface-2" />
+            <div className="h-3 w-1/2 animate-pulse rounded bg-surface-2" />
           </div>
         </div>
       ))}
