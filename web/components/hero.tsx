@@ -48,7 +48,7 @@ export default function Hero({ hero }: { hero?: Hero }) {
             <span className="eyebrow">Orthopedic instruments · since 2005</span>
           </motion.div>
 
-          <h1 className="heading-upper mt-7 text-[3rem] leading-[0.9] tracking-[-0.01em] sm:text-[4.6rem] lg:text-[5.6rem]">
+          <h1 className="heading-upper display-thin mt-7 text-[2.9rem] leading-[0.98] sm:text-[4.4rem] lg:text-[5.4rem]">
             <Line delay={0.12}>Engineered for</Line>
             <Line delay={0.26} className="text-stroke">Surgery.</Line>
           </h1>
