@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
+import {
+  ArrowUpRight,
+  PencilRuler,
+  Tag,
+  Sparkle,
+  ShieldCheck,
+} from "@phosphor-icons/react/dist/ssr";
+import Reveal from "@/components/reveal";
 
 export const metadata: Metadata = {
   title: "Capabilities & OEM",
@@ -10,68 +17,83 @@ export const metadata: Metadata = {
 
 export default function CapabilitiesPage() {
   return (
-    <div className="container-c py-14">
-      <header className="max-w-prose">
-        <span className="eyebrow">Capabilities</span>
-        <h1 className="display mt-4 text-[2.6rem] leading-[1.06] sm:text-[3.4rem]">
-          OEM and custom manufacturing, finished to your standard.
-        </h1>
-        <p className="mt-6 text-[1.08rem] leading-relaxed text-ink-2">
-          Beyond our standard catalog, we manufacture to specification and mark
-          instruments under your own brand. Tell us what you need and we will
-          quote it.
-        </p>
-      </header>
+    <>
+      <section className="border-b border-line bg-surface-2">
+        <div className="container-c py-16 md:py-24">
+          <Reveal>
+            <span className="eyebrow">Capabilities</span>
+            <h1 className="heading-upper mt-5 max-w-[18ch] text-[2.8rem] leading-[0.95] sm:text-[4rem]">
+              OEM & custom manufacturing
+            </h1>
+            <p className="mt-7 max-w-prose text-[1.1rem] leading-relaxed text-ink-2">
+              Beyond our standard catalog, we manufacture to specification and
+              mark instruments under your own brand. Tell us what you need and we
+              will quote it.
+            </p>
+          </Reveal>
+        </div>
+      </section>
 
-      <section className="mt-14">
-        <h2 className="eyebrow mb-5">What we offer</h2>
-        <div className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
-          {CAPS.map((c) => (
-            <div key={c.title} className="bg-surface p-6">
-              <h3 className="text-[1.05rem] font-semibold">{c.title}</h3>
-              <p className="mt-2 text-[0.92rem] text-muted">{c.body}</p>
-            </div>
+      <section className="container-c py-16 md:py-24">
+        <Reveal>
+          <span className="eyebrow mb-8 block">What we offer</span>
+        </Reveal>
+        <div className="grid gap-px overflow-hidden rounded-card border border-line bg-line sm:grid-cols-2">
+          {CAPS.map((c, i) => (
+            <Reveal key={c.title} delay={i * 0.06}>
+              <div className="h-full bg-surface p-8 transition-colors duration-400 hover:bg-surface-2">
+                <c.icon size={28} weight="light" className="text-ink" />
+                <h2 className="mt-5 text-[1.15rem] font-semibold tracking-tight">{c.title}</h2>
+                <p className="mt-2 leading-relaxed text-ink-2">{c.body}</p>
+              </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
-      <section className="mt-14">
-        <h2 className="eyebrow mb-5">Available finishes</h2>
+      <section className="container-c pb-16 md:pb-24">
+        <Reveal>
+          <span className="eyebrow mb-8 block">Available finishes</span>
+        </Reveal>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-          {FINISHES.map((f) => (
-            <div key={f} className="rounded-xl border border-line bg-surface p-4 text-[0.9rem]">
-              {f}
-            </div>
+          {FINISHES.map((f, i) => (
+            <Reveal key={f} delay={i * 0.05}>
+              <div className="rounded-card border border-line bg-surface p-5 text-[0.9rem] font-medium transition-colors duration-400 hover:border-ink">
+                {f}
+              </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
-      <section className="mt-16 flex flex-col items-start gap-6 rounded-card border border-line bg-accent-soft p-8 md:flex-row md:items-center md:justify-between md:p-12">
-        <div>
-          <h2 className="display text-[1.8rem] sm:text-[2.2rem]">
-            Have a custom requirement?
-          </h2>
-          <p className="mt-2 max-w-[48ch] text-ink-2">
-            Send drawings, samples or a reference list and we will prepare a
-            quotation.
-          </p>
-        </div>
-        <Link href="/contact" className="btn btn-primary shrink-0">
-          Get in touch
-          <span className="btn-dot">
-            <ArrowUpRight size={13} weight="bold" />
-          </span>
-        </Link>
+      <section className="container-c pb-24">
+        <Reveal>
+          <div className="flex flex-col items-start justify-between gap-6 rounded-[16px] border border-line bg-surface-2 p-8 md:flex-row md:items-center md:p-14">
+            <div>
+              <h2 className="heading-upper text-[1.8rem] leading-[0.98] sm:text-[2.4rem]">
+                Have a custom requirement?
+              </h2>
+              <p className="mt-3 max-w-[48ch] text-ink-2">
+                Send drawings, samples or a reference list and we will prepare a
+                quotation.
+              </p>
+            </div>
+            <Link href="/contact" className="btn btn-dark btn-lg shrink-0">
+              Get in touch
+              <ArrowUpRight size={15} weight="bold" />
+            </Link>
+          </div>
+        </Reveal>
       </section>
-    </div>
+    </>
   );
 }
 
 const CAPS = [
-  { title: "OEM manufacturing", body: "Production to your drawings and specifications." },
-  { title: "Private-label marking", body: "Instruments marked with your brand and references." },
-  { title: "Custom instruments", body: "New designs and modifications on request." },
-  { title: "Lifetime guarantee", body: "Every instrument backed against manufacturing defects." },
+  { icon: PencilRuler, title: "OEM manufacturing", body: "Production to your drawings and specifications." },
+  { icon: Tag, title: "Private-label marking", body: "Instruments marked with your brand and references." },
+  { icon: Sparkle, title: "Custom instruments", body: "New designs and modifications on request." },
+  { icon: ShieldCheck, title: "Lifetime guarantee", body: "Every instrument backed against manufacturing defects." },
 ];
 
 const FINISHES = [

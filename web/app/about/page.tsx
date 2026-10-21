@@ -1,5 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import {
+  ArrowUpRight,
+  ShieldCheck,
+  Factory,
+  Globe,
+  Certificate,
+} from "@phosphor-icons/react/dist/ssr";
+import Reveal from "@/components/reveal";
+import { getCatalog } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "About",
@@ -8,65 +17,77 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const { stats } = getCatalog();
   return (
-    <div className="container-c py-14">
-      <header className="max-w-prose">
-        <span className="eyebrow">About Pakizm</span>
-        <h1 className="display mt-4 text-[2.6rem] leading-[1.06] sm:text-[3.4rem]">
-          A manufacturer of precision surgical instruments.
-        </h1>
-        <p className="mt-6 text-[1.08rem] leading-relaxed text-ink-2">
-          Since 2005, Pakizm has manufactured and exported orthopedic, dental and
-          general surgery instruments. We produce in surgical stainless steel to
-          exacting tolerances, supplying distributors and healthcare providers
-          around the world.
-        </p>
-      </header>
+    <>
+      <section className="border-b border-line bg-surface-2">
+        <div className="container-c py-16 md:py-24">
+          <Reveal>
+            <span className="eyebrow">About Pakizm</span>
+            <h1 className="heading-upper mt-5 max-w-[16ch] text-[2.8rem] leading-[0.95] sm:text-[4rem]">
+              A manufacturer of precision instruments
+            </h1>
+            <p className="mt-7 max-w-prose text-[1.1rem] leading-relaxed text-ink-2">
+              Since 2005, Pakizm has manufactured and exported orthopedic, dental
+              and general surgery instruments. We produce in surgical stainless
+              steel to exacting tolerances, supplying distributors and healthcare
+              providers around the world.
+            </p>
+          </Reveal>
+          <Reveal delay={0.12}>
+            <div className="mt-12 flex flex-wrap gap-12 border-t border-line pt-8">
+              {[
+                ["2005", "Manufacturing since"],
+                [stats.products.toLocaleString(), "Instruments"],
+                [stats.variants.toLocaleString(), "References"],
+                ["100%", "Surgical stainless steel"],
+              ].map(([v, l]) => (
+                <div key={l}>
+                  <div className="ref text-[1.8rem] font-semibold tracking-tight">{v}</div>
+                  <div className="text-[0.76rem] uppercase tracking-[0.1em] text-muted">{l}</div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
 
-      <section className="mt-16 grid gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-3">
-        {VALUES.map((v) => (
-          <div key={v.title} className="bg-surface p-6">
-            <div className="ref text-[0.78rem] text-accent">{v.code}</div>
-            <h2 className="mt-2 text-[1.05rem] font-semibold">{v.title}</h2>
-            <p className="mt-2 text-[0.92rem] text-muted">{v.body}</p>
+      <section className="container-c py-16 md:py-24">
+        <div className="grid gap-x-10 gap-y-12 md:grid-cols-2">
+          {VALUES.map((v, i) => (
+            <Reveal key={v.title} delay={i * 0.08}>
+              <div className="flex gap-5">
+                <v.icon size={30} weight="light" className="mt-1 shrink-0 text-ink" />
+                <div>
+                  <h2 className="text-[1.2rem] font-semibold tracking-tight">{v.title}</h2>
+                  <p className="mt-2 max-w-[44ch] leading-relaxed text-ink-2">{v.body}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="container-c pb-24">
+        <Reveal>
+          <div className="flex flex-col items-start justify-between gap-6 rounded-[16px] bg-ink p-8 text-bg md:flex-row md:items-center md:p-14">
+            <h2 className="heading-upper max-w-[18ch] text-[1.8rem] leading-[0.98] sm:text-[2.4rem]">
+              Built for partners worldwide
+            </h2>
+            <Link href="/capabilities" className="btn btn-light btn-lg shrink-0">
+              See our capabilities
+              <ArrowUpRight size={15} weight="bold" />
+            </Link>
           </div>
-        ))}
+        </Reveal>
       </section>
-
-      <section className="mt-16 grid gap-10 md:grid-cols-[1fr_1fr]">
-        <div>
-          <h2 className="display text-[1.7rem] sm:text-[2rem]">
-            Quality that carries a lifetime guarantee
-          </h2>
-          <p className="mt-4 text-muted">
-            Every instrument is inspected and backed by our guarantee against
-            manufacturing defects for the life of the product. We stand behind
-            the materials, the finish and the function of each piece we ship.
-          </p>
-        </div>
-        <div>
-          <h2 className="display text-[1.7rem] sm:text-[2rem]">
-            Built for partners worldwide
-          </h2>
-          <p className="mt-4 text-muted">
-            We work with distributors and brands internationally, offering OEM
-            manufacturing and private-label marking so our partners can present
-            the range under their own identity.
-          </p>
-          <Link
-            href="/capabilities"
-            className="focus-ring mt-4 inline-block text-[0.92rem] font-medium text-accent hover:underline"
-          >
-            See our capabilities →
-          </Link>
-        </div>
-      </section>
-    </div>
+    </>
   );
 }
 
 const VALUES = [
-  { code: "01", title: "Surgical stainless steel", body: "Instruments produced from medical-grade stainless steel." },
-  { code: "02", title: "Made to specification", body: "Produced to exacting tolerances, finished to order." },
-  { code: "03", title: "Since 2005", body: "Two decades of manufacturing and export experience." },
+  { icon: Factory, title: "Made to specification", body: "Produced to exacting tolerances in surgical stainless steel and finished to order." },
+  { icon: ShieldCheck, title: "Lifetime guarantee", body: "Every instrument is inspected and backed against manufacturing defects for the life of the product." },
+  { icon: Certificate, title: "OEM & private label", body: "We mark instruments under your own brand so partners can present the range as their own." },
+  { icon: Globe, title: "Worldwide export", body: "Two decades of manufacturing and export, serving distributors and providers internationally." },
 ];

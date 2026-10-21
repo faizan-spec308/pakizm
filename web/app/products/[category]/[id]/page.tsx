@@ -52,14 +52,27 @@ export default async function ProductPage({
       <div className="grid gap-12 md:grid-cols-2">
         {/* image — double-bezel */}
         <div className="md:sticky md:top-28 md:self-start">
-          <div className="aspect-square overflow-hidden rounded-card border border-line product-surface">
+          <div className="group aspect-square overflow-hidden rounded-card border border-line product-surface">
             <ProductImage
               ref_={p.primaryRef}
               alt={p.name}
-              className="h-full w-full object-contain p-12"
+              className="h-full w-full object-contain p-12 transition-transform duration-700 ease-premium group-hover:scale-105"
               showRef={false}
             />
           </div>
+          <dl className="mt-4 grid grid-cols-2 gap-px overflow-hidden rounded-card border border-line bg-line text-[0.82rem]">
+            {[
+              ["Material", "Surgical stainless steel"],
+              ["Finish", "To order"],
+              ["Marking", "OEM / custom"],
+              ["Guarantee", "Lifetime"],
+            ].map(([k, v]) => (
+              <div key={k} className="bg-surface px-4 py-3">
+                <dt className="text-muted">{k}</dt>
+                <dd className="mt-0.5 font-medium text-ink">{v}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
 
         {/* details */}
