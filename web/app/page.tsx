@@ -150,7 +150,7 @@ export default function HomePage() {
         <Reveal>
           <div className="grid items-center gap-8 overflow-hidden rounded-[18px] bg-ink p-8 text-bg md:grid-cols-[1.3fr_0.7fr] md:p-14">
             <div>
-              <span className="eyebrow !text-accent-soft">Capabilities</span>
+              <span className="eyebrow !text-bg/60">Capabilities</span>
               <h2 className="heading-upper mt-4 text-[2rem] leading-tight sm:text-[2.8rem]">
                 OEM & private-label manufacturing
               </h2>
@@ -160,7 +160,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex md:justify-end">
-              <Link href="/capabilities" className="btn btn-primary btn-lg">
+              <Link href="/capabilities" className="btn btn-light btn-lg">
                 Explore capabilities
                 <ArrowUpRight size={16} weight="bold" />
               </Link>

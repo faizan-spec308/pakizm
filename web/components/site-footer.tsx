@@ -27,7 +27,7 @@ export default function SiteFooter() {
 
       <div className="container-c grid gap-12 py-14 md:grid-cols-[1.6fr_1fr_1fr]">
         <div>
-          <div className="font-display text-[1.4rem] font-extrabold tracking-tighter">PAKIZM</div>
+          <div className="font-display text-[1.6rem] font-semibold uppercase tracking-[0.02em]">Pakizm</div>
           <p className="mt-4 max-w-[36ch] leading-relaxed text-muted">
             Manufacturer of precision orthopedic, dental and general surgery
             instruments in surgical stainless steel. Worldwide since 2005.

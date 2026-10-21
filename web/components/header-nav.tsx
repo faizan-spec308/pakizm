@@ -44,11 +44,10 @@ export default function HeaderNav({ categories }: { categories: Cat[] }) {
     >
       <div className="border-b border-line">
         <div className="container-c flex h-[64px] items-center gap-6">
-          {/* logo */}
-          <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label="Pakizm home">
-            <Logo />
-            <span className="font-display text-[1.25rem] font-extrabold tracking-tighter">
-              PAKIZM
+          {/* wordmark (premium logo to be supplied) */}
+          <Link href="/" className="shrink-0" aria-label="Pakizm home">
+            <span className="font-display text-[1.4rem] font-semibold uppercase tracking-[0.02em]">
+              Pakizm
             </span>
           </Link>
 
@@ -164,7 +163,7 @@ export default function HeaderNav({ categories }: { categories: Cat[] }) {
             transition={{ duration: 0.25 }}
           >
             <div className="container-c flex h-[64px] items-center justify-between border-b border-line">
-              <span className="font-display text-[1.25rem] font-extrabold tracking-tighter">PAKIZM</span>
+              <span className="font-display text-[1.4rem] font-semibold uppercase tracking-[0.02em]">Pakizm</span>
               <button
                 className="-mr-1 flex h-10 w-10 items-center justify-center"
                 aria-label="Close menu"
@@ -229,21 +228,5 @@ export default function HeaderNav({ categories }: { categories: Cat[] }) {
         )}
       </AnimatePresence>
     </header>
-  );
-}
-
-function Logo() {
-  return (
-    <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" className="shrink-0">
-      <rect width="32" height="32" rx="7" fill="var(--ink)" />
-      <path
-        d="M11 23 V9 h6.2 a4.4 4.4 0 0 1 0 8.8 H11"
-        fill="none"
-        stroke="var(--bg)"
-        strokeWidth="2.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
   );
 }
