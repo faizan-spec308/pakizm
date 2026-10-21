@@ -8,7 +8,6 @@ import {
   Certificate,
 } from "@phosphor-icons/react/dist/ssr";
 import Reveal from "@/components/reveal";
-import { getCatalog } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "About",
@@ -17,7 +16,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const { stats } = getCatalog();
   return (
     <>
       <section className="border-b border-line bg-surface-2">
@@ -35,16 +33,16 @@ export default function AboutPage() {
             </p>
           </Reveal>
           <Reveal delay={0.12}>
-            <div className="mt-12 flex flex-wrap gap-12 border-t border-line pt-8">
+            <div className="mt-12 flex flex-wrap gap-x-12 gap-y-6 border-t border-line pt-8">
               {[
-                ["2005", "Manufacturing since"],
-                [stats.products.toLocaleString(), "Instruments"],
-                [stats.variants.toLocaleString(), "References"],
-                ["100%", "Surgical stainless steel"],
+                ["Since 2005", "Manufacturing"],
+                ["Surgical stainless steel", "Materials"],
+                ["OEM & private label", "Custom marking"],
+                ["Worldwide", "Export"],
               ].map(([v, l]) => (
                 <div key={l}>
-                  <div className="ref text-[1.8rem] font-semibold tracking-tight">{v}</div>
-                  <div className="text-[0.76rem] uppercase tracking-[0.1em] text-muted">{l}</div>
+                  <div className="font-display text-[1.25rem] font-semibold tracking-tight">{v}</div>
+                  <div className="text-[0.72rem] font-medium uppercase tracking-[0.12em] text-muted">{l}</div>
                 </div>
               ))}
             </div>

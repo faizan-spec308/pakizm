@@ -11,11 +11,12 @@ import Reveal from "@/components/reveal";
 import ProductCard from "@/components/product-card";
 import Hero from "@/components/hero";
 import Marquee from "@/components/marquee";
+import EditorialBand from "@/components/editorial-band";
 
 const FEATURED_REFS = ["14-0131", "14-0133", "14-0137", "14-1403", "14-1405", "14-0135"];
 
 export default function HomePage() {
-  const { categories, products, stats } = getCatalog();
+  const { categories, products } = getCatalog();
   const byRef = (r: string) => products.find((p) => p.primaryRef === r);
   const featured = FEATURED_REFS.map(byRef).filter(Boolean) as typeof products;
   const hero = featured[0];
@@ -25,7 +26,6 @@ export default function HomePage() {
     <>
       <Hero
         hero={hero && { id: hero.id, name: hero.name, primaryRef: hero.primaryRef, categorySlug: hero.categorySlug }}
-        stats={stats}
       />
       <Marquee />
 
@@ -90,6 +90,8 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
+      <EditorialBand />
 
       {/* OEM promo */}
       <section className="container-c py-16 md:py-24">

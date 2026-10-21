@@ -7,10 +7,9 @@ import { ArrowRight } from "@phosphor-icons/react";
 import type { ReactNode } from "react";
 
 type Hero = { id: string; name: string; primaryRef: string; categorySlug: string };
-type Stats = { products: number; variants: number; categories: number };
 const EASE = [0.16, 1, 0.3, 1] as const;
 
-export default function Hero({ hero, stats }: { hero?: Hero; stats: Stats }) {
+export default function Hero({ hero }: { hero?: Hero }) {
   const reduce = useReducedMotion();
   const rise = (delay: number) => ({
     initial: reduce ? false : { opacity: 0, y: 22 },
@@ -59,7 +58,7 @@ export default function Hero({ hero, stats }: { hero?: Hero; stats: Stats }) {
             to specification, finished to order, supplied worldwide.
           </motion.p>
 
-          <motion.div className="mt-9 flex flex-wrap gap-3" {...rise(0.58)}>
+          <motion.div className="mt-10 flex flex-wrap gap-3" {...rise(0.58)}>
             <Link href="/products" className="btn btn-dark btn-lg">
               Shop the catalog
               <ArrowRight size={15} weight="bold" />
@@ -67,19 +66,6 @@ export default function Hero({ hero, stats }: { hero?: Hero; stats: Stats }) {
             <Link href="/contact" className="btn btn-ghost btn-lg">
               Request a quote
             </Link>
-          </motion.div>
-
-          <motion.div className="mt-12 flex gap-10 border-t border-line pt-6" {...rise(0.66)}>
-            {[
-              [stats.products.toLocaleString(), "Instruments"],
-              [stats.variants.toLocaleString(), "References"],
-              [String(stats.categories), "Categories"],
-            ].map(([v, l]) => (
-              <div key={l}>
-                <div className="ref text-[1.55rem] font-semibold tracking-tight text-ink">{v}</div>
-                <div className="text-[0.74rem] font-medium uppercase tracking-[0.12em] text-muted">{l}</div>
-              </div>
-            ))}
           </motion.div>
         </div>
 
