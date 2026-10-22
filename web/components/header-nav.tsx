@@ -13,6 +13,7 @@ import {
   Handbag,
   CaretDown,
 } from "@phosphor-icons/react";
+import { useCart } from "./cart-context";
 
 type Cat = { name: string; slug: string; count: number };
 const EASE = [0.16, 1, 0.3, 1] as const;
@@ -25,6 +26,7 @@ export default function HeaderNav({ categories }: { categories: Cat[] }) {
   const [q, setQ] = useState("");
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
+  const { count } = useCart();
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -48,7 +50,7 @@ export default function HeaderNav({ categories }: { categories: Cat[] }) {
     { icon: MagnifyingGlass, label: "Search", onClick: () => setSearch((s) => !s) },
     { icon: Heart, label: "Wishlist", href: "/products" },
     { icon: User, label: "Account", href: "/contact" },
-    { icon: Handbag, label: "Cart", href: "/contact" },
+    { icon: Handbag, label: "Cart", href: "/cart", badge: count },
   ];
 
   return (
@@ -109,10 +111,15 @@ export default function HeaderNav({ categories }: { categories: Cat[] }) {
               <Link
                 key={it.label}
                 href={it.href}
-                aria-label={it.label}
-                className="flex h-10 w-10 items-center justify-center text-ink transition-transform duration-300 hover:-translate-y-0.5"
+                aria-label={it.badge ? `${it.label} (${it.badge})` : it.label}
+                className="relative flex h-10 w-10 items-center justify-center text-ink transition-transform duration-300 hover:-translate-y-0.5"
               >
                 <it.icon size={21} weight="regular" />
+                {!!it.badge && it.badge > 0 && (
+                  <span className="absolute right-0.5 top-0.5 flex h-[16px] min-w-[16px] items-center justify-center rounded-full bg-ink px-1 text-[0.6rem] font-bold text-bg">
+                    {it.badge > 99 ? "99+" : it.badge}
+                  </span>
+                )}
               </Link>
             ) : (
               <button

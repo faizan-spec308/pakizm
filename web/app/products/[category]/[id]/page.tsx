@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 import { getCatalog, getProduct, getRelated } from "@/lib/catalog";
 import ProductImage from "@/components/product-image";
 import ProductCard from "@/components/product-card";
+import AddToCart from "@/components/add-to-cart";
 
 export function generateStaticParams() {
   return getCatalog().products.map((p) => ({
@@ -97,13 +97,21 @@ export default async function ProductPage({
             </span>
           </div>
 
-          {/* variants */}
+          <AddToCart
+            productId={p.id}
+            name={p.name}
+            categorySlug={p.categorySlug}
+            variants={p.variants}
+          />
+
+          {/* full reference list */}
           <div className="mt-8 max-h-[480px] overflow-y-auto rounded-card border border-line">
             <table className="w-full text-[0.9rem]">
               <thead className="sticky top-0 z-10">
                 <tr className="border-b border-line bg-surface-2 text-left text-[0.68rem] uppercase tracking-[0.1em] text-muted">
                   <th className="px-5 py-3 font-medium">Reference</th>
                   <th className="px-5 py-3 font-medium">Size / specification</th>
+                  <th className="px-5 py-3 text-right font-medium">Price</th>
                 </tr>
               </thead>
               <tbody>
@@ -114,28 +122,15 @@ export default async function ProductPage({
                   >
                     <td className="ref whitespace-nowrap px-5 py-3 text-ink">{v.ref}</td>
                     <td className="px-5 py-3 text-ink-2">{v.spec || "—"}</td>
+                    <td className="ref whitespace-nowrap px-5 py-3 text-right text-ink">
+                      ${v.price.toFixed(2)}
+                    </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          {/* quote */}
-          <div className="mt-8 rounded-card border border-line bg-accent-soft p-6">
-            <p className="font-semibold tracking-tight">Request pricing for this instrument</p>
-            <p className="mt-1.5 text-[0.9rem] leading-relaxed text-ink-2">
-              Available in surgical stainless steel with OEM and custom marking.
-            </p>
-            <Link
-              href={`/contact?ref=${encodeURIComponent(p.primaryRef)}`}
-              className="btn btn-primary mt-5"
-            >
-              Request a quote
-              <span className="btn-dot">
-                <ArrowUpRight size={13} weight="bold" />
-              </span>
-            </Link>
-          </div>
         </div>
       </div>
 

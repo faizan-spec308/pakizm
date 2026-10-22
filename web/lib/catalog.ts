@@ -1,6 +1,6 @@
 import catalogData from "@/data/catalog.json";
 
-export type Variant = { ref: string; spec: string };
+export type Variant = { ref: string; spec: string; price: number };
 
 export type Product = {
   id: string;
@@ -14,6 +14,7 @@ export type Product = {
   refs: string[];
   variants: Variant[];
   image: string;
+  price: number;
   printedPage: number | null;
 };
 
@@ -53,6 +54,18 @@ export function getProductsByCategory(slug: string): Product[] {
 
 export function getProduct(id: string): Product | undefined {
   return catalog.products.find((p) => p.id === id);
+}
+
+let _variants: Map<string, { price: number; name: string; spec: string }> | null = null;
+/** Trusted server-side lookup of a variant by reference (for checkout pricing). */
+export function variantInfo(ref: string) {
+  if (!_variants) {
+    _variants = new Map();
+    for (const p of catalog.products)
+      for (const v of p.variants)
+        _variants.set(v.ref, { price: v.price, name: p.name, spec: v.spec });
+  }
+  return _variants.get(ref);
 }
 
 export function getRelated(product: Product, limit = 4): Product[] {

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { CartProvider } from "@/components/cart-context";
 import AnnouncementBar from "@/components/announcement-bar";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
@@ -25,10 +26,12 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <AnnouncementBar />
-        <SiteHeader />
-        <main id="main">{children}</main>
-        <SiteFooter />
+        <CartProvider>
+          <AnnouncementBar />
+          <SiteHeader />
+          <main id="main">{children}</main>
+          <SiteFooter />
+        </CartProvider>
       </body>
     </html>
   );

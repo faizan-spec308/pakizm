@@ -8,6 +8,7 @@ type SlimProduct = {
   categorySlug: string;
   subcategory: string;
   refs: string[];
+  price?: number;
 };
 
 export default function ProductCard({ product }: { product: SlimProduct }) {
@@ -37,9 +38,11 @@ export default function ProductCard({ product }: { product: SlimProduct }) {
             {n} {n === 1 ? "size" : "sizes"}
           </span>
         </div>
-        <span className="mt-2 text-[0.8rem] font-semibold text-accent">
-          Request quote →
-        </span>
+        {typeof product.price === "number" && (
+          <span className="ref mt-2 text-[0.9rem] font-semibold text-ink">
+            From ${product.price.toFixed(2)}
+          </span>
+        )}
       </div>
     </Link>
   );
