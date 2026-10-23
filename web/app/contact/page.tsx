@@ -51,7 +51,7 @@ export default function ContactPage() {
                   <Phone size={20} weight="light" className="mt-0.5 shrink-0 text-ink" />
                   <div>
                     <p className="text-[0.8rem] text-muted">Phone</p>
-                    <p className="select-all font-medium">+92 00 000 0000</p>
+                    <p className="select-all font-medium">+44 7933398273</p>
                   </div>
                 </div>
                 <p className="mt-4 text-[0.76rem] text-muted">
