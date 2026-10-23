@@ -7,9 +7,9 @@ import { ArrowUpRight } from "@phosphor-icons/react";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 const PIECES = [
-  { ref: "14-1403", name: "Osteotome" },
-  { ref: "14-0131", name: "Bone forceps" },
-  { ref: "14-1405", name: "Elevator" },
+  { ref: "14-1403", rot: -8, delay: 0, dur: 7 },
+  { ref: "14-0131", rot: 5, delay: 0.4, dur: 8 },
+  { ref: "14-1405", rot: -3, delay: 0.8, dur: 6.5 },
 ];
 
 export default function EditorialBand() {
@@ -21,7 +21,7 @@ export default function EditorialBand() {
         className="pointer-events-none absolute inset-0 opacity-60"
         style={{ background: "radial-gradient(70% 90% at 75% 40%, rgba(255,255,255,0.08), transparent 60%)" }}
       />
-      <div className="container-c relative grid items-center gap-12 py-20 md:grid-cols-[1fr_1fr] md:py-28">
+      <div className="container-c relative grid items-center gap-10 py-20 md:grid-cols-[1fr_1fr] md:py-28">
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,47 +45,31 @@ export default function EditorialBand() {
           </Link>
         </motion.div>
 
-        {/* specimen plate — instruments presented on a clean catalogue card */}
-        <motion.div
-          initial={reduce ? false : { opacity: 0, y: 36 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.9, ease: EASE }}
-          className="md:justify-self-end"
-        >
-          <motion.div
-            animate={reduce ? {} : { y: [0, -10, 0] }}
-            transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-            className="product-surface w-full max-w-[460px] rounded-[16px] border border-line p-6 text-ink shadow-[0_50px_90px_rgba(0,0,0,0.55)] sm:p-7"
-          >
-            <div className="mb-5 flex items-baseline justify-between">
-              <span className="eyebrow">Specimen plate</span>
-              <span className="ref text-[0.72rem] text-muted">Series 14</span>
-            </div>
-            <div className="grid grid-cols-3">
-              {PIECES.map((p, i) => (
-                <div
-                  key={p.ref}
-                  className={`flex flex-col items-center px-2 ${i > 0 ? "border-l border-line" : ""}`}
-                >
-                  <div className="flex h-[230px] items-center justify-center sm:h-[300px]">
-                    <Image
-                      src={`/hero/${p.ref}.png`}
-                      alt={p.name}
-                      width={200}
-                      height={720}
-                      className="max-h-full w-auto object-contain"
-                    />
-                  </div>
-                  <span className="mt-3 text-center text-[0.72rem] font-medium leading-tight text-ink-2">
-                    {p.name}
-                  </span>
-                  <span className="ref mt-0.5 text-[0.66rem] text-muted">{p.ref}</span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </motion.div>
+        <div className="relative flex h-[320px] items-center justify-center gap-2 sm:h-[400px]">
+          {PIECES.map((p, i) => (
+            <motion.div
+              key={p.ref}
+              initial={reduce ? false : { opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.9, delay: 0.1 + i * 0.12, ease: EASE }}
+              style={{ rotate: `${p.rot}deg` }}
+            >
+              <motion.div
+                animate={reduce ? {} : { y: [0, -16, 0] }}
+                transition={{ duration: p.dur, repeat: Infinity, ease: "easeInOut", delay: p.delay }}
+              >
+                <Image
+                  src={`/hero/${p.ref}.png`}
+                  alt=""
+                  width={260}
+                  height={760}
+                  className="max-h-[300px] w-auto drop-shadow-[0_24px_40px_rgba(0,0,0,0.5)] sm:max-h-[380px]"
+                />
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
