@@ -4,6 +4,7 @@ import { CartProvider } from "@/components/cart-context";
 import AnnouncementBar from "@/components/announcement-bar";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
+import CookieBanner from "@/components/cookie-banner";
 
 export const metadata: Metadata = {
   title: {
@@ -31,6 +32,7 @@ export default function RootLayout({
           <SiteHeader />
           <main id="main">{children}</main>
           <SiteFooter />
+          <CookieBanner />
         </CartProvider>
       </body>
     </html>

@@ -25,7 +25,7 @@ export default function SiteFooter() {
         </div>
       </div>
 
-      <div className="container-c grid gap-12 py-14 md:grid-cols-[1.6fr_1fr_1fr]">
+      <div className="container-c grid gap-12 py-14 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <div className="font-display text-[1.6rem] font-semibold uppercase tracking-[0.02em]">Pakizm</div>
           <p className="mt-4 max-w-[36ch] leading-relaxed text-muted">
@@ -53,12 +53,26 @@ export default function SiteFooter() {
             <li><Link href="/contact" className="transition-colors hover:text-accent">Request a Quote</Link></li>
           </ul>
         </div>
+        <div>
+          <div className="mb-4 text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-ink">Legal</div>
+          <ul className="flex flex-col gap-2.5 text-[0.9rem] text-ink-2">
+            <li><Link href="/legal/privacy" className="transition-colors hover:text-accent">Privacy Policy</Link></li>
+            <li><Link href="/legal/terms" className="transition-colors hover:text-accent">Terms & Conditions</Link></li>
+            <li><Link href="/legal/refund-returns" className="transition-colors hover:text-accent">Refund & Returns</Link></li>
+            <li><Link href="/legal/shipping" className="transition-colors hover:text-accent">Shipping</Link></li>
+            <li><Link href="/legal/cookies" className="transition-colors hover:text-accent">Cookie Policy</Link></li>
+          </ul>
+        </div>
       </div>
 
       <div className="border-t border-line">
-        <div className="container-c flex flex-col gap-2 py-6 text-[0.8rem] text-muted sm:flex-row sm:items-center sm:justify-between">
-          <span>© {new Date().getFullYear()} Pakizm. All rights reserved.</span>
-          <span>Pakistan · Worldwide export</span>
+        <div className="container-c flex flex-col gap-3 py-6 text-[0.8rem] text-muted sm:flex-row sm:items-center sm:justify-between">
+          <span>© {new Date().getFullYear()} Pakizm · Pakistan · Worldwide export</span>
+          <div className="flex flex-wrap gap-x-5 gap-y-1">
+            <Link href="/legal/privacy" className="transition-colors hover:text-ink">Privacy</Link>
+            <Link href="/legal/terms" className="transition-colors hover:text-ink">Terms</Link>
+            <Link href="/legal/cookies" className="transition-colors hover:text-ink">Cookies</Link>
+          </div>
         </div>
       </div>
     </footer>
