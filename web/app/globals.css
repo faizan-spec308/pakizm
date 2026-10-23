@@ -124,6 +124,19 @@ a { color: inherit; text-decoration: none; }
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.01em;
 }
+/* prices: clean sans with lining/tabular figures (never monospace) */
+.price {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  letter-spacing: -0.015em;
+}
+.price-lg {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
 
 /* ---- buttons ---- */
 .btn {

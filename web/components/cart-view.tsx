@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Minus, Plus, Trash, ArrowRight } from "@phosphor-icons/react";
+import { Minus, Plus, Trash, ArrowRight, Lock } from "@phosphor-icons/react";
 import { useCart, usd } from "./cart-context";
 import ProductImage from "./product-image";
 
@@ -86,8 +86,8 @@ export default function CartView() {
                     </button>
                   </div>
                   <div className="flex items-center gap-4">
-                    <span className="ref font-semibold">{usd(it.price * it.qty)}</span>
-                    <button onClick={() => remove(it.ref)} aria-label="Remove" className="text-muted hover:text-ink">
+                    <span className="price font-semibold">{usd(it.price * it.qty)}</span>
+                    <button onClick={() => remove(it.ref)} aria-label="Remove" className="text-muted transition-colors hover:text-ink">
                       <Trash size={17} weight="regular" />
                     </button>
                   </div>
@@ -103,21 +103,37 @@ export default function CartView() {
 
       <aside className="lg:sticky lg:top-28 lg:self-start">
         <div className="rounded-card border border-line bg-surface-2 p-6">
-          <h2 className="heading-upper text-[1.3rem]">Summary</h2>
-          <div className="mt-5 flex items-center justify-between border-b border-line pb-4 text-[0.92rem]">
-            <span className="text-muted">Subtotal</span>
-            <span className="ref font-semibold">{usd(subtotal)}</span>
+          <h2 className="heading-upper text-[1.15rem]">Order summary</h2>
+
+          <dl className="mt-5 flex flex-col gap-3 text-[0.92rem]">
+            <div className="flex items-center justify-between">
+              <dt className="text-muted">Subtotal</dt>
+              <dd className="price font-semibold">{usd(subtotal)}</dd>
+            </div>
+            <div className="flex items-center justify-between">
+              <dt className="text-muted">Shipping</dt>
+              <dd className="text-[0.84rem] text-muted">Calculated at checkout</dd>
+            </div>
+          </dl>
+
+          <div className="mt-4 flex items-baseline justify-between border-t border-line pt-4">
+            <span className="text-[0.82rem] font-semibold uppercase tracking-[0.1em] text-muted">Total</span>
+            <span className="price-lg text-[1.7rem]">{usd(subtotal)}</span>
           </div>
-          <p className="mt-4 text-[0.8rem] leading-relaxed text-muted">
-            Shipping and taxes are calculated at checkout. Prices are placeholders
-            pending final pricing.
-          </p>
+
           <button onClick={checkout} disabled={loading} className="btn btn-dark btn-lg mt-6 w-full disabled:opacity-60">
             {loading ? "Starting checkout…" : "Proceed to checkout"}
             {!loading && <ArrowRight size={15} weight="bold" />}
           </button>
-          {err && <p className="mt-3 text-[0.82rem] text-ink-2">{err}</p>}
-          <p className="mt-4 text-center text-[0.76rem] text-muted">Secure checkout via Stripe</p>
+          {err && <p className="mt-3 rounded-btn bg-surface px-3 py-2 text-[0.82rem] text-ink-2">{err}</p>}
+
+          <div className="mt-5 flex items-center justify-center gap-2 text-[0.76rem] text-muted">
+            <Lock size={13} weight="fill" />
+            Secure checkout via Stripe
+          </div>
+          <p className="mt-3 text-center text-[0.72rem] leading-relaxed text-muted">
+            Prices are placeholders pending final pricing. Taxes applied at checkout.
+          </p>
         </div>
       </aside>
     </div>

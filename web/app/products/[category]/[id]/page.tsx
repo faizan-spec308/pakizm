@@ -122,7 +122,7 @@ export default async function ProductPage({
                   >
                     <td className="ref whitespace-nowrap px-5 py-3 text-ink">{v.ref}</td>
                     <td className="px-5 py-3 text-ink-2">{v.spec || "—"}</td>
-                    <td className="ref whitespace-nowrap px-5 py-3 text-right text-ink">
+                    <td className="price whitespace-nowrap px-5 py-3 text-right font-medium text-ink">
                       ${v.price.toFixed(2)}
                     </td>
                   </tr>

@@ -35,9 +35,7 @@ export default function AddToCart({
   return (
     <div className="mt-8 rounded-card border border-line bg-surface-2 p-6">
       <div className="flex items-baseline justify-between gap-3">
-        <div className="ref font-display text-[1.9rem] font-medium tracking-tight">
-          {usd(v.price * qty)}
-        </div>
+        <div className="price-lg text-[2.1rem]">{usd(v.price * qty)}</div>
         <span className="rounded bg-surface px-2 py-0.5 text-[0.62rem] font-semibold uppercase tracking-wide text-muted">
           Placeholder price
         </span>

@@ -39,8 +39,9 @@ export default function ProductCard({ product }: { product: SlimProduct }) {
           </span>
         </div>
         {typeof product.price === "number" && (
-          <span className="ref mt-2 text-[0.9rem] font-semibold text-ink">
-            From ${product.price.toFixed(2)}
+          <span className="price mt-2 text-[0.95rem] font-semibold text-ink">
+            <span className="text-[0.72rem] font-normal text-muted">From </span>
+            ${product.price.toFixed(2)}
           </span>
         )}
       </div>
