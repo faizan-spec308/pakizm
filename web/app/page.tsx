@@ -12,6 +12,8 @@ import ProductCard from "@/components/product-card";
 import Hero from "@/components/hero";
 import Marquee from "@/components/marquee";
 import EditorialBand from "@/components/editorial-band";
+import ProductImage from "@/components/product-image";
+import categoryImages from "@/data/category-images.json";
 
 const FEATURED_REFS = ["14-0131", "14-0133", "14-0137", "14-1403", "14-1405", "14-0135"];
 
@@ -45,19 +47,23 @@ export default function HomePage() {
             </Link>
           </Reveal>
         </div>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
           {topCats.map((c, i) => (
             <Reveal key={c.slug} delay={Math.min(i * 0.04, 0.3)}>
-              <Link
-                href={`/products/${c.slug}`}
-                className="group relative flex h-full min-h-[136px] flex-col justify-between overflow-hidden rounded-card border border-line bg-surface-2 p-5 transition-all duration-500 ease-premium hover:border-ink hover:bg-surface"
-              >
-                <span className="ref text-[0.72rem] text-muted">{c.count} items</span>
-                <div className="flex items-end justify-between gap-2">
-                  <span className="font-display text-[1.2rem] font-semibold leading-tight tracking-tight text-ink">
-                    {c.name}
+              <Link href={`/products/${c.slug}`} className="group block">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-card border border-line product-surface transition-colors duration-500 ease-premium group-hover:border-ink">
+                  <ProductImage
+                    ref_={(categoryImages as Record<string, string>)[c.slug]}
+                    alt={c.name}
+                    className="h-full w-full object-contain p-10 transition-transform duration-700 ease-premium group-hover:scale-[1.06]"
+                    showRef={false}
+                  />
+                  <span className="absolute left-3 top-3 flex h-8 w-8 translate-y-1 items-center justify-center rounded-full bg-ink text-bg opacity-0 transition-all duration-500 ease-premium group-hover:translate-y-0 group-hover:opacity-100">
+                    <ArrowUpRight size={14} weight="bold" />
                   </span>
-                  <ArrowUpRight size={18} weight="bold" className="shrink-0 text-muted transition-all duration-500 ease-premium group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-ink" />
+                </div>
+                <div className="mt-3.5 font-display text-[1.1rem] font-semibold tracking-tight text-ink group-hover:text-accent">
+                  {c.name}
                 </div>
               </Link>
             </Reveal>

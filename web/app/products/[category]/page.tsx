@@ -53,10 +53,6 @@ export default async function CategoryPage({
       <header className="mb-12 border-b border-line pb-10">
         <span className="eyebrow">Category</span>
         <h1 className="heading-upper mt-4 text-[2.6rem] sm:text-[3.4rem]">{cat.name}</h1>
-        <p className="ref mt-3 text-[0.9rem] text-muted">
-          {cat.count} instruments · {groups.length}{" "}
-          {groups.length === 1 ? "group" : "groups"}
-        </p>
       </header>
 
       {groups.map((g) => (
@@ -64,9 +60,6 @@ export default async function CategoryPage({
           {groups.length > 1 && (
             <h2 className="mb-5 text-[1.15rem] font-semibold tracking-[-0.01em]">
               {g.subcategory}
-              <span className="ref ml-2 text-[0.85rem] font-normal text-muted">
-                {g.items.length}
-              </span>
             </h2>
           )}
           <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">

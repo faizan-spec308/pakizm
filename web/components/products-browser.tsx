@@ -83,7 +83,7 @@ export default function ProductsBrowser({
           </div>
           <div className="flex gap-2 overflow-x-auto pb-1">
             <Chip active={cat === ""} onClick={() => setCat("")}>
-              All{all ? ` · ${all.length}` : ""}
+              All
             </Chip>
             {cats.map((c) => (
               <Chip key={c.slug} active={cat === c.slug} onClick={() => setCat(c.slug)}>
@@ -106,11 +106,7 @@ export default function ProductsBrowser({
           </div>
         ) : (
           <>
-            <div className="mb-6 flex items-center justify-between gap-4">
-              <p className="text-[0.85rem] text-muted">
-                <span className="ref text-ink">{filtered.length.toLocaleString()}</span>{" "}
-                products{cat ? ` in ${cats.find((c) => c.slug === cat)?.name}` : ""}
-              </p>
+            <div className="mb-6 flex items-center justify-end gap-4">
               <label className="flex items-center gap-2 text-[0.82rem] text-muted">
                 <span className="hidden sm:inline">Sort</span>
                 <select
@@ -132,7 +128,7 @@ export default function ProductsBrowser({
             {shown.length < filtered.length && (
               <div className="mt-14 flex justify-center">
                 <button onClick={() => setLimit((l) => l + PAGE)} className="btn btn-ghost">
-                  Show more · {filtered.length - shown.length} remaining
+                  Show more
                 </button>
               </div>
             )}

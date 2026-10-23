@@ -12,7 +12,6 @@ type SlimProduct = {
 };
 
 export default function ProductCard({ product }: { product: SlimProduct }) {
-  const n = product.refs.length;
   return (
     <Link
       href={`/products/${product.categorySlug}/${product.id}`}
@@ -32,11 +31,8 @@ export default function ProductCard({ product }: { product: SlimProduct }) {
         <h3 className="text-[0.95rem] font-semibold leading-snug tracking-tight text-ink group-hover:text-accent">
           {product.name}
         </h3>
-        <div className="mt-1.5 flex items-center justify-between">
+        <div className="mt-1.5">
           <span className="ref text-[0.78rem] text-muted">{product.primaryRef}</span>
-          <span className="text-[0.72rem] text-muted">
-            {n} {n === 1 ? "size" : "sizes"}
-          </span>
         </div>
         {typeof product.price === "number" && (
           <span className="price mt-2 text-[0.95rem] font-semibold text-ink">

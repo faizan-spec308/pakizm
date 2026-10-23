@@ -192,11 +192,10 @@ export default function HeaderNav({ categories }: { categories: Cat[] }) {
                   >
                     <Link
                       href={`/products/${c.slug}`}
-                      className="group flex items-center justify-between rounded-sm px-3 py-2 text-[0.9rem] transition-colors hover:bg-surface-2"
+                      className="group block rounded-sm px-3 py-2 text-[0.9rem] font-medium text-ink-2 transition-colors hover:bg-surface-2 hover:text-ink"
                       onClick={() => setMega(false)}
                     >
-                      <span className="font-medium text-ink-2 group-hover:text-ink">{c.name}</span>
-                      <span className="ref text-[0.72rem] text-muted">{c.count}</span>
+                      {c.name}
                     </Link>
                   </motion.div>
                 ))}
