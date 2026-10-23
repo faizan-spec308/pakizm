@@ -68,7 +68,7 @@ export default function ProductsBrowser({
 
   return (
     <div>
-      <div className="sticky top-[66px] z-30 -mx-6 border-b border-line bg-bg/90 px-6 py-4 backdrop-blur-xl">
+      <div className="sticky top-[66px] z-30 -mx-4 border-b border-line bg-bg/90 px-4 py-4 backdrop-blur-xl sm:-mx-[26px] sm:px-[26px]">
         <div className="flex flex-col gap-3.5">
           <div className="relative">
             <MagnifyingGlass size={17} weight="regular" className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-muted" />

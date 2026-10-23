@@ -21,7 +21,7 @@ export default function ProductCard({ product }: { product: SlimProduct }) {
         <ProductImage
           ref_={product.primaryRef}
           alt={product.name}
-          className="h-full w-full object-contain p-7 transition-transform duration-500 ease-premium group-hover:scale-[1.05]"
+          className="h-full w-full object-contain p-5 transition-transform duration-500 ease-premium group-hover:scale-[1.05] sm:p-7"
         />
         <span className="absolute left-3 top-3 rounded bg-surface-2/90 px-2 py-0.5 text-[0.62rem] font-semibold uppercase tracking-wide text-muted backdrop-blur">
           {product.subcategory}

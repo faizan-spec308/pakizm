@@ -87,7 +87,7 @@ export default function Hero({ hero }: { hero?: Hero }) {
                   width={520}
                   height={1200}
                   priority
-                  className="max-h-[66vh] w-auto drop-shadow-[0_30px_40px_rgba(11,11,11,0.18)]"
+                  className="max-h-[42vh] w-auto drop-shadow-[0_30px_40px_rgba(11,11,11,0.18)] sm:max-h-[56vh] lg:max-h-[66vh]"
                 />
               </motion.div>
               <span className="absolute -left-2 top-6 rounded-sm bg-ink px-2.5 py-1 text-[0.62rem] font-bold uppercase tracking-wide text-bg">

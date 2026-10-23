@@ -42,7 +42,7 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={0.08}>
             <Link href="/products" className="link-underline inline-flex items-center gap-2 text-[0.82rem] font-bold uppercase tracking-wide text-ink">
-              All 26 categories
+              All categories
               <ArrowRight size={14} weight="bold" />
             </Link>
           </Reveal>
@@ -55,7 +55,7 @@ export default function HomePage() {
                   <ProductImage
                     ref_={(categoryImages as Record<string, string>)[c.slug]}
                     alt={c.name}
-                    className="h-full w-full object-contain p-10 transition-transform duration-700 ease-premium group-hover:scale-[1.06]"
+                    className="h-full w-full object-contain p-7 transition-transform duration-700 ease-premium group-hover:scale-[1.06] sm:p-10"
                     showRef={false}
                   />
                   <span className="absolute left-3 top-3 flex h-8 w-8 translate-y-1 items-center justify-center rounded-full bg-ink text-bg opacity-0 transition-all duration-500 ease-premium group-hover:translate-y-0 group-hover:opacity-100">

@@ -46,7 +46,7 @@ export default async function ProductPage({
           {p.category}
         </Link>
         <span>/</span>
-        <span className="text-ink-2">{p.name}</span>
+        <span className="line-clamp-1 max-w-[55vw] text-ink-2 sm:max-w-none">{p.name}</span>
       </nav>
 
       <div className="grid gap-12 md:grid-cols-2">
@@ -56,7 +56,7 @@ export default async function ProductPage({
             <ProductImage
               ref_={p.primaryRef}
               alt={p.name}
-              className="h-full w-full object-contain p-12 transition-transform duration-700 ease-premium group-hover:scale-105"
+              className="h-full w-full object-contain p-8 transition-transform duration-700 ease-premium group-hover:scale-105 sm:p-12"
               showRef={false}
             />
           </div>

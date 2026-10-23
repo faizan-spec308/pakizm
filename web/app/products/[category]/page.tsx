@@ -52,7 +52,7 @@ export default async function CategoryPage({
 
       <header className="mb-12 border-b border-line pb-10">
         <span className="eyebrow">Category</span>
-        <h1 className="heading-upper mt-4 text-[2.6rem] sm:text-[3.4rem]">{cat.name}</h1>
+        <h1 className="heading-upper mt-4 text-[2.1rem] sm:text-[3.4rem]">{cat.name}</h1>
       </header>
 
       {groups.map((g) => (
