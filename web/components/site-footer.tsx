@@ -49,6 +49,7 @@ export default function SiteFooter() {
           <ul className="flex flex-col gap-2.5 text-[0.9rem] text-ink-2">
             <li><Link href="/about" className="transition-colors hover:text-accent">About</Link></li>
             <li><Link href="/capabilities" className="transition-colors hover:text-accent">Capabilities & OEM</Link></li>
+            <li><Link href="/faq" className="transition-colors hover:text-accent">FAQ</Link></li>
             <li><Link href="/contact" className="transition-colors hover:text-accent">Contact</Link></li>
             <li><Link href="/contact" className="transition-colors hover:text-accent">Request a Quote</Link></li>
           </ul>
@@ -61,6 +62,7 @@ export default function SiteFooter() {
             <li><Link href="/legal/refund-returns" className="transition-colors hover:text-accent">Refund & Returns</Link></li>
             <li><Link href="/legal/shipping" className="transition-colors hover:text-accent">Shipping</Link></li>
             <li><Link href="/legal/cookies" className="transition-colors hover:text-accent">Cookie Policy</Link></li>
+            <li><Link href="/legal/accessibility" className="transition-colors hover:text-accent">Accessibility</Link></li>
           </ul>
         </div>
       </div>

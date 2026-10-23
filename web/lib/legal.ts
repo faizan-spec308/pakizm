@@ -256,6 +256,44 @@ export const policies: Policy[] = [
       },
     ],
   },
+  {
+    slug: "accessibility",
+    title: "Accessibility Statement",
+    updated: UPDATED,
+    intro:
+      "Pakizm is committed to making its website usable for as many people as possible, including those who rely on assistive technologies.",
+    sections: [
+      {
+        heading: "Our commitment",
+        body: [
+          "We aim to meet the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA as a reference standard, and we continue to improve the experience over time.",
+        ],
+      },
+      {
+        heading: "What we do",
+        list: [
+          "Use semantic HTML and clear heading structure.",
+          "Support keyboard navigation with visible focus states.",
+          "Maintain readable colour contrast and legible typography.",
+          "Provide text alternatives for meaningful images.",
+          "Respect the 'reduce motion' setting for animations.",
+          "Build layouts that adapt to phones, tablets and desktops.",
+        ],
+      },
+      {
+        heading: "Known limitations",
+        body: [
+          "Some product photography is being added over time, and a small number of images may not yet have full descriptions. We are actively improving coverage.",
+        ],
+      },
+      {
+        heading: "Feedback",
+        body: [
+          `If you encounter an accessibility barrier on this site, please let us know at ${CONTACT} so we can address it.`,
+        ],
+      },
+    ],
+  },
 ];
 
 export function getPolicy(slug: string): Policy | undefined {

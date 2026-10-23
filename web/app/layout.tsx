@@ -5,14 +5,28 @@ import AnnouncementBar from "@/components/announcement-bar";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import CookieBanner from "@/components/cookie-banner";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Pakizm — Orthopedic Surgical Instruments",
     template: "%s — Pakizm",
   },
-  description:
-    "Manufacturer of precision orthopedic, dental and general surgery instruments. Surgical stainless steel, OEM and custom manufacturing, worldwide export since 2005.",
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: "Pakizm — Orthopedic Surgical Instruments",
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pakizm — Orthopedic Surgical Instruments",
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
