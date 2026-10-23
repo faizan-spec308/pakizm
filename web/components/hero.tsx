@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight } from "@phosphor-icons/react";
+import { ArrowRight, ArrowUpRight } from "@phosphor-icons/react";
 import type { ReactNode } from "react";
 
 type Hero = { id: string; name: string; primaryRef: string; categorySlug: string };
@@ -76,21 +76,31 @@ export default function Hero({ hero }: { hero?: Hero }) {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.25, ease: EASE }}
           >
-            <Link href={`/products/${hero.categorySlug}/${hero.id}`} aria-label={hero.name} className="relative block">
+            <Link href={`/products/${hero.categorySlug}/${hero.id}`} aria-label={hero.name} className="group relative block">
               <motion.div
-                animate={reduce ? {} : { y: [0, -14, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                animate={reduce ? {} : { y: [0, -12, 0] }}
+                transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+                className="product-surface w-[min(78vw,360px)] rounded-[16px] border border-line p-7 shadow-[0_45px_80px_rgba(11,11,11,0.16)] sm:w-[340px] sm:p-9 lg:w-[380px]"
               >
-                <Image
-                  src={`/hero/${hero.primaryRef}.png`}
-                  alt={hero.name}
-                  width={520}
-                  height={1200}
-                  priority
-                  className="max-h-[42vh] w-auto drop-shadow-[0_30px_40px_rgba(11,11,11,0.18)] sm:max-h-[56vh] lg:max-h-[66vh]"
-                />
+                <div className="flex h-[36vh] items-center justify-center sm:h-[48vh] lg:h-[54vh]">
+                  <Image
+                    src={`/hero/${hero.primaryRef}.png`}
+                    alt={hero.name}
+                    width={520}
+                    height={1200}
+                    priority
+                    className="max-h-full w-auto object-contain transition-transform duration-700 ease-premium group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div className="mt-5 flex items-end justify-between border-t border-line pt-4">
+                  <div>
+                    <div className="text-[0.92rem] font-semibold leading-tight tracking-tight text-ink">{hero.name}</div>
+                    <div className="ref mt-1 text-[0.72rem] text-muted">{hero.primaryRef}</div>
+                  </div>
+                  <ArrowUpRight size={18} weight="bold" className="text-ink transition-transform duration-500 ease-premium group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </div>
               </motion.div>
-              <span className="absolute -left-2 top-6 rounded-sm bg-ink px-2.5 py-1 text-[0.62rem] font-bold uppercase tracking-wide text-bg">
+              <span className="absolute -left-2 -top-2 rounded-sm bg-ink px-2.5 py-1 text-[0.62rem] font-bold uppercase tracking-wide text-bg shadow-soft">
                 Featured
               </span>
             </Link>
