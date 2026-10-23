@@ -8,7 +8,7 @@ export default function NotFound() {
         <span className="price-lg text-[5rem] leading-none sm:text-[7rem]">404</span>
         <h1 className="heading-upper text-[1.8rem] sm:text-[2.4rem]">Page not found</h1>
         <p className="max-w-[46ch] leading-relaxed text-ink-2">
-          The page you're looking for doesn't exist or may have moved. Browse the
+          The page you&rsquo;re looking for doesn&rsquo;t exist or may have moved. Browse the
           catalog or head back to the homepage.
         </p>
         <div className="mt-2 flex flex-wrap justify-center gap-3">
