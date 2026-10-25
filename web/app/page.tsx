@@ -13,17 +13,25 @@ import ProductCard from "@/components/product-card";
 import Hero from "@/components/hero";
 import Marquee from "@/components/marquee";
 import EditorialBand from "@/components/editorial-band";
-import ProductImage from "@/components/product-image";
-import categoryImages from "@/data/category-images.json";
 
 const FEATURED_REFS = ["14-0131", "14-0133", "14-0137", "14-1403", "14-1405", "14-0135"];
 
+const FEATURED_CATEGORIES = [
+  { slug: "forceps", name: "Forceps" },
+  { slug: "rongeurs", name: "Rongeurs" },
+  { slug: "cutters", name: "Cutters" },
+  { slug: "retractors", name: "Retractors" },
+  { slug: "scissors", name: "Scissors" },
+  { slug: "needle-holders", name: "Needle Holders" },
+  { slug: "elevators", name: "Elevators" },
+  { slug: "pliers", name: "Pliers" },
+];
+
 export default function HomePage() {
-  const { categories, products } = getCatalog();
+  const { products } = getCatalog();
   const byRef = (r: string) => products.find((p) => p.primaryRef === r);
   const featured = FEATURED_REFS.map(byRef).filter(Boolean) as typeof products;
   const hero = featured[0];
-  const topCats = categories.slice(0, 8);
 
   return (
     <>
@@ -49,15 +57,16 @@ export default function HomePage() {
           </Reveal>
         </div>
         <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
-          {topCats.map((c, i) => (
+          {FEATURED_CATEGORIES.map((c, i) => (
             <Reveal key={c.slug} delay={Math.min(i * 0.04, 0.3)}>
               <Link href={`/products/${c.slug}`} className="group block">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-card border border-line product-surface transition-colors duration-500 ease-premium group-hover:border-ink">
-                  <ProductImage
-                    ref_={(categoryImages as Record<string, string>)[c.slug]}
+                <div className="relative aspect-square overflow-hidden rounded-card border border-line product-surface transition-colors duration-500 ease-premium group-hover:border-ink">
+                  <Image
+                    src={`/instruments/category/${c.slug}.webp`}
                     alt={c.name}
-                    className="h-full w-full object-contain p-7 transition-transform duration-700 ease-premium group-hover:scale-[1.06] sm:p-10"
-                    showRef={false}
+                    fill
+                    sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw"
+                    className="object-contain p-6 transition-transform duration-700 ease-premium group-hover:scale-[1.06] sm:p-8"
                   />
                   <span className="absolute left-3 top-3 flex h-8 w-8 translate-y-1 items-center justify-center rounded-full bg-ink text-bg opacity-0 transition-all duration-500 ease-premium group-hover:translate-y-0 group-hover:opacity-100">
                     <ArrowUpRight size={14} weight="bold" />
