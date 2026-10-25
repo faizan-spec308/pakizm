@@ -82,12 +82,12 @@ export default function Hero({ hero }: { hero?: Hero }) {
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               >
                 <Image
-                  src={`/hero/${hero.primaryRef}.png`}
+                  src="/instruments/cut/reduction-forceps.png"
                   alt={hero.name}
-                  width={520}
-                  height={1200}
+                  width={1000}
+                  height={620}
                   priority
-                  className="max-h-[42vh] w-auto drop-shadow-[0_30px_40px_rgba(11,11,11,0.18)] sm:max-h-[56vh] lg:max-h-[66vh]"
+                  className="h-auto w-[86vw] max-w-[420px] drop-shadow-[0_30px_45px_rgba(11,11,11,0.22)] sm:w-[440px] lg:max-w-[560px]"
                 />
               </motion.div>
               <span className="absolute -left-2 top-6 rounded-sm bg-ink px-2.5 py-1 text-[0.62rem] font-bold uppercase tracking-wide text-bg">

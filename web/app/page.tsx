@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -99,6 +100,44 @@ export default function HomePage() {
 
       <EditorialBand />
 
+      {/* Selected instruments — real product photography */}
+      <section className="container-c py-16 md:py-24">
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+          <Reveal>
+            <div>
+              <span className="eyebrow">Craftsmanship in detail</span>
+              <h2 className="heading-upper mt-4 text-[2rem] sm:text-[2.6rem]">Selected instruments</h2>
+            </div>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <Link href="/products" className="link-underline inline-flex items-center gap-2 text-[0.82rem] font-bold uppercase tracking-wide text-ink">
+              Browse the catalog
+              <ArrowRight size={14} weight="bold" />
+            </Link>
+          </Reveal>
+        </div>
+        <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
+          {REAL_INSTRUMENTS.map((it, i) => (
+            <Reveal key={it.img} delay={Math.min(i * 0.04, 0.3)}>
+              <Link href="/products" className="group block">
+                <div className="relative aspect-square overflow-hidden rounded-card border border-line product-surface transition-colors duration-500 ease-premium group-hover:border-ink">
+                  <Image
+                    src={`/instruments/${it.img}.webp`}
+                    alt={it.name}
+                    fill
+                    sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw"
+                    className="object-contain p-6 transition-transform duration-700 ease-premium group-hover:scale-[1.05]"
+                  />
+                </div>
+                <div className="mt-3.5 text-[0.98rem] font-semibold tracking-tight text-ink group-hover:text-accent">
+                  {it.name}
+                </div>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
       {/* OEM promo */}
       <section className="container-c py-16 md:py-24">
         <Reveal>
@@ -179,6 +218,17 @@ export default function HomePage() {
     </>
   );
 }
+
+const REAL_INSTRUMENTS = [
+  { img: "reduction-forceps", name: "Bone Reduction Forceps" },
+  { img: "bone-holding-forceps", name: "Bone Holding Forceps" },
+  { img: "pin-wire-cutter", name: "Pin & Wire Cutter" },
+  { img: "bolt-cutter", name: "Bolt / Pin Cutter" },
+  { img: "bone-rongeur", name: "Bone Rongeur" },
+  { img: "plate-holding-forceps", name: "Plate Holding Forceps" },
+  { img: "self-retaining-retractor", name: "Self-Retaining Retractor" },
+  { img: "weitlaner-retractor", name: "Weitlaner Retractor" },
+];
 
 const VALUES = [
   { icon: Gear, title: "Made to specification", body: "Produced to exacting tolerances in surgical stainless steel, finished to order." },

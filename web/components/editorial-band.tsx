@@ -6,11 +6,6 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "@phosphor-icons/react";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
-const PIECES = [
-  { ref: "14-1403", rot: -8, delay: 0, dur: 7 },
-  { ref: "14-0131", rot: 5, delay: 0.4, dur: 8 },
-  { ref: "14-1405", rot: -3, delay: 0.8, dur: 6.5 },
-];
 
 export default function EditorialBand() {
   const reduce = useReducedMotion();
@@ -45,31 +40,26 @@ export default function EditorialBand() {
           </Link>
         </motion.div>
 
-        <div className="relative flex h-[320px] items-center justify-center gap-2 sm:h-[400px]">
-          {PIECES.map((p, i) => (
-            <motion.div
-              key={p.ref}
-              initial={reduce ? false : { opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.9, delay: 0.1 + i * 0.12, ease: EASE }}
-              style={{ rotate: `${p.rot}deg` }}
-            >
-              <motion.div
-                animate={reduce ? {} : { y: [0, -16, 0] }}
-                transition={{ duration: p.dur, repeat: Infinity, ease: "easeInOut", delay: p.delay }}
-              >
-                <Image
-                  src={`/hero/${p.ref}.png`}
-                  alt=""
-                  width={260}
-                  height={760}
-                  className="max-h-[300px] w-auto drop-shadow-[0_24px_40px_rgba(0,0,0,0.5)] sm:max-h-[380px]"
-                />
-              </motion.div>
-            </motion.div>
-          ))}
-        </div>
+        <motion.div
+          className="relative flex h-[300px] items-center justify-center sm:h-[400px]"
+          initial={reduce ? false : { opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.9, ease: EASE }}
+        >
+          <motion.div
+            animate={reduce ? {} : { y: [0, -16, 0] }}
+            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <Image
+              src="/instruments/cut/pin-wire-cutter.png"
+              alt="Pakizm pin and wire cutter"
+              width={620}
+              height={800}
+              className="max-h-[300px] w-auto drop-shadow-[0_30px_50px_rgba(0,0,0,0.55)] sm:max-h-[400px]"
+            />
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

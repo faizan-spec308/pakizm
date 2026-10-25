@@ -18,3 +18,6 @@ exports/
 *.zip
 catalog-data/
 scripts/
+
+# raw source photos (processed outputs live in web/public/instruments)
+assets-src/
