@@ -90,9 +90,6 @@ export default function Hero({ hero }: { hero?: Hero }) {
                   className="h-auto w-[82vw] max-w-[400px] drop-shadow-[0_30px_45px_rgba(11,11,11,0.22)] sm:w-[420px] lg:max-w-[520px]"
                 />
               </motion.div>
-              <span className="absolute -left-2 top-6 rounded-sm bg-ink px-2.5 py-1 text-[0.62rem] font-bold uppercase tracking-wide text-bg">
-                Featured
-              </span>
             </Link>
           </motion.div>
         )}
